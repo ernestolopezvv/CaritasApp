@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -9,19 +9,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--IDS34-->
         <scene sceneID="YHk-D1-BOY">
             <objects>
-                <viewController id="qah-Zb-cf7" customClass="ViewController" customModule="ecSegGrado" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qah-Zb-cf7" customClass="IDS34" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p28-iB-i9f">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-MX-QpI" userLabel="Main">
-                                <rect key="frame" x="100.66666666666669" y="27.666666666666657" width="642.66666666666652" height="313.66666666666674"/>
+                                <rect key="frame" x="29.333333333333343" y="101.33333333333331" width="331.33333333333326" height="651.33333333333348"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sD-QV-bJC" userLabel="Logo">
-                                        <rect key="frame" x="0.0" y="118.66666666666667" width="642.66666666666663" height="43.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="65.333333333333343" width="331.33333333333331" height="91.333333333333343"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="JS3-8Q-NYs">
                                                 <rect key="frame" x="-11" y="-23" width="373" height="201"/>
@@ -38,10 +38,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90m-6N-ebd" userLabel="Email">
-                                        <rect key="frame" x="20" y="274.33333333333331" width="546.33333333333337" height="15"/>
+                                        <rect key="frame" x="20" y="266" width="281.66666666666669" height="23.333333333333314"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRo-Xh-0jb">
-                                                <rect key="frame" x="5" y="-2" width="546.33333333333337" height="24.666666666666668"/>
+                                                <rect key="frame" x="5" y="-2" width="281.66666666666669" height="38.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -55,10 +55,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-SG-87g" userLabel="Passw">
-                                        <rect key="frame" x="20" y="329.66666666666663" width="546.33333333333337" height="19"/>
+                                        <rect key="frame" x="20" y="330" width="281.66666666666669" height="27.333333333333314"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoY-1t-9wR">
-                                                <rect key="frame" x="5" y="-2" width="546.33333333333337" height="31.333333333333332"/>
+                                                <rect key="frame" x="5" y="-2" width="281.66666666666669" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -72,10 +72,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-aB-zd6" userLabel="Send">
-                                        <rect key="frame" x="1" y="388.66666666666663" width="642.66666666666663" height="25"/>
+                                        <rect key="frame" x="1" y="397.33333333333337" width="331.33333333333331" height="52"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-JF-pDf">
-                                                <rect key="frame" x="225" y="3.3333333333333712" width="192.66666666666663" height="18.333333333333332"/>
+                                                <rect key="frame" x="116.00000000000003" y="12.666666666666631" width="99.333333333333343" height="26.666666666666671"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Resolver"/>
