@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q13-Cr-SHN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,20 +8,200 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="HaL-FQ-VPm">
+        <!--IDS1AP-->
+        <scene sceneID="0qz-ot-v1b">
             <objects>
-                <viewController id="Q13-Cr-SHN" customClass="ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="56b-ND-vxQ">
+                <viewController id="unh-5D-gxF" customClass="IDS1AP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pfP-Hi-zjw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="l5M-fX-anI"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-m5-Vk8" userLabel="Row1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="134.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar producto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMI-TR-Jpg" userLabel="Agregar">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="134.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="WMI-TR-Jpg" firstAttribute="centerX" secondItem="aKC-m5-Vk8" secondAttribute="centerX" id="6j2-TL-yLX"/>
+                                    <constraint firstItem="WMI-TR-Jpg" firstAttribute="centerY" secondItem="aKC-m5-Vk8" secondAttribute="centerY" id="Ks9-YM-WZf"/>
+                                    <constraint firstItem="WMI-TR-Jpg" firstAttribute="width" secondItem="aKC-m5-Vk8" secondAttribute="width" id="wYE-Ge-aWe"/>
+                                    <constraint firstItem="WMI-TR-Jpg" firstAttribute="height" secondItem="aKC-m5-Vk8" secondAttribute="height" id="zNa-Tt-sAG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FM8-nD-SVf" userLabel="Row2">
+                                <rect key="frame" x="0.0" y="178.5" width="414" height="134.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu3-dD-bZ3" userLabel="Gracias">
+                                        <rect key="frame" x="20.5" y="0.0" width="373" height="134.5"/>
+                                        <string key="text">El producto que intentaste agregar no existe, a continuacion llena los datos para confirmar su dada de alta
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="iu3-dD-bZ3" firstAttribute="height" secondItem="FM8-nD-SVf" secondAttribute="height" id="Hee-2o-DBT"/>
+                                    <constraint firstItem="iu3-dD-bZ3" firstAttribute="width" secondItem="FM8-nD-SVf" secondAttribute="width" multiplier="0.9" id="Pf4-fl-1g6"/>
+                                    <constraint firstItem="iu3-dD-bZ3" firstAttribute="centerY" secondItem="FM8-nD-SVf" secondAttribute="centerY" id="alA-ch-zwC"/>
+                                    <constraint firstItem="iu3-dD-bZ3" firstAttribute="centerX" secondItem="FM8-nD-SVf" secondAttribute="centerX" id="dKf-Kv-9cs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-Qy-dIg" userLabel="Row3">
+                                <rect key="frame" x="0.0" y="343" width="414" height="44.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jw-9V-fNl">
+                                        <rect key="frame" x="30" y="0.0" width="290" height="33.5"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3jw-9V-fNl" firstAttribute="leading" secondItem="LBG-Qy-dIg" secondAttribute="leading" constant="30" id="4Jk-hF-eVK"/>
+                                    <constraint firstItem="3jw-9V-fNl" firstAttribute="top" secondItem="LBG-Qy-dIg" secondAttribute="top" id="EQq-b6-aM4"/>
+                                    <constraint firstItem="3jw-9V-fNl" firstAttribute="height" secondItem="LBG-Qy-dIg" secondAttribute="height" multiplier="0.75" id="GnB-2d-3Y2"/>
+                                    <constraint firstItem="3jw-9V-fNl" firstAttribute="width" secondItem="LBG-Qy-dIg" secondAttribute="width" multiplier="0.7" id="cHp-Ad-7kt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-nN-fab" userLabel="Row4">
+                                <rect key="frame" x="0.0" y="387.5" width="414" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x59-9B-c1V">
+                                        <rect key="frame" x="30" y="0.0" width="290" height="33.5"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="x59-9B-c1V" firstAttribute="top" secondItem="CrL-nN-fab" secondAttribute="top" id="277-KW-FI4"/>
+                                    <constraint firstItem="x59-9B-c1V" firstAttribute="leading" secondItem="CrL-nN-fab" secondAttribute="leading" constant="30" id="329-Lh-Tlb"/>
+                                    <constraint firstItem="x59-9B-c1V" firstAttribute="height" secondItem="CrL-nN-fab" secondAttribute="height" multiplier="0.75" id="5ql-e6-hyh"/>
+                                    <constraint firstItem="x59-9B-c1V" firstAttribute="width" secondItem="CrL-nN-fab" secondAttribute="width" multiplier="0.7" id="TQU-OP-Z4g"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16v-R6-ex9" userLabel="Row5">
+                                <rect key="frame" x="0.0" y="432.5" width="414" height="44.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWP-3T-QGB">
+                                        <rect key="frame" x="30" y="0.0" width="290" height="33.5"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GWP-3T-QGB" firstAttribute="height" secondItem="16v-R6-ex9" secondAttribute="height" multiplier="0.75" id="1Zl-HD-qSt"/>
+                                    <constraint firstItem="GWP-3T-QGB" firstAttribute="width" secondItem="16v-R6-ex9" secondAttribute="width" multiplier="0.7" id="RGv-Qh-MHo"/>
+                                    <constraint firstItem="GWP-3T-QGB" firstAttribute="leading" secondItem="16v-R6-ex9" secondAttribute="leading" constant="30" id="iId-RX-dMh"/>
+                                    <constraint firstItem="GWP-3T-QGB" firstAttribute="top" secondItem="16v-R6-ex9" secondAttribute="top" id="slT-mM-gAk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apX-5q-VtR" userLabel="Row6">
+                                <rect key="frame" x="0.0" y="477" width="414" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yTu-b8-jRY">
+                                        <rect key="frame" x="30" y="0.0" width="290" height="34"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="yTu-b8-jRY" firstAttribute="width" secondItem="apX-5q-VtR" secondAttribute="width" multiplier="0.7" id="OM8-Wy-ibp"/>
+                                    <constraint firstItem="yTu-b8-jRY" firstAttribute="top" secondItem="apX-5q-VtR" secondAttribute="top" id="QHD-WA-7tR"/>
+                                    <constraint firstItem="yTu-b8-jRY" firstAttribute="height" secondItem="apX-5q-VtR" secondAttribute="height" multiplier="0.75" id="Vr3-NX-aZI"/>
+                                    <constraint firstItem="yTu-b8-jRY" firstAttribute="leading" secondItem="apX-5q-VtR" secondAttribute="leading" constant="30" id="dNU-go-Jn6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YN6-M0-Om3" userLabel="Row7">
+                                <rect key="frame" x="0.0" y="522" width="414" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-n7-P6N">
+                                        <rect key="frame" x="30" y="0.0" width="290" height="33.5"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Sei-n7-P6N" firstAttribute="top" secondItem="YN6-M0-Om3" secondAttribute="top" id="BMQ-PZ-0XP"/>
+                                    <constraint firstItem="Sei-n7-P6N" firstAttribute="leading" secondItem="YN6-M0-Om3" secondAttribute="leading" constant="30" id="C4F-Mk-gIV"/>
+                                    <constraint firstItem="Sei-n7-P6N" firstAttribute="width" secondItem="YN6-M0-Om3" secondAttribute="width" multiplier="0.7" id="OdZ-3I-Nbx"/>
+                                    <constraint firstItem="Sei-n7-P6N" firstAttribute="height" secondItem="YN6-M0-Om3" secondAttribute="height" multiplier="0.75" id="gNB-PZ-5zc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-m9-Say" userLabel="Row8">
+                                <rect key="frame" x="0.0" y="617" width="414" height="44.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMm-F7-J9s" userLabel="Subir archivo">
+                                        <rect key="frame" x="145" y="0.0" width="124" height="44.5"/>
+                                        <state key="normal" title="Continuar"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vMm-F7-J9s" firstAttribute="centerY" secondItem="Vko-m9-Say" secondAttribute="centerY" id="Dta-Gk-YkT"/>
+                                    <constraint firstItem="vMm-F7-J9s" firstAttribute="width" secondItem="Vko-m9-Say" secondAttribute="width" multiplier="0.3" id="Fh6-Lp-EBk"/>
+                                    <constraint firstItem="vMm-F7-J9s" firstAttribute="height" secondItem="Vko-m9-Say" secondAttribute="height" id="IVF-BY-ghG"/>
+                                    <constraint firstItem="vMm-F7-J9s" firstAttribute="centerX" secondItem="Vko-m9-Say" secondAttribute="centerX" id="baE-Ht-vt6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IFq-YR-X9H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YN6-M0-Om3" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.05" id="1BI-g0-z8b"/>
+                            <constraint firstItem="CrL-nN-fab" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="3ze-I3-Hc2"/>
+                            <constraint firstItem="LBG-Qy-dIg" firstAttribute="top" secondItem="FM8-nD-SVf" secondAttribute="bottom" constant="30" id="5E4-QT-vf4"/>
+                            <constraint firstItem="Vko-m9-Say" firstAttribute="top" secondItem="YN6-M0-Om3" secondAttribute="bottom" constant="50" id="7j3-ng-xCb"/>
+                            <constraint firstItem="FM8-nD-SVf" firstAttribute="top" secondItem="aKC-m5-Vk8" secondAttribute="bottom" id="8QV-OY-UZ0"/>
+                            <constraint firstItem="CrL-nN-fab" firstAttribute="top" secondItem="LBG-Qy-dIg" secondAttribute="bottom" id="AmS-qz-Enr"/>
+                            <constraint firstItem="LBG-Qy-dIg" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="Azy-nT-Wfz"/>
+                            <constraint firstItem="LBG-Qy-dIg" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="E2z-Tt-yu2"/>
+                            <constraint firstItem="CrL-nN-fab" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="Eo2-Es-BKw"/>
+                            <constraint firstItem="apX-5q-VtR" firstAttribute="top" secondItem="16v-R6-ex9" secondAttribute="bottom" id="Etc-e8-Rsg"/>
+                            <constraint firstItem="aKC-m5-Vk8" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.15" id="IZ2-j7-8xl"/>
+                            <constraint firstItem="Vko-m9-Say" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="Ibr-C5-aOm"/>
+                            <constraint firstItem="16v-R6-ex9" firstAttribute="top" secondItem="CrL-nN-fab" secondAttribute="bottom" id="IsH-Fb-dhf"/>
+                            <constraint firstItem="aKC-m5-Vk8" firstAttribute="top" secondItem="IFq-YR-X9H" secondAttribute="top" id="LYt-xT-IgZ"/>
+                            <constraint firstItem="aKC-m5-Vk8" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="MiM-r3-mcj"/>
+                            <constraint firstItem="CrL-nN-fab" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.05" id="PXH-ec-wkx"/>
+                            <constraint firstItem="16v-R6-ex9" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="RIK-gn-rK0"/>
+                            <constraint firstItem="Vko-m9-Say" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="WIo-Ts-9Lb"/>
+                            <constraint firstItem="apX-5q-VtR" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="bps-dU-RU2"/>
+                            <constraint firstItem="aKC-m5-Vk8" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="eZ2-2g-agi"/>
+                            <constraint firstItem="FM8-nD-SVf" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="fzL-eK-cbx"/>
+                            <constraint firstItem="FM8-nD-SVf" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="gix-w1-nfe"/>
+                            <constraint firstItem="LBG-Qy-dIg" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.05" id="ip3-dh-ILT"/>
+                            <constraint firstItem="YN6-M0-Om3" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="kds-QO-Lan"/>
+                            <constraint firstItem="Vko-m9-Say" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.05" id="u7V-wp-0em"/>
+                            <constraint firstItem="apX-5q-VtR" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.05" id="uSK-2t-hms"/>
+                            <constraint firstItem="apX-5q-VtR" firstAttribute="leading" secondItem="IFq-YR-X9H" secondAttribute="leading" id="uew-pS-rj3"/>
+                            <constraint firstItem="16v-R6-ex9" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="vc1-mB-xfn"/>
+                            <constraint firstItem="16v-R6-ex9" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.05" id="wH1-Vj-FTk"/>
+                            <constraint firstItem="YN6-M0-Om3" firstAttribute="top" secondItem="apX-5q-VtR" secondAttribute="bottom" id="wNt-Za-P49"/>
+                            <constraint firstItem="YN6-M0-Om3" firstAttribute="width" secondItem="pfP-Hi-zjw" secondAttribute="width" id="wkz-ON-4mz"/>
+                            <constraint firstItem="FM8-nD-SVf" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.15" id="zSD-wj-wyH"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgq-4r-8Ql" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VY-gB-oCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.333333333333336" y="93.75"/>
+            <point key="canvasLocation" x="214" y="-17"/>
         </scene>
         <!--ConfirmarViewController-->
         <scene sceneID="nS6-yg-fKt">
@@ -113,6 +293,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
