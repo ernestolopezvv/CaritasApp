@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8578F6C55B0A6837D9F42876 /* Pods_CaritasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6803FA0F9A66368CB02A12A /* Pods_CaritasApp.framework */; };
+		A01842F0DF66313F93EADBE6 /* Pods_CaritasApp_CaritasAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB64970746FA69F049F485 /* Pods_CaritasApp_CaritasAppUITests.framework */; };
 		C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316026EADAE100EDB65C /* AppDelegate.swift */; };
 		C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316226EADAE100EDB65C /* SceneDelegate.swift */; };
 		C4DC316526EADAE100EDB65C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316426EADAE100EDB65C /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		C4DC317826EADAE300EDB65C /* CaritasAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC317726EADAE300EDB65C /* CaritasAppTests.swift */; };
 		C4DC318326EADAE300EDB65C /* CaritasAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC318226EADAE300EDB65C /* CaritasAppUITests.swift */; };
 		C4DC319126EAF4FA00EDB65C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC319026EAF4FA00EDB65C /* LoginViewController.swift */; };
+		C6D00E2D4F0D430CDD789803 /* Pods_CaritasAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790AD81C1ED079434718B10C /* Pods_CaritasAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		465F31AC0DC41428D41BF89F /* Pods-CaritasApp-CaritasAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaritasApp-CaritasAppUITests.release.xcconfig"; path = "Target Support Files/Pods-CaritasApp-CaritasAppUITests/Pods-CaritasApp-CaritasAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		466B4AEE4201E7DF367A67D3 /* Pods-CaritasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaritasApp.release.xcconfig"; path = "Target Support Files/Pods-CaritasApp/Pods-CaritasApp.release.xcconfig"; sourceTree = "<group>"; };
+		5D09C44E4036E84A739B3F36 /* Pods-CaritasApp-CaritasAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaritasApp-CaritasAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CaritasApp-CaritasAppUITests/Pods-CaritasApp-CaritasAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68A3A8C720089A82F2011EB1 /* Pods-CaritasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaritasApp.debug.xcconfig"; path = "Target Support Files/Pods-CaritasApp/Pods-CaritasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		790AD81C1ED079434718B10C /* Pods_CaritasAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaritasAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED4FF3E76BDAFFBFBE010B1 /* Pods-CaritasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaritasAppTests.release.xcconfig"; path = "Target Support Files/Pods-CaritasAppTests/Pods-CaritasAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6803FA0F9A66368CB02A12A /* Pods_CaritasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaritasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1071EC7B28E20A33AF971F4 /* Pods-CaritasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaritasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CaritasAppTests/Pods-CaritasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4DC315D26EADAE100EDB65C /* CaritasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaritasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DC316026EADAE100EDB65C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DC316226EADAE100EDB65C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 		C4DC318226EADAE300EDB65C /* CaritasAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaritasAppUITests.swift; sourceTree = "<group>"; };
 		C4DC318426EADAE300EDB65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4DC319026EAF4FA00EDB65C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBAB64970746FA69F049F485 /* Pods_CaritasApp_CaritasAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaritasApp_CaritasAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8578F6C55B0A6837D9F42876 /* Pods_CaritasApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D00E2D4F0D430CDD789803 /* Pods_CaritasAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01842F0DF66313F93EADBE6 /* Pods_CaritasApp_CaritasAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CD00AD28659D151554F5126 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68A3A8C720089A82F2011EB1 /* Pods-CaritasApp.debug.xcconfig */,
+				466B4AEE4201E7DF367A67D3 /* Pods-CaritasApp.release.xcconfig */,
+				5D09C44E4036E84A739B3F36 /* Pods-CaritasApp-CaritasAppUITests.debug.xcconfig */,
+				465F31AC0DC41428D41BF89F /* Pods-CaritasApp-CaritasAppUITests.release.xcconfig */,
+				C1071EC7B28E20A33AF971F4 /* Pods-CaritasAppTests.debug.xcconfig */,
+				AED4FF3E76BDAFFBFBE010B1 /* Pods-CaritasAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0852CBDE43C53D6BDAFC873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6803FA0F9A66368CB02A12A /* Pods_CaritasApp.framework */,
+				DBAB64970746FA69F049F485 /* Pods_CaritasApp_CaritasAppUITests.framework */,
+				790AD81C1ED079434718B10C /* Pods_CaritasAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4DC315426EADAE100EDB65C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +124,8 @@
 				C4DC317626EADAE300EDB65C /* CaritasAppTests */,
 				C4DC318126EADAE300EDB65C /* CaritasAppUITests */,
 				C4DC315E26EADAE100EDB65C /* Products */,
+				4CD00AD28659D151554F5126 /* Pods */,
+				B0852CBDE43C53D6BDAFC873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DC318726EADAE300EDB65C /* Build configuration list for PBXNativeTarget "CaritasApp" */;
 			buildPhases = (
+				51D8A03DFF04D532D255EB2C /* [CP] Check Pods Manifest.lock */,
 				C4DC315926EADAE100EDB65C /* Sources */,
 				C4DC315A26EADAE100EDB65C /* Frameworks */,
 				C4DC315B26EADAE100EDB65C /* Resources */,
+				31FA2D151FABDC5D3AA19366 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DC318A26EADAE300EDB65C /* Build configuration list for PBXNativeTarget "CaritasAppTests" */;
 			buildPhases = (
+				3631DF79AFABE8813E0741CA /* [CP] Check Pods Manifest.lock */,
 				C4DC316F26EADAE300EDB65C /* Sources */,
 				C4DC317026EADAE300EDB65C /* Frameworks */,
 				C4DC317126EADAE300EDB65C /* Resources */,
@@ -173,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DC318D26EADAE300EDB65C /* Build configuration list for PBXNativeTarget "CaritasAppUITests" */;
 			buildPhases = (
+				3DD4FD2FF5D5BC7BBF034CEF /* [CP] Check Pods Manifest.lock */,
 				C4DC317A26EADAE300EDB65C /* Sources */,
 				C4DC317B26EADAE300EDB65C /* Frameworks */,
 				C4DC317C26EADAE300EDB65C /* Resources */,
+				F378768917F5B2CBB9BE5AE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31FA2D151FABDC5D3AA19366 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaritasApp/Pods-CaritasApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaritasApp/Pods-CaritasApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CaritasApp/Pods-CaritasApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3631DF79AFABE8813E0741CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaritasAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DD4FD2FF5D5BC7BBF034CEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaritasApp-CaritasAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D8A03DFF04D532D255EB2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaritasApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F378768917F5B2CBB9BE5AE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaritasApp-CaritasAppUITests/Pods-CaritasApp-CaritasAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaritasApp-CaritasAppUITests/Pods-CaritasApp-CaritasAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CaritasApp-CaritasAppUITests/Pods-CaritasApp-CaritasAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4DC315926EADAE100EDB65C /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		C4DC318826EADAE300EDB65C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A3A8C720089A82F2011EB1 /* Pods-CaritasApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +605,7 @@
 		};
 		C4DC318926EADAE300EDB65C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466B4AEE4201E7DF367A67D3 /* Pods-CaritasApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +624,7 @@
 		};
 		C4DC318B26EADAE300EDB65C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1071EC7B28E20A33AF971F4 /* Pods-CaritasAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +646,7 @@
 		};
 		C4DC318C26EADAE300EDB65C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED4FF3E76BDAFFBFBE010B1 /* Pods-CaritasAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		C4DC318E26EADAE300EDB65C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D09C44E4036E84A739B3F36 /* Pods-CaritasApp-CaritasAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +688,7 @@
 		};
 		C4DC318F26EADAE300EDB65C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465F31AC0DC41428D41BF89F /* Pods-CaritasApp-CaritasAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
