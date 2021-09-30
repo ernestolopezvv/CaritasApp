@@ -1,6 +1,0 @@
-framework module Pods_CaritasApp_CaritasAppUITests {
-  umbrella header "Pods-CaritasApp-CaritasAppUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

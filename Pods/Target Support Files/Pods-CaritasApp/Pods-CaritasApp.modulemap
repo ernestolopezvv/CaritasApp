@@ -1,6 +1,0 @@
-framework module Pods_CaritasApp {
-  umbrella header "Pods-CaritasApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
