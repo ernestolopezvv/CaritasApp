@@ -8,7 +8,7 @@
 import UIKit
 import FSCalendar
 
-class IDS14: UIViewController, FSCalendarDelegate {
+class IDS14ViewController: UIViewController, FSCalendarDelegate {
     
     @IBOutlet var calendar: FSCalendar!
     

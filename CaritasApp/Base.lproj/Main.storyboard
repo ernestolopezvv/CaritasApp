@@ -207,7 +207,7 @@
         <!--ConfirmarViewController-->
         <scene sceneID="nS6-yg-fKt">
             <objects>
-                <viewController title="ConfirmarViewController" id="mxq-Vg-QTf" customClass="ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ConfirmarViewController" id="mxq-Vg-QTf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gje-YD-BDR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="4312" y="1499"/>
         </scene>
-        <!--IDS35ALMACEN-->
+        <!--View Controller-->
         <scene sceneID="fMW-iU-ET5">
             <objects>
-                <viewController id="aXW-ls-E8y" customClass="IDS35ALMACEN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDSALMACEN" id="aXW-ls-E8y" customClass="IDS35AViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xeq-g4-pAj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,10 +410,10 @@
             </objects>
             <point key="canvasLocation" x="4312" y="86"/>
         </scene>
-        <!--IDS35DONADOR-->
+        <!--View Controller-->
         <scene sceneID="Eas-vk-Qbx">
             <objects>
-                <viewController id="St1-4L-XkQ" customClass="IDS35DONADOR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDSDONADOR" id="St1-4L-XkQ" customClass="IDS35DViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RUt-5m-rhk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="2190" y="-652"/>
         </scene>
-        <!--IDS35CHOFER-->
+        <!--View Controller-->
         <scene sceneID="cOJ-7d-4TU">
             <objects>
-                <viewController id="5n7-qI-31P" customClass="IDS35CHOFER" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDSCHOFER" id="5n7-qI-31P" customClass="IDS35CViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W12-SB-2eJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,10 +610,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-gI-JZv" userLabel="Title1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="134.5"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de donador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqG-HG-Siv" userLabel="Donador">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -628,7 +628,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBd-bN-FlH" userLabel="Label1">
-                                <rect key="frame" x="0.0" y="178.5" width="414" height="27"/>
+                                <rect key="frame" x="0.0" y="178" width="414" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de registrado:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJv-hi-PXH">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
@@ -646,7 +646,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-Z7-LWG" userLabel="Text1">
-                                <rect key="frame" x="0.0" y="205.5" width="414" height="44.5"/>
+                                <rect key="frame" x="0.0" y="205" width="414" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePJ-zr-4fd">
                                         <rect key="frame" x="20" y="10" width="372.5" height="33.5"/>
@@ -663,10 +663,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLR-nf-Gd8" userLabel="Label2">
-                                <rect key="frame" x="0.0" y="260" width="414" height="27"/>
+                                <rect key="frame" x="0.0" y="260" width="414" height="26.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-rm-dy0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -681,10 +681,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wI-bf-uon" userLabel="Text2">
-                                <rect key="frame" x="0.0" y="287" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="286.5" width="414" height="45.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-ul-u8p">
-                                        <rect key="frame" x="20" y="10" width="372.5" height="33.5"/>
+                                        <rect key="frame" x="20" y="10" width="372.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -751,7 +751,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpP-82-jXh" userLabel="Text4">
-                                <rect key="frame" x="0.0" y="450.5" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="450.5" width="414" height="44.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-B8-3Vb">
                                         <rect key="frame" x="20" y="10" width="372.5" height="33.5"/>
@@ -768,10 +768,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbP-5j-1K0" userLabel="Label5">
-                                <rect key="frame" x="0.0" y="505.5" width="414" height="26.5"/>
+                                <rect key="frame" x="0.0" y="505" width="414" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asignado por:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nc-ee-Er5">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -789,7 +789,7 @@
                                 <rect key="frame" x="0.0" y="532" width="414" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JgG-vz-3L5">
-                                        <rect key="frame" x="20" y="10" width="372.5" height="34"/>
+                                        <rect key="frame" x="20" y="10" width="372.5" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -803,10 +803,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD0-Ae-ynZ" userLabel="Label6">
-                                <rect key="frame" x="0.0" y="587" width="414" height="27"/>
+                                <rect key="frame" x="0.0" y="587" width="414" height="26.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion de almacen:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOl-4G-mIt">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -821,7 +821,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT5-qB-Be4" userLabel="Text6">
-                                <rect key="frame" x="0.0" y="614" width="414" height="44.5"/>
+                                <rect key="frame" x="0.0" y="613.5" width="414" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="McW-5o-nSq">
                                         <rect key="frame" x="20" y="10" width="372.5" height="33.5"/>
@@ -838,10 +838,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4w-bZ-Vw2" userLabel="Button1">
-                                <rect key="frame" x="0.0" y="678.5" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="678.5" width="414" height="44.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45d-pb-4jG">
-                                        <rect key="frame" x="145" y="0.0" width="124" height="45"/>
+                                        <rect key="frame" x="145" y="0.0" width="124" height="44.5"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
@@ -1826,10 +1826,10 @@
             </objects>
             <point key="canvasLocation" x="4312" y="-652"/>
         </scene>
-        <!--IDS34-->
+        <!--View Controller-->
         <scene sceneID="yMO-Bw-qPS">
             <objects>
-                <viewController id="060-iL-7X7" customClass="IDS34" sceneMemberID="viewController">
+                <viewController id="060-iL-7X7" customClass="IDS34ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwL-hc-QMp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
