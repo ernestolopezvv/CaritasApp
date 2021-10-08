@@ -1,5 +1,5 @@
 //
-//  IDS1NDViewController.swift
+//  IDS-17ViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,10 +7,17 @@
 
 import UIKit
 
-class IDS1NDViewController: UIViewController {
-    
+class IDS17ViewController: UIViewController {
+
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onGoButtonConfirm(_ sender: Any) {
+        performSegue(withIdentifier: "RecieveToConfirm", sender: self)
+    }
+    @IBAction func onGoButtonConfirm2(_ sender: Any) {
+        performSegue(withIdentifier: "RecieveToConfirm", sender: self)
     }
     
     override func viewDidLoad() {

@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7222F311270E87880045733D /* IDS35AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F310270E87880045733D /* IDS35AViewController.swift */; };
-		7222F313270E87AB0045733D /* IDS35DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F312270E87AB0045733D /* IDS35DViewController.swift */; };
-		7222F315270E87E60045733D /* IDS35CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F314270E87E60045733D /* IDS35CViewController.swift */; };
+		59640A51271082290088E3BF /* IDS-25_SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59640A50271082290088E3BF /* IDS-25_SDViewController.swift */; };
+		59A5E16A27103746004E05A7 /* Donacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5E16627103745004E05A7 /* Donacion.swift */; };
+		59A5E16B27103746004E05A7 /* Articulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5E16727103745004E05A7 /* Articulo.swift */; };
+		7222F311270E87880045733D /* IDS-35_AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F310270E87880045733D /* IDS-35_AViewController.swift */; };
+		7222F313270E87AB0045733D /* IDS-35_DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F312270E87AB0045733D /* IDS-35_DViewController.swift */; };
+		7222F315270E87E60045733D /* IDS-35_CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F314270E87E60045733D /* IDS-35_CViewController.swift */; };
 		728011D4270FFCFE0092EE00 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 728011D3270FFCFE0092EE00 /* FSCalendar */; };
-		728011D6271000D00092EE00 /* IDS1NDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D5271000D00092EE00 /* IDS1NDViewController.swift */; };
-		728011D8271001420092EE00 /* IDS25ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D7271001420092EE00 /* IDS25ViewController.swift */; };
-		728011DC2710084F0092EE00 /* IDS16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DB2710084F0092EE00 /* IDS16ViewController.swift */; };
-		728011DE27100A090092EE00 /* IDS23HViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DD27100A090092EE00 /* IDS23HViewController.swift */; };
-		728011E027100A1E0092EE00 /* IDS23DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DF27100A1E0092EE00 /* IDS23DViewController.swift */; };
-		728011E227100AC10092EE00 /* IDS1APViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E127100AC10092EE00 /* IDS1APViewController.swift */; };
-		728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E327100B6F0092EE00 /* IDS17ViewController.swift */; };
-		728011E6271015260092EE00 /* IDS2-18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E5271015260092EE00 /* IDS2-18ViewController.swift */; };
-		72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */; };
+		728011D6271000D00092EE00 /* IDS-1_NDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D5271000D00092EE00 /* IDS-1_NDViewController.swift */; };
+		728011D8271001420092EE00 /* IDS-25ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D7271001420092EE00 /* IDS-25ViewController.swift */; };
+		728011DC2710084F0092EE00 /* IDS-16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DB2710084F0092EE00 /* IDS-16ViewController.swift */; };
+		728011DE27100A090092EE00 /* IDS-23_HViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DD27100A090092EE00 /* IDS-23_HViewController.swift */; };
+		728011E027100A1E0092EE00 /* IDS-23_DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DF27100A1E0092EE00 /* IDS-23_DViewController.swift */; };
+		728011E227100AC10092EE00 /* IDS-1_APViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E127100AC10092EE00 /* IDS-1_APViewController.swift */; };
+		728011E427100B6F0092EE00 /* IDS-17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E327100B6F0092EE00 /* IDS-17ViewController.swift */; };
+		728011E6271015260092EE00 /* IDS-2-18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E5271015260092EE00 /* IDS-2-18ViewController.swift */; };
+		72892AF3270D7EC300F05E5F /* IDS-14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72892AF2270D7EC300F05E5F /* IDS-14ViewController.swift */; };
 		C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316026EADAE100EDB65C /* AppDelegate.swift */; };
 		C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316226EADAE100EDB65C /* SceneDelegate.swift */; };
-		C4DC316526EADAE100EDB65C /* IDS34ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */; };
+		C4DC316526EADAE100EDB65C /* IDS-34ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316426EADAE100EDB65C /* IDS-34ViewController.swift */; };
 		C4DC316826EADAE100EDB65C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DC316626EADAE100EDB65C /* Main.storyboard */; };
 		C4DC316A26EADAE300EDB65C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DC316926EADAE300EDB65C /* Assets.xcassets */; };
 		C4DC316D26EADAE300EDB65C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DC316B26EADAE300EDB65C /* LaunchScreen.storyboard */; };
@@ -48,22 +51,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7222F310270E87880045733D /* IDS35AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35AViewController.swift; sourceTree = "<group>"; };
-		7222F312270E87AB0045733D /* IDS35DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35DViewController.swift; sourceTree = "<group>"; };
-		7222F314270E87E60045733D /* IDS35CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35CViewController.swift; sourceTree = "<group>"; };
-		728011D5271000D00092EE00 /* IDS1NDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS1NDViewController.swift; sourceTree = "<group>"; };
-		728011D7271001420092EE00 /* IDS25ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS25ViewController.swift; sourceTree = "<group>"; };
-		728011DB2710084F0092EE00 /* IDS16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS16ViewController.swift; sourceTree = "<group>"; };
-		728011DD27100A090092EE00 /* IDS23HViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS23HViewController.swift; sourceTree = "<group>"; };
-		728011DF27100A1E0092EE00 /* IDS23DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS23DViewController.swift; sourceTree = "<group>"; };
-		728011E127100AC10092EE00 /* IDS1APViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS1APViewController.swift; sourceTree = "<group>"; };
-		728011E327100B6F0092EE00 /* IDS17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS17ViewController.swift; sourceTree = "<group>"; };
-		728011E5271015260092EE00 /* IDS2-18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS2-18ViewController.swift"; sourceTree = "<group>"; };
-		72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS14ViewController.swift; sourceTree = "<group>"; };
+		59640A50271082290088E3BF /* IDS-25_SDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-25_SDViewController.swift"; sourceTree = "<group>"; };
+		59A5E16627103745004E05A7 /* Donacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donacion.swift; sourceTree = "<group>"; };
+		59A5E16727103745004E05A7 /* Articulo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articulo.swift; sourceTree = "<group>"; };
+		7222F310270E87880045733D /* IDS-35_AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-35_AViewController.swift"; sourceTree = "<group>"; };
+		7222F312270E87AB0045733D /* IDS-35_DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-35_DViewController.swift"; sourceTree = "<group>"; };
+		7222F314270E87E60045733D /* IDS-35_CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-35_CViewController.swift"; sourceTree = "<group>"; };
+		728011D5271000D00092EE00 /* IDS-1_NDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-1_NDViewController.swift"; sourceTree = "<group>"; };
+		728011D7271001420092EE00 /* IDS-25ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-25ViewController.swift"; sourceTree = "<group>"; };
+		728011DB2710084F0092EE00 /* IDS-16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-16ViewController.swift"; sourceTree = "<group>"; };
+		728011DD27100A090092EE00 /* IDS-23_HViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-23_HViewController.swift"; sourceTree = "<group>"; };
+		728011DF27100A1E0092EE00 /* IDS-23_DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-23_DViewController.swift"; sourceTree = "<group>"; };
+		728011E127100AC10092EE00 /* IDS-1_APViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-1_APViewController.swift"; sourceTree = "<group>"; };
+		728011E327100B6F0092EE00 /* IDS-17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-17ViewController.swift"; sourceTree = "<group>"; };
+		728011E5271015260092EE00 /* IDS-2-18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-2-18ViewController.swift"; sourceTree = "<group>"; };
+		72892AF2270D7EC300F05E5F /* IDS-14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-14ViewController.swift"; sourceTree = "<group>"; };
 		C4DC315D26EADAE100EDB65C /* CaritasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaritasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DC316026EADAE100EDB65C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DC316226EADAE100EDB65C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS34ViewController.swift; sourceTree = "<group>"; };
+		C4DC316426EADAE100EDB65C /* IDS-34ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS-34ViewController.swift"; sourceTree = "<group>"; };
 		C4DC316726EADAE100EDB65C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4DC316926EADAE300EDB65C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DC316C26EADAE300EDB65C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +108,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A5E16427103745004E05A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59A5E16527103745004E05A7 /* ValueObject */,
+				59A5E16827103745004E05A7 /* Tools */,
+				59A5E16927103745004E05A7 /* Services */,
+			);
+			name = Model;
+			path = ../../CaritasApp_1.0/CaritasApp_1.0/Model;
+			sourceTree = "<group>";
+		};
+		59A5E16527103745004E05A7 /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				59A5E16627103745004E05A7 /* Donacion.swift */,
+				59A5E16727103745004E05A7 /* Articulo.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		59A5E16827103745004E05A7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		59A5E16927103745004E05A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C4DC315426EADAE100EDB65C = {
 			isa = PBXGroup;
 			children = (
@@ -125,21 +165,23 @@
 		C4DC315F26EADAE100EDB65C /* CaritasApp */ = {
 			isa = PBXGroup;
 			children = (
+				59A5E16427103745004E05A7 /* Model */,
 				C4DC316026EADAE100EDB65C /* AppDelegate.swift */,
 				C4DC316226EADAE100EDB65C /* SceneDelegate.swift */,
-				C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */,
-				7222F310270E87880045733D /* IDS35AViewController.swift */,
-				72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */,
-				728011D7271001420092EE00 /* IDS25ViewController.swift */,
-				728011DF27100A1E0092EE00 /* IDS23DViewController.swift */,
-				728011E327100B6F0092EE00 /* IDS17ViewController.swift */,
-				728011E5271015260092EE00 /* IDS2-18ViewController.swift */,
-				728011E127100AC10092EE00 /* IDS1APViewController.swift */,
-				7222F312270E87AB0045733D /* IDS35DViewController.swift */,
-				728011D5271000D00092EE00 /* IDS1NDViewController.swift */,
-				728011DD27100A090092EE00 /* IDS23HViewController.swift */,
-				7222F314270E87E60045733D /* IDS35CViewController.swift */,
-				728011DB2710084F0092EE00 /* IDS16ViewController.swift */,
+				728011E127100AC10092EE00 /* IDS-1_APViewController.swift */,
+				728011D5271000D00092EE00 /* IDS-1_NDViewController.swift */,
+				72892AF2270D7EC300F05E5F /* IDS-14ViewController.swift */,
+				728011DB2710084F0092EE00 /* IDS-16ViewController.swift */,
+				728011E327100B6F0092EE00 /* IDS-17ViewController.swift */,
+				728011E5271015260092EE00 /* IDS-2-18ViewController.swift */,
+				728011DF27100A1E0092EE00 /* IDS-23_DViewController.swift */,
+				728011DD27100A090092EE00 /* IDS-23_HViewController.swift */,
+				728011D7271001420092EE00 /* IDS-25ViewController.swift */,
+				59640A50271082290088E3BF /* IDS-25_SDViewController.swift */,
+				C4DC316426EADAE100EDB65C /* IDS-34ViewController.swift */,
+				7222F310270E87880045733D /* IDS-35_AViewController.swift */,
+				7222F314270E87E60045733D /* IDS-35_CViewController.swift */,
+				7222F312270E87AB0045733D /* IDS-35_DViewController.swift */,
 				C4DC316626EADAE100EDB65C /* Main.storyboard */,
 				C4DC316926EADAE300EDB65C /* Assets.xcassets */,
 				C4DC316B26EADAE300EDB65C /* LaunchScreen.storyboard */,
@@ -302,21 +344,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				728011DE27100A090092EE00 /* IDS23HViewController.swift in Sources */,
-				728011E027100A1E0092EE00 /* IDS23DViewController.swift in Sources */,
-				7222F313270E87AB0045733D /* IDS35DViewController.swift in Sources */,
-				C4DC316526EADAE100EDB65C /* IDS34ViewController.swift in Sources */,
-				728011DC2710084F0092EE00 /* IDS16ViewController.swift in Sources */,
-				728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */,
-				728011D8271001420092EE00 /* IDS25ViewController.swift in Sources */,
-				7222F311270E87880045733D /* IDS35AViewController.swift in Sources */,
+				728011DE27100A090092EE00 /* IDS-23_HViewController.swift in Sources */,
+				728011E027100A1E0092EE00 /* IDS-23_DViewController.swift in Sources */,
+				7222F313270E87AB0045733D /* IDS-35_DViewController.swift in Sources */,
+				C4DC316526EADAE100EDB65C /* IDS-34ViewController.swift in Sources */,
+				59640A51271082290088E3BF /* IDS-25_SDViewController.swift in Sources */,
+				59A5E16A27103746004E05A7 /* Donacion.swift in Sources */,
+				728011DC2710084F0092EE00 /* IDS-16ViewController.swift in Sources */,
+				728011E427100B6F0092EE00 /* IDS-17ViewController.swift in Sources */,
+				728011D8271001420092EE00 /* IDS-25ViewController.swift in Sources */,
+				7222F311270E87880045733D /* IDS-35_AViewController.swift in Sources */,
 				C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */,
-				7222F315270E87E60045733D /* IDS35CViewController.swift in Sources */,
+				7222F315270E87E60045733D /* IDS-35_CViewController.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
-				728011E6271015260092EE00 /* IDS2-18ViewController.swift in Sources */,
-				72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */,
-				728011E227100AC10092EE00 /* IDS1APViewController.swift in Sources */,
-				728011D6271000D00092EE00 /* IDS1NDViewController.swift in Sources */,
+				728011E6271015260092EE00 /* IDS-2-18ViewController.swift in Sources */,
+				72892AF3270D7EC300F05E5F /* IDS-14ViewController.swift in Sources */,
+				728011E227100AC10092EE00 /* IDS-1_APViewController.swift in Sources */,
+				59A5E16B27103746004E05A7 /* Articulo.swift in Sources */,
+				728011D6271000D00092EE00 /* IDS-1_NDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  IDS17ViewController.swift
+//  IDS-25ViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,17 +7,13 @@
 
 import UIKit
 
-class IDS17ViewController: UIViewController {
-
-    @IBAction func onCloseButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+class IDS25ViewController: UIViewController {
+    @IBAction func onGoButton(_ sender: Any) {
+        performSegue(withIdentifier: "DonationToDonator", sender: self)
     }
     
-    @IBAction func onGoButtonConfirm(_ sender: Any) {
-        performSegue(withIdentifier: "RecieveToConfirm", sender: self)
-    }
-    @IBAction func onGoButtonConfirm2(_ sender: Any) {
-        performSegue(withIdentifier: "RecieveToConfirm", sender: self)
+    @IBAction func onCloseButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

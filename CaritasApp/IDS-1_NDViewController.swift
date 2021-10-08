@@ -1,5 +1,5 @@
 //
-//  IDS1APViewController.swift
+//  IDS-1_NDViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class IDS1APViewController: UIViewController {
-
+class IDS1NDViewController: UIViewController {
+    
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
