@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--IDS-1_AP-->
+        <!--IDS1_AP-->
         <scene sceneID="0qz-ot-v1b">
             <objects>
-                <viewController title="IDS1AP" id="unh-5D-gxF" userLabel="IDS-1_AP" customClass="IDS1APViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IDS1AP" id="unh-5D-gxF" userLabel="IDS1_AP" customClass="IDS1_APViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfP-Hi-zjw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="5119" y="822"/>
         </scene>
-        <!--IDS-1_ND-->
+        <!--IDS1_ND-->
         <scene sceneID="q2s-Ee-SAp">
             <objects>
-                <viewController title="IDS1ND" id="h91-Vw-ynT" userLabel="IDS-1_ND" customClass="IDS1NDViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IDS1ND" id="h91-Vw-ynT" userLabel="IDS1_ND" customClass="IDS1_NDViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0R-uG-IID" userLabel="Main">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -402,10 +402,10 @@
             </objects>
             <point key="canvasLocation" x="3042" y="-652"/>
         </scene>
-        <!--IDS-14-->
+        <!--IDS14-->
         <scene sceneID="ou0-p4-WjB">
             <objects>
-                <viewController storyboardIdentifier="IDS14" id="jaO-Q6-AtW" userLabel="IDS-14" customClass="IDS14ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDS14" id="jaO-Q6-AtW" userLabel="IDS14" customClass="IDS14ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T4J-cf-hiu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -459,10 +459,10 @@
             </objects>
             <point key="canvasLocation" x="4312" y="-652"/>
         </scene>
-        <!--IDS-16-->
+        <!--IDS16-->
         <scene sceneID="NzF-la-rIz">
             <objects>
-                <viewController title="IDS16" id="fTK-Sr-luu" userLabel="IDS-16" customClass="IDS16ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IDS16" id="fTK-Sr-luu" userLabel="IDS16" customClass="IDS16ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ya5-y7-S8J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -811,10 +811,10 @@
             </objects>
             <point key="canvasLocation" x="2190" y="1499"/>
         </scene>
-        <!--IDS-17-->
+        <!--IDS17-->
         <scene sceneID="0UM-kH-GIa">
             <objects>
-                <viewController id="DKN-Ab-MRr" userLabel="IDS-17" customClass="IDS17ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DKN-Ab-MRr" userLabel="IDS17" customClass="IDS17ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tp5-RQ-rEN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -977,10 +977,10 @@
             </objects>
             <point key="canvasLocation" x="4312" y="822"/>
         </scene>
-        <!--IDS-2-18-->
+        <!--IDS2_18-->
         <scene sceneID="nS6-yg-fKt">
             <objects>
-                <viewController title="IDS2-18" id="mxq-Vg-QTf" userLabel="IDS-2-18" customClass="IDS2_18ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IDS2-18" id="mxq-Vg-QTf" userLabel="IDS2_18" customClass="IDS2_18ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gje-YD-BDR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1068,10 +1068,10 @@
             </objects>
             <point key="canvasLocation" x="4312" y="1499"/>
         </scene>
-        <!--IDS-23_Detalles-->
+        <!--IDS23_Detalles-->
         <scene sceneID="0pc-7A-TfD">
             <objects>
-                <viewController title="IDS23Detalles" id="wSx-FZ-VKe" userLabel="IDS-23_Detalles" customClass="IDS23DViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IDS23Detalles" id="wSx-FZ-VKe" userLabel="IDS23_Detalles" customClass="IDS23_DViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xfQ-AW-0SW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1412,10 +1412,10 @@
             </objects>
             <point key="canvasLocation" x="6654" y="86"/>
         </scene>
-        <!--IDS-23_Historial-->
+        <!--IDS23_Historial-->
         <scene sceneID="QCL-TR-eDh">
             <objects>
-                <viewController title="IDS23Historial" id="PfY-nI-Z37" userLabel="IDS-23_Historial" customClass="IDS23HViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IDS23Historial" id="PfY-nI-Z37" userLabel="IDS23_Historial" customClass="IDS23_HViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k6Z-go-ZAk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1565,10 +1565,10 @@
             </objects>
             <point key="canvasLocation" x="1349" y="-652"/>
         </scene>
-        <!--IDS-25-->
+        <!--IDS25-->
         <scene sceneID="Ptg-OR-PPa">
             <objects>
-                <viewController id="fkO-dd-hs0" userLabel="IDS-25" customClass="IDS25ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fkO-dd-hs0" userLabel="IDS25" customClass="IDS25ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Czm-f2-G4Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1734,10 +1734,10 @@
             </objects>
             <point key="canvasLocation" x="5119" y="90"/>
         </scene>
-        <!--IDS-25_SD-->
+        <!--IDS25_SelDon-->
         <scene sceneID="KS2-54-Xe7">
             <objects>
-                <viewController id="ZOo-Fb-rh6" userLabel="IDS-25_SD" sceneMemberID="viewController">
+                <viewController id="ZOo-Fb-rh6" userLabel="IDS25_SelDon" customClass="IDS25_SDViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CSr-lC-wvt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1752,6 +1752,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="74.5" height="36.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                                <connections>
+                                                    <action selector="onCloseButton:" destination="ZOo-Fb-rh6" eventType="touchUpInside" id="DgM-Ac-mzH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1777,23 +1780,29 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bj8-Um-V7d">
-                                                <rect key="frame" x="256" y="71" width="74.5" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bj8-Um-V7d">
+                                                <rect key="frame" x="118" y="66.5" width="74.5" height="44"/>
                                                 <state key="normal" title="Detalles"/>
+                                                <connections>
+                                                    <action selector="onGoButton:" destination="ZOo-Fb-rh6" eventType="touchUpInside" id="fTn-6G-Ia5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="lH2-au-MaX" firstAttribute="leading" secondItem="eYY-oB-yXd" secondAttribute="leading" id="7c4-b5-nsf"/>
                                             <constraint firstItem="8l9-2j-16o" firstAttribute="top" secondItem="lH2-au-MaX" secondAttribute="bottom" multiplier="1.2" id="9Qx-5N-ufm"/>
+                                            <constraint firstItem="Bj8-Um-V7d" firstAttribute="height" secondItem="8l9-2j-16o" secondAttribute="height" id="Eqj-Ti-hxy"/>
+                                            <constraint firstItem="Bj8-Um-V7d" firstAttribute="leading" secondItem="8l9-2j-16o" secondAttribute="trailing" multiplier="0.3" id="Ocy-UQ-dUE"/>
                                             <constraint firstItem="lH2-au-MaX" firstAttribute="width" secondItem="eYY-oB-yXd" secondAttribute="width" id="TPq-j1-oWg"/>
+                                            <constraint firstItem="Bj8-Um-V7d" firstAttribute="top" secondItem="lH2-au-MaX" secondAttribute="bottom" multiplier="1.2" id="Uq8-Hx-tAc"/>
                                             <constraint firstItem="8l9-2j-16o" firstAttribute="width" secondItem="eYY-oB-yXd" secondAttribute="width" id="aIX-y9-V5I"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lH2-au-MaX" secondAttribute="trailing" id="dTm-iW-KiL"/>
                                             <constraint firstItem="8l9-2j-16o" firstAttribute="height" secondItem="eYY-oB-yXd" secondAttribute="height" multiplier="0.4" id="obv-bD-mPw"/>
                                             <constraint firstItem="lH2-au-MaX" firstAttribute="top" secondItem="eYY-oB-yXd" secondAttribute="top" id="w60-Xb-a7v"/>
                                             <constraint firstItem="lH2-au-MaX" firstAttribute="height" secondItem="eYY-oB-yXd" secondAttribute="height" multiplier="0.5" id="xB8-pd-0dV"/>
                                             <constraint firstItem="8l9-2j-16o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eYY-oB-yXd" secondAttribute="leading" id="xJW-3l-yYT"/>
+                                            <constraint firstItem="Bj8-Um-V7d" firstAttribute="width" secondItem="8l9-2j-16o" secondAttribute="width" multiplier="0.199732" id="xjZ-af-zjX"/>
                                             <constraint firstAttribute="trailing" secondItem="8l9-2j-16o" secondAttribute="trailing" constant="-20" id="zh8-b0-8JF"/>
                                         </constraints>
                                     </view>
@@ -1811,7 +1820,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="91"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Donación" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-ge-hzz">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Donador" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-ge-hzz" userLabel="# Donador">
                                                                     <rect key="frame" x="9.5" y="9" width="186.5" height="73"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -1880,10 +1889,11 @@
             </objects>
             <point key="canvasLocation" x="5871" y="-392"/>
         </scene>
-        <!--IDS-34_Login-->
+        <!--IDS34_Login-->
         <scene sceneID="yMO-Bw-qPS">
             <objects>
-                <viewController title="IDS34Login" id="060-iL-7X7" userLabel="IDS-34_Login" customClass="IDS34ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajE-ML-lyk" sceneMemberID="firstResponder"/>
+                <viewController title="IDS34Login" id="060-iL-7X7" userLabel="IDS34_Login" customClass="IDS34ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwL-hc-QMp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2010,14 +2020,13 @@
                         <segue destination="5n7-qI-31P" kind="presentation" identifier="LoginToDriver" modalPresentationStyle="fullScreen" id="gmb-1h-Wa3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ajE-ML-lyk" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3013" y="90"/>
         </scene>
-        <!--IDS-35_Almacen-->
+        <!--IDS35_Almacen-->
         <scene sceneID="fMW-iU-ET5">
             <objects>
-                <viewController storyboardIdentifier="IDSALMACEN" title="IDS35Almacen" id="aXW-ls-E8y" userLabel="IDS-35_Almacen" customClass="IDS35AViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDSALMACEN" title="IDS35Almacen" id="aXW-ls-E8y" userLabel="IDS35_Almacen" customClass="IDS35_AViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xeq-g4-pAj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2203,10 +2212,10 @@
             </objects>
             <point key="canvasLocation" x="4311.594202898551" y="85.714285714285708"/>
         </scene>
-        <!--IDS-35_Chofer-->
+        <!--IDS35_Chofer-->
         <scene sceneID="cOJ-7d-4TU">
             <objects>
-                <viewController storyboardIdentifier="IDSCHOFER" title="IDS35Chofer" id="5n7-qI-31P" userLabel="IDS-35_Chofer" customClass="IDS35CViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDSCHOFER" title="IDS35Chofer" id="5n7-qI-31P" userLabel="IDS35_Chofer" customClass="IDS35_CViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W12-SB-2eJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2332,10 +2341,10 @@
             </objects>
             <point key="canvasLocation" x="2190" y="822"/>
         </scene>
-        <!--IDS-35_Donador-->
+        <!--IDS35_Donador-->
         <scene sceneID="Eas-vk-Qbx">
             <objects>
-                <viewController storyboardIdentifier="IDSDONADOR" title="IDS35Donador" id="St1-4L-XkQ" userLabel="IDS-35_Donador" customClass="IDS35DViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IDSDONADOR" title="IDS35Donador" id="St1-4L-XkQ" userLabel="IDS35_Donador" customClass="IDS35_DViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RUt-5m-rhk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

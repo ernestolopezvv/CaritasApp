@@ -1,5 +1,5 @@
 //
-//  IDS-2-18ViewController.swift
+//  IDS1_NDViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IDS2_18ViewController: UIViewController {
+class IDS1_NDViewController: UIViewController {
     
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)

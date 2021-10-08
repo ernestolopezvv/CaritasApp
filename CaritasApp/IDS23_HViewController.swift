@@ -1,5 +1,5 @@
 //
-//  IDS-23_HViewController.swift
+//  IDS23_HViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IDS23HViewController: UIViewController {
+class IDS23_HViewController: UIViewController {
 
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)

@@ -1,5 +1,5 @@
 //
-//  IDS-25_SDViewController.swift
+//  IDS25_SDViewController.swift
 //  CaritasApp
 //
 //  Created by Enrique Ruiz on 08/10/21.
@@ -8,17 +8,15 @@
 import UIKit
 
 class IDS25_SDViewController: UIViewController {
- 
-    @IBAction func on2GoButton(_ sender: Any) {
+
+    
+    @IBAction func onGoButton(_ sender: Any) {
         performSegue(withIdentifier: "DonatorToHistory", sender: self)
     }
     
-    
-    @IBAction func on2CloseButton(_ sender: Any) {
+    @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

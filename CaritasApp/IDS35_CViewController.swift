@@ -1,16 +1,20 @@
 //
-//  IDS-1_NDViewController.swift
+//  IDS35_CViewController.swift
 //  CaritasApp
 //
-//  Created by Santiago A.A.M on 07/10/21.
+//  Created by Santiago A.A.M on 06/10/21.
 //
 
 import UIKit
 
-class IDS1NDViewController: UIViewController {
+class IDS35_CViewController: UIViewController {
     
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onGoButtonDonationInfo(_ sender: Any) {
+        performSegue(withIdentifier: "DriverToDonationInfo", sender: self)
     }
     
     override func viewDidLoad() {

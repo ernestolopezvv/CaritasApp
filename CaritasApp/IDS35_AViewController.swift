@@ -1,5 +1,5 @@
 //
-//  IDS-35_AViewController.swift
+//  IDS35_AViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 06/10/21.
@@ -8,7 +8,7 @@
 import UIKit
 import FSCalendar
 
-class IDS35AViewController: UIViewController {
+class IDS35_AViewController: UIViewController {
     
     @IBAction func onGoButtonDonation(_ sender: Any) {
         performSegue(withIdentifier: "AdminToDonation", sender: self)

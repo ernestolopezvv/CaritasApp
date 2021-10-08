@@ -1,16 +1,22 @@
 //
-//  IDS-23_DViewController.swift
+//  IDS35_DViewController.swift
 //  CaritasApp
 //
-//  Created by Santiago A.A.M on 07/10/21.
+//  Created by Santiago A.A.M on 06/10/21.
 //
 
 import UIKit
 
-class IDS23DViewController: UIViewController {
-    
+class IDS35_DViewController: UIViewController {
+
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    @IBAction func onGoButtonImport(_ sender: Any) {
+        performSegue(withIdentifier: "DonatorToImport", sender: self)
+    }
+    @IBAction func onGoButtonHistory(_ sender: Any) {
+        performSegue(withIdentifier: "DonatorToHistory", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
