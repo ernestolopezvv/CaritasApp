@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="060-iL-7X7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -299,13 +299,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5F6-2V-cy4" userLabel="Main">
-                                <rect key="frame" x="31" y="105.5" width="352" height="695"/>
+                                <rect key="frame" x="31" y="44" width="352" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-be-XWv" userLabel="Row1">
-                                        <rect key="frame" x="0.0" y="5" width="352" height="139"/>
+                                        <rect key="frame" x="0.0" y="5" width="352" height="163.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido, selecciona la acción que deseas realizar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReS-G0-FD4">
-                                                <rect key="frame" x="0.0" y="38" width="352" height="62.5"/>
+                                                <rect key="frame" x="0.0" y="45" width="352" height="73.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -319,17 +319,43 @@
                                             <constraint firstItem="ReS-G0-FD4" firstAttribute="height" secondItem="dxG-be-XWv" secondAttribute="height" multiplier="0.45" id="iIg-DO-CYz"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTb-A5-Uy3" userLabel="Row2">
-                                        <rect key="frame" x="0.0" y="144" width="352" height="173.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ima-lO-Bto" userLabel="Back">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="41"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-eW-YWU">
-                                                <rect key="frame" x="0.0" y="20" width="352" height="87"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                                <state key="normal" title="Calendario de donaciones en puerta"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7k-P6-yQm">
+                                                <rect key="frame" x="-21" y="2" width="112.5" height="37"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                                <connections>
+                                                    <action selector="onCloseButton:" destination="aXW-ls-E8y" eventType="touchUpInside" id="D03-dn-SVg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="y7k-P6-yQm" firstAttribute="width" secondItem="ima-lO-Bto" secondAttribute="width" multiplier="1.6" id="3Yd-Rz-ac3"/>
+                                            <constraint firstItem="y7k-P6-yQm" firstAttribute="centerY" secondItem="ima-lO-Bto" secondAttribute="centerY" id="VHc-c6-3RM"/>
+                                            <constraint firstItem="y7k-P6-yQm" firstAttribute="height" secondItem="ima-lO-Bto" secondAttribute="height" multiplier="0.898551" id="pER-Bl-5AG"/>
+                                            <constraint firstItem="y7k-P6-yQm" firstAttribute="centerX" secondItem="ima-lO-Bto" secondAttribute="centerX" id="yAU-CV-8Ff"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTb-A5-Uy3" userLabel="Row2">
+                                        <rect key="frame" x="0.0" y="168.5" width="352" height="204.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-eW-YWU">
+                                                <rect key="frame" x="0.0" y="20" width="352" height="102.5"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <state key="normal" title="Calendario de donaciones en puerta"/>
+                                                <connections>
+                                                    <action selector="onGoButtonCalendar:" destination="YKQ-fu-bJ4" eventType="touchUpInside" id="AOG-Dl-iP7"/>
+                                                    <action selector="onGoButtonCalendar:" destination="aXW-ls-E8y" eventType="touchUpInside" id="XKy-IW-Gcm"/>
+                                                    <segue destination="jaO-Q6-AtW" kind="presentation" identifier="AdminToCalendar" id="qnR-Jw-Cmp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uZr-eW-YWU" secondAttribute="trailing" id="4QZ-CC-rDl"/>
                                             <constraint firstItem="uZr-eW-YWU" firstAttribute="width" secondItem="KTb-A5-Uy3" secondAttribute="width" id="Ean-QS-Udl"/>
                                             <constraint firstItem="uZr-eW-YWU" firstAttribute="leading" secondItem="KTb-A5-Uy3" secondAttribute="leading" id="IeZ-EQ-q1g"/>
                                             <constraint firstItem="uZr-eW-YWU" firstAttribute="top" secondItem="KTb-A5-Uy3" secondAttribute="top" constant="20" id="dJA-pS-JK0"/>
@@ -337,38 +363,40 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3i-JI-NHu" userLabel="Row3">
-                                        <rect key="frame" x="0.0" y="322.5" width="352" height="174"/>
+                                        <rect key="frame" x="0.0" y="378" width="352" height="204.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieM-E0-hmL">
-                                                <rect key="frame" x="0.0" y="20" width="352" height="87"/>
+                                                <rect key="frame" x="0.0" y="20" width="352" height="102.5"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <state key="normal" title="Historial de donaciones"/>
+                                                <connections>
+                                                    <action selector="onGoButtonDonation:" destination="aXW-ls-E8y" eventType="touchUpInside" id="t0Y-O3-62F"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="ieM-E0-hmL" firstAttribute="height" secondItem="H3i-JI-NHu" secondAttribute="height" multiplier="0.5" id="6B6-kt-uTp"/>
                                             <constraint firstItem="ieM-E0-hmL" firstAttribute="width" secondItem="H3i-JI-NHu" secondAttribute="width" id="7ud-6l-76x"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ieM-E0-hmL" secondAttribute="trailing" id="9vd-um-tB0"/>
                                             <constraint firstItem="ieM-E0-hmL" firstAttribute="top" secondItem="H3i-JI-NHu" secondAttribute="top" constant="20" id="OAm-9G-Ah6"/>
                                             <constraint firstItem="ieM-E0-hmL" firstAttribute="leading" secondItem="H3i-JI-NHu" secondAttribute="leading" id="eiN-2E-oZc"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aul-ik-5SG" userLabel="Row4">
-                                        <rect key="frame" x="0.0" y="496.5" width="352" height="174"/>
+                                        <rect key="frame" x="0.0" y="582.5" width="352" height="204.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-ge-fRV">
-                                                <rect key="frame" x="0.0" y="20" width="352" height="87"/>
+                                                <rect key="frame" x="0.0" y="20" width="352" height="102.5"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="linkColor"/>
                                                 <state key="normal" title="Recibir donación"/>
-                                                <connections>
-                                                    <action selector="resolver:" destination="aXW-ls-E8y" eventType="touchUpInside" id="WI4-Js-ufR"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="gkg-ge-fRV" firstAttribute="width" secondItem="aul-ik-5SG" secondAttribute="width" id="5wY-i8-8If"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gkg-ge-fRV" secondAttribute="trailing" id="VdZ-c7-wmg"/>
                                             <constraint firstItem="gkg-ge-fRV" firstAttribute="leading" secondItem="aul-ik-5SG" secondAttribute="leading" id="e3I-FO-Dve"/>
                                             <constraint firstItem="gkg-ge-fRV" firstAttribute="height" secondItem="aul-ik-5SG" secondAttribute="height" multiplier="0.5" id="eZ4-8i-N1z"/>
                                             <constraint firstItem="gkg-ge-fRV" firstAttribute="top" secondItem="aul-ik-5SG" secondAttribute="top" constant="20" id="x2H-mq-6o5"/>
@@ -379,20 +407,24 @@
                                 <constraints>
                                     <constraint firstItem="dxG-be-XWv" firstAttribute="top" secondItem="5F6-2V-cy4" secondAttribute="top" constant="5" id="3ma-AJ-nCJ"/>
                                     <constraint firstItem="aul-ik-5SG" firstAttribute="leading" secondItem="5F6-2V-cy4" secondAttribute="leading" id="6OV-yI-rQO"/>
+                                    <constraint firstItem="ima-lO-Bto" firstAttribute="leading" secondItem="5F6-2V-cy4" secondAttribute="leading" id="8hQ-k0-UyJ"/>
                                     <constraint firstItem="KTb-A5-Uy3" firstAttribute="height" secondItem="5F6-2V-cy4" secondAttribute="height" multiplier="0.25" id="DH3-JN-Cpx"/>
                                     <constraint firstItem="dxG-be-XWv" firstAttribute="width" secondItem="5F6-2V-cy4" secondAttribute="width" id="Gmt-Vc-17N"/>
                                     <constraint firstItem="dxG-be-XWv" firstAttribute="leading" secondItem="5F6-2V-cy4" secondAttribute="leading" id="IjS-Ib-VR2"/>
                                     <constraint firstItem="aul-ik-5SG" firstAttribute="width" secondItem="5F6-2V-cy4" secondAttribute="width" id="ItM-if-n9q"/>
                                     <constraint firstItem="H3i-JI-NHu" firstAttribute="height" secondItem="5F6-2V-cy4" secondAttribute="height" multiplier="0.25" id="Kyk-V0-jqV"/>
                                     <constraint firstItem="H3i-JI-NHu" firstAttribute="leading" secondItem="5F6-2V-cy4" secondAttribute="leading" id="OSg-Qo-gpa"/>
+                                    <constraint firstItem="ima-lO-Bto" firstAttribute="top" secondItem="5F6-2V-cy4" secondAttribute="top" id="SLd-vG-W5R"/>
                                     <constraint firstItem="dxG-be-XWv" firstAttribute="height" secondItem="5F6-2V-cy4" secondAttribute="height" multiplier="0.2" id="SoE-1N-GT4"/>
                                     <constraint firstItem="KTb-A5-Uy3" firstAttribute="top" secondItem="dxG-be-XWv" secondAttribute="bottom" id="TLb-1V-re2"/>
                                     <constraint firstItem="aul-ik-5SG" firstAttribute="top" secondItem="H3i-JI-NHu" secondAttribute="bottom" id="VYZ-Pe-YlT"/>
+                                    <constraint firstItem="ima-lO-Bto" firstAttribute="width" secondItem="5F6-2V-cy4" secondAttribute="width" multiplier="0.2" id="a58-On-EXV"/>
                                     <constraint firstItem="KTb-A5-Uy3" firstAttribute="width" secondItem="5F6-2V-cy4" secondAttribute="width" id="eRS-cW-3jG"/>
                                     <constraint firstItem="H3i-JI-NHu" firstAttribute="width" secondItem="5F6-2V-cy4" secondAttribute="width" id="jBI-vt-kdF"/>
                                     <constraint firstItem="KTb-A5-Uy3" firstAttribute="leading" secondItem="5F6-2V-cy4" secondAttribute="leading" id="kdP-hw-ab5"/>
                                     <constraint firstItem="H3i-JI-NHu" firstAttribute="top" secondItem="KTb-A5-Uy3" secondAttribute="bottom" constant="5" id="kel-r4-APo"/>
                                     <constraint firstItem="aul-ik-5SG" firstAttribute="height" secondItem="5F6-2V-cy4" secondAttribute="height" multiplier="0.25" id="o9G-r7-cZP"/>
+                                    <constraint firstItem="ima-lO-Bto" firstAttribute="height" secondItem="5F6-2V-cy4" secondAttribute="height" multiplier="0.05" id="vib-v8-UyL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -402,13 +434,18 @@
                             <constraint firstItem="5F6-2V-cy4" firstAttribute="centerY" secondItem="W0N-1q-bre" secondAttribute="centerY" id="El6-pV-x8T"/>
                             <constraint firstItem="5F6-2V-cy4" firstAttribute="width" secondItem="W0N-1q-bre" secondAttribute="width" multiplier="0.85" id="KdX-ZV-RHr"/>
                             <constraint firstItem="5F6-2V-cy4" firstAttribute="centerX" secondItem="W0N-1q-bre" secondAttribute="centerX" id="o2a-lt-2h3"/>
-                            <constraint firstItem="5F6-2V-cy4" firstAttribute="height" secondItem="W0N-1q-bre" secondAttribute="height" multiplier="0.85" id="ziM-lv-RWm"/>
+                            <constraint firstItem="5F6-2V-cy4" firstAttribute="height" secondItem="W0N-1q-bre" secondAttribute="height" id="ziM-lv-RWm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ob5-q7-Vrn"/>
+                    <connections>
+                        <segue destination="fkO-dd-hs0" kind="presentation" identifier="AdminToDonation" id="i4v-ey-a3P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAU-FU-Y6W" sceneMemberID="firstResponder"/>
+                <exit id="YKQ-fu-bJ4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4312" y="86"/>
+            <point key="canvasLocation" x="4311.594202898551" y="85.714285714285708"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Eas-vk-Qbx">
@@ -1431,20 +1468,20 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="x6Q-7p-oat">
-                                                        <rect key="frame" x="0.0" y="44.5" width="373" height="41.5"/>
+                                                        <rect key="frame" x="0.0" y="44.5" width="373" height="42.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x6Q-7p-oat" id="QRb-pf-olN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="41.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="42.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Últimas Donaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoG-te-FYs">
-                                                                    <rect key="frame" x="20" y="12" width="186.5" height="21"/>
+                                                                    <rect key="frame" x="20" y="12" width="186.5" height="21.5"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQn-Gt-yLa">
-                                                                    <rect key="frame" x="248" y="12" width="74.5" height="21"/>
+                                                                    <rect key="frame" x="248" y="12" width="74.5" height="21.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -1463,7 +1500,7 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="91" id="rVf-od-Frw">
-                                                        <rect key="frame" x="0.0" y="86" width="373" height="91"/>
+                                                        <rect key="frame" x="0.0" y="87" width="373" height="91"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rVf-od-Frw" id="gM1-Xd-I3b">
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="91"/>
@@ -1661,17 +1698,17 @@
             <objects>
                 <viewController id="fkO-dd-hs0" userLabel="IDS-25" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Czm-f2-G4Y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tye-fC-xah" userLabel="Main">
-                                <rect key="frame" x="31" y="85" width="352" height="736"/>
+                                <rect key="frame" x="31" y="40.5" width="352" height="727"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxy-7n-rec" userLabel="Row1">
-                                        <rect key="frame" x="20" y="10" width="299" height="59"/>
+                                        <rect key="frame" x="20" y="10" width="299" height="58"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historial de Donaciones FALSO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQq-F4-QNP">
-                                                <rect key="frame" x="0.0" y="0.0" width="299" height="59"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="299" height="58"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1686,10 +1723,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="894-MD-0YZ" userLabel="Row2">
-                                        <rect key="frame" x="20" y="69" width="317" height="73.5"/>
+                                        <rect key="frame" x="20" y="68" width="317" height="73"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el donador de quien te gustaría conocer sus donaciones" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f07-9M-8jn">
-                                                <rect key="frame" x="0.0" y="0.0" width="317" height="73.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="73"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1704,14 +1741,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71e-6m-gs8" userLabel="Row3">
-                                        <rect key="frame" x="0.0" y="142.5" width="352" height="44"/>
+                                        <rect key="frame" x="0.0" y="141" width="352" height="43.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdo-iX-Ejc">
-                                                <rect key="frame" x="0.0" y="0.0" width="211" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="211" height="43.5"/>
                                                 <state key="normal" title="Seleccionar Donador"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHc-Ya-9dU">
-                                                <rect key="frame" x="253.5" y="0.0" width="88" height="44"/>
+                                                <rect key="frame" x="253.5" y="0.0" width="88" height="43.5"/>
                                                 <state key="normal" title="Ver historial"/>
                                             </button>
                                         </subviews>
@@ -1728,16 +1765,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ED-gI-AQ3" userLabel="Row4">
-                                        <rect key="frame" x="0.0" y="261.5" width="352" height="139.5"/>
+                                        <rect key="frame" x="0.0" y="258" width="352" height="138.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si deseas conocer todas las donaciones hechas hasta el momento, presiona el botón para descargar el archivo generado." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dkm-at-ZgO">
-                                                <rect key="frame" x="0.0" y="0.0" width="352" height="97.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="352" height="97"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-gj-L1B">
-                                                <rect key="frame" x="0.0" y="127" width="176" height="21"/>
+                                                <rect key="frame" x="0.0" y="126" width="176" height="20.5"/>
                                                 <state key="normal" title="Descargar Historial"/>
                                             </button>
                                         </subviews>
@@ -1799,11 +1836,11 @@
             <objects>
                 <viewController storyboardIdentifier="IDS14" id="jaO-Q6-AtW" userLabel="IDS-14" customClass="IDS14" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T4J-cf-hiu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGp-C5-7tf" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="cfp-Od-CTN"/>
@@ -1862,6 +1899,9 @@
                                                 <rect key="frame" x="0.0" y="20" width="352" height="87"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <state key="normal" title="Administrador del banco de alimentos"/>
+                                                <connections>
+                                                    <action selector="onGoButtonAdmin:" destination="060-iL-7X7" eventType="touchUpInside" id="GAU-Ri-4RG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1899,9 +1939,6 @@
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="linkColor"/>
                                                 <state key="normal" title="Donador"/>
-                                                <connections>
-                                                    <action selector="resolver:" destination="aXW-ls-E8y" eventType="touchUpInside" id="0Vb-Fh-vxP"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1944,6 +1981,9 @@
                             <constraint firstItem="shv-CL-AMS" firstAttribute="centerY" secondItem="Nxn-Yr-OBf" secondAttribute="centerY" id="x0b-Kc-Gca"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="aXW-ls-E8y" kind="presentation" identifier="LoginToAdmin" modalPresentationStyle="fullScreen" id="zH5-OC-KjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajE-ML-lyk" sceneMemberID="firstResponder"/>
             </objects>

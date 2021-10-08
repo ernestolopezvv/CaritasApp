@@ -9,7 +9,10 @@
 import UIKit
 
 class IDS34ViewController: UIViewController {
-
+    @IBAction func onGoButtonAdmin(_ sender: Any) {
+        performSegue(withIdentifier: "LoginToAdmin", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
