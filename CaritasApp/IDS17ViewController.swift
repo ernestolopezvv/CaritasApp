@@ -1,5 +1,5 @@
 //
-//  IDS23ViewController.swift
+//  IDS17ViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IDS23ViewController: UIViewController {
+class IDS17ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
