@@ -8,8 +8,13 @@
 import UIKit
 
 class IDS35CViewController: UIViewController {
+    
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onGoButtonDonationInfo(_ sender: Any) {
+        performSegue(withIdentifier: "DriverToDonationInfo", sender: self)
     }
     
     override func viewDidLoad() {

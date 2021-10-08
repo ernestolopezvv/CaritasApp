@@ -9,6 +9,7 @@
 import UIKit
 
 class IDS34ViewController: UIViewController {
+    
     @IBAction func onGoButtonAdmin(_ sender: Any) {
         performSegue(withIdentifier: "LoginToAdmin", sender: self)
     }

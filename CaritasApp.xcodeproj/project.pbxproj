@@ -18,6 +18,7 @@
 		728011E027100A1E0092EE00 /* IDS23DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DF27100A1E0092EE00 /* IDS23DViewController.swift */; };
 		728011E227100AC10092EE00 /* IDS1APViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E127100AC10092EE00 /* IDS1APViewController.swift */; };
 		728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E327100B6F0092EE00 /* IDS17ViewController.swift */; };
+		728011E6271015260092EE00 /* IDS2-18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E5271015260092EE00 /* IDS2-18ViewController.swift */; };
 		72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */; };
 		C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316026EADAE100EDB65C /* AppDelegate.swift */; };
 		C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316226EADAE100EDB65C /* SceneDelegate.swift */; };
@@ -57,6 +58,7 @@
 		728011DF27100A1E0092EE00 /* IDS23DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS23DViewController.swift; sourceTree = "<group>"; };
 		728011E127100AC10092EE00 /* IDS1APViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS1APViewController.swift; sourceTree = "<group>"; };
 		728011E327100B6F0092EE00 /* IDS17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS17ViewController.swift; sourceTree = "<group>"; };
+		728011E5271015260092EE00 /* IDS2-18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IDS2-18ViewController.swift"; sourceTree = "<group>"; };
 		72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS14ViewController.swift; sourceTree = "<group>"; };
 		C4DC315D26EADAE100EDB65C /* CaritasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaritasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DC316026EADAE100EDB65C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,14 +132,15 @@
 				72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */,
 				728011D7271001420092EE00 /* IDS25ViewController.swift */,
 				728011DF27100A1E0092EE00 /* IDS23DViewController.swift */,
+				728011E327100B6F0092EE00 /* IDS17ViewController.swift */,
+				728011E5271015260092EE00 /* IDS2-18ViewController.swift */,
+				728011E127100AC10092EE00 /* IDS1APViewController.swift */,
 				7222F312270E87AB0045733D /* IDS35DViewController.swift */,
 				728011D5271000D00092EE00 /* IDS1NDViewController.swift */,
 				728011DD27100A090092EE00 /* IDS23HViewController.swift */,
 				7222F314270E87E60045733D /* IDS35CViewController.swift */,
 				728011DB2710084F0092EE00 /* IDS16ViewController.swift */,
 				C4DC316626EADAE100EDB65C /* Main.storyboard */,
-				728011E327100B6F0092EE00 /* IDS17ViewController.swift */,
-				728011E127100AC10092EE00 /* IDS1APViewController.swift */,
 				C4DC316926EADAE300EDB65C /* Assets.xcassets */,
 				C4DC316B26EADAE300EDB65C /* LaunchScreen.storyboard */,
 				C4DC316E26EADAE300EDB65C /* Info.plist */,
@@ -310,6 +313,7 @@
 				C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */,
 				7222F315270E87E60045733D /* IDS35CViewController.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
+				728011E6271015260092EE00 /* IDS2-18ViewController.swift in Sources */,
 				72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */,
 				728011E227100AC10092EE00 /* IDS1APViewController.swift in Sources */,
 				728011D6271000D00092EE00 /* IDS1NDViewController.swift in Sources */,

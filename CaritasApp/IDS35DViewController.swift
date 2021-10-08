@@ -15,6 +15,9 @@ class IDS35DViewController: UIViewController {
     @IBAction func onGoButtonImport(_ sender: Any) {
         performSegue(withIdentifier: "DonatorToImport", sender: self)
     }
+    @IBAction func onGoButtonHistory(_ sender: Any) {
+        performSegue(withIdentifier: "DonatorToHistory", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -1,5 +1,5 @@
 //
-//  IDS25ViewController.swift
+//  IDS2-18ViewController.swift
 //  CaritasApp
 //
 //  Created by Santiago A.A.M on 07/10/21.
@@ -7,10 +7,8 @@
 
 import UIKit
 
-class IDS25ViewController: UIViewController {
-    @IBAction func onGoButton(_ sender: Any) {
-        performSegue(withIdentifier: "DonationToHistory", sender: self)
-    }
+class IDS2_18ViewController: UIViewController {
+    
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
