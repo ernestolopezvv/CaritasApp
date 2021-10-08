@@ -9,6 +9,9 @@ import UIKit
 import FSCalendar
 
 class IDS14ViewController: UIViewController, FSCalendarDelegate {
+    @IBAction func onCloseButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBOutlet var calendar: FSCalendar!
     

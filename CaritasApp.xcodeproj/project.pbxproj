@@ -10,7 +10,11 @@
 		7222F311270E87880045733D /* IDS35AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F310270E87880045733D /* IDS35AViewController.swift */; };
 		7222F313270E87AB0045733D /* IDS35DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F312270E87AB0045733D /* IDS35DViewController.swift */; };
 		7222F315270E87E60045733D /* IDS35CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F314270E87E60045733D /* IDS35CViewController.swift */; };
-		72892AED270D771D00F05E5F /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 72892AEC270D771D00F05E5F /* FSCalendar */; };
+		728011D4270FFCFE0092EE00 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 728011D3270FFCFE0092EE00 /* FSCalendar */; };
+		728011D6271000D00092EE00 /* IDS1NDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D5271000D00092EE00 /* IDS1NDViewController.swift */; };
+		728011D8271001420092EE00 /* IDS25ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D7271001420092EE00 /* IDS25ViewController.swift */; };
+		728011DA271006C30092EE00 /* IDS23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011D9271006C30092EE00 /* IDS23ViewController.swift */; };
+		728011DC2710084F0092EE00 /* IDS16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DB2710084F0092EE00 /* IDS16ViewController.swift */; };
 		72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */; };
 		C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316026EADAE100EDB65C /* AppDelegate.swift */; };
 		C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316226EADAE100EDB65C /* SceneDelegate.swift */; };
@@ -43,6 +47,10 @@
 		7222F310270E87880045733D /* IDS35AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35AViewController.swift; sourceTree = "<group>"; };
 		7222F312270E87AB0045733D /* IDS35DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35DViewController.swift; sourceTree = "<group>"; };
 		7222F314270E87E60045733D /* IDS35CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35CViewController.swift; sourceTree = "<group>"; };
+		728011D5271000D00092EE00 /* IDS1NDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS1NDViewController.swift; sourceTree = "<group>"; };
+		728011D7271001420092EE00 /* IDS25ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS25ViewController.swift; sourceTree = "<group>"; };
+		728011D9271006C30092EE00 /* IDS23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS23ViewController.swift; sourceTree = "<group>"; };
+		728011DB2710084F0092EE00 /* IDS16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS16ViewController.swift; sourceTree = "<group>"; };
 		72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS14ViewController.swift; sourceTree = "<group>"; };
 		C4DC315D26EADAE100EDB65C /* CaritasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaritasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DC316026EADAE100EDB65C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72892AED270D771D00F05E5F /* FSCalendar in Frameworks */,
+				728011D4270FFCFE0092EE00 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,9 +122,13 @@
 				C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */,
 				7222F310270E87880045733D /* IDS35AViewController.swift */,
 				72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */,
-				C4DC316626EADAE100EDB65C /* Main.storyboard */,
-				7222F314270E87E60045733D /* IDS35CViewController.swift */,
+				728011D7271001420092EE00 /* IDS25ViewController.swift */,
+				728011D9271006C30092EE00 /* IDS23ViewController.swift */,
 				7222F312270E87AB0045733D /* IDS35DViewController.swift */,
+				728011D5271000D00092EE00 /* IDS1NDViewController.swift */,
+				7222F314270E87E60045733D /* IDS35CViewController.swift */,
+				728011DB2710084F0092EE00 /* IDS16ViewController.swift */,
+				C4DC316626EADAE100EDB65C /* Main.storyboard */,
 				C4DC316926EADAE300EDB65C /* Assets.xcassets */,
 				C4DC316B26EADAE300EDB65C /* LaunchScreen.storyboard */,
 				C4DC316E26EADAE300EDB65C /* Info.plist */,
@@ -159,7 +171,7 @@
 			);
 			name = CaritasApp;
 			packageProductDependencies = (
-				72892AEC270D771D00F05E5F /* FSCalendar */,
+				728011D3270FFCFE0092EE00 /* FSCalendar */,
 			);
 			productName = CaritasApp;
 			productReference = C4DC315D26EADAE100EDB65C /* CaritasApp.app */;
@@ -233,7 +245,7 @@
 			);
 			mainGroup = C4DC315426EADAE100EDB65C;
 			packageReferences = (
-				72892AEB270D771D00F05E5F /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = C4DC315E26EADAE100EDB65C /* Products */;
 			projectDirPath = "";
@@ -278,13 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728011DA271006C30092EE00 /* IDS23ViewController.swift in Sources */,
 				7222F313270E87AB0045733D /* IDS35DViewController.swift in Sources */,
 				C4DC316526EADAE100EDB65C /* IDS34ViewController.swift in Sources */,
+				728011DC2710084F0092EE00 /* IDS16ViewController.swift in Sources */,
+				728011D8271001420092EE00 /* IDS25ViewController.swift in Sources */,
 				7222F311270E87880045733D /* IDS35AViewController.swift in Sources */,
 				C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */,
 				7222F315270E87E60045733D /* IDS35CViewController.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
 				72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */,
+				728011D6271000D00092EE00 /* IDS1NDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,20 +631,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		72892AEB270D771D00F05E5F /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+		728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		72892AEC270D771D00F05E5F /* FSCalendar */ = {
+		728011D3270FFCFE0092EE00 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72892AEB270D771D00F05E5F /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			package = 728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */;
 			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */

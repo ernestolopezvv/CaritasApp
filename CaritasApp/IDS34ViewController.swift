@@ -12,6 +12,13 @@ class IDS34ViewController: UIViewController {
     @IBAction func onGoButtonAdmin(_ sender: Any) {
         performSegue(withIdentifier: "LoginToAdmin", sender: self)
     }
+    @IBAction func onGoButtonDriver(_ sender: Any) {
+        performSegue(withIdentifier: "LoginToDriver", sender: self)
+    }
+    @IBAction func onGoButtonDonator(_ sender: Any) {
+        performSegue(withIdentifier: "LoginToDonator", sender: self)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

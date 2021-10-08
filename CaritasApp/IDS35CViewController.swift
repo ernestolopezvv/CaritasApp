@@ -8,7 +8,10 @@
 import UIKit
 
 class IDS35CViewController: UIViewController {
-
+    @IBAction func onCloseButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

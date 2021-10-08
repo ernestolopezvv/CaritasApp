@@ -1,20 +1,19 @@
 //
-//  IDS35DViewController.swift
+//  IDS25ViewController.swift
 //  CaritasApp
 //
-//  Created by Santiago A.A.M on 06/10/21.
+//  Created by Santiago A.A.M on 07/10/21.
 //
 
 import UIKit
 
-class IDS35DViewController: UIViewController {
-
+class IDS25ViewController: UIViewController {
+    @IBAction func onGoButton(_ sender: Any) {
+    }
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    @IBAction func onGoButtonImport(_ sender: Any) {
-        performSegue(withIdentifier: "DonatorToImport", sender: self)
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
