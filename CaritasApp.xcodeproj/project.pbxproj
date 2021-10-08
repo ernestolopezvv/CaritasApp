@@ -10,6 +10,8 @@
 		59837B322710A73900176599 /* Donacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B302710A73900176599 /* Donacion.swift */; };
 		59837B332710A73900176599 /* Articulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B312710A73900176599 /* Articulo.swift */; };
 		59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B342710B64200176599 /* IDS25_SDViewController.swift */; };
+		59837B382710C8C800176599 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 59837B372710C8C800176599 /* Alamofire */; };
+		59837B3B2710CB7500176599 /* APIFunctionsPrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B3A2710CB7500176599 /* APIFunctionsPrueba.swift */; };
 		7222F311270E87880045733D /* IDS35_AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F310270E87880045733D /* IDS35_AViewController.swift */; };
 		7222F313270E87AB0045733D /* IDS35_DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F312270E87AB0045733D /* IDS35_DViewController.swift */; };
 		7222F315270E87E60045733D /* IDS35_CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F314270E87E60045733D /* IDS35_CViewController.swift */; };
@@ -54,6 +56,7 @@
 		59837B302710A73900176599 /* Donacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donacion.swift; sourceTree = "<group>"; };
 		59837B312710A73900176599 /* Articulo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articulo.swift; sourceTree = "<group>"; };
 		59837B342710B64200176599 /* IDS25_SDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS25_SDViewController.swift; sourceTree = "<group>"; };
+		59837B3A2710CB7500176599 /* APIFunctionsPrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctionsPrueba.swift; path = CaritasApp/APIFunctionsPrueba.swift; sourceTree = SOURCE_ROOT; };
 		7222F310270E87880045733D /* IDS35_AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35_AViewController.swift; sourceTree = "<group>"; };
 		7222F312270E87AB0045733D /* IDS35_DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35_DViewController.swift; sourceTree = "<group>"; };
 		7222F314270E87E60045733D /* IDS35_CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35_CViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728011D4270FFCFE0092EE00 /* FSCalendar in Frameworks */,
+				59837B382710C8C800176599 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +122,27 @@
 			path = CaritasApp/Model/ValueObject;
 			sourceTree = SOURCE_ROOT;
 		};
+		59837B392710C91800176599 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				728011E127100AC10092EE00 /* IDS1_APViewController.swift */,
+				728011D5271000D00092EE00 /* IDS1_NDViewController.swift */,
+				72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */,
+				728011DB2710084F0092EE00 /* IDS16ViewController.swift */,
+				728011E327100B6F0092EE00 /* IDS17ViewController.swift */,
+				728011E5271015260092EE00 /* IDS2_18ViewController.swift */,
+				728011DF27100A1E0092EE00 /* IDS23_DViewController.swift */,
+				728011DD27100A090092EE00 /* IDS23_HViewController.swift */,
+				728011D7271001420092EE00 /* IDS25ViewController.swift */,
+				59837B342710B64200176599 /* IDS25_SDViewController.swift */,
+				C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */,
+				7222F310270E87880045733D /* IDS35_AViewController.swift */,
+				7222F314270E87E60045733D /* IDS35_CViewController.swift */,
+				7222F312270E87AB0045733D /* IDS35_DViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		59A5E16427103745004E05A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +164,7 @@
 		59A5E16927103745004E05A7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				59837B3A2710CB7500176599 /* APIFunctionsPrueba.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,20 +195,7 @@
 				59A5E16427103745004E05A7 /* Model */,
 				C4DC316026EADAE100EDB65C /* AppDelegate.swift */,
 				C4DC316226EADAE100EDB65C /* SceneDelegate.swift */,
-				728011E127100AC10092EE00 /* IDS1_APViewController.swift */,
-				728011D5271000D00092EE00 /* IDS1_NDViewController.swift */,
-				72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */,
-				728011DB2710084F0092EE00 /* IDS16ViewController.swift */,
-				728011E327100B6F0092EE00 /* IDS17ViewController.swift */,
-				728011E5271015260092EE00 /* IDS2_18ViewController.swift */,
-				728011DF27100A1E0092EE00 /* IDS23_DViewController.swift */,
-				728011DD27100A090092EE00 /* IDS23_HViewController.swift */,
-				728011D7271001420092EE00 /* IDS25ViewController.swift */,
-				59837B342710B64200176599 /* IDS25_SDViewController.swift */,
-				C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */,
-				7222F310270E87880045733D /* IDS35_AViewController.swift */,
-				7222F314270E87E60045733D /* IDS35_CViewController.swift */,
-				7222F312270E87AB0045733D /* IDS35_DViewController.swift */,
+				59837B392710C91800176599 /* ViewControllers */,
 				C4DC316626EADAE100EDB65C /* Main.storyboard */,
 				C4DC316926EADAE300EDB65C /* Assets.xcassets */,
 				C4DC316B26EADAE300EDB65C /* LaunchScreen.storyboard */,
@@ -227,6 +240,7 @@
 			name = CaritasApp;
 			packageProductDependencies = (
 				728011D3270FFCFE0092EE00 /* FSCalendar */,
+				59837B372710C8C800176599 /* Alamofire */,
 			);
 			productName = CaritasApp;
 			productReference = C4DC315D26EADAE100EDB65C /* CaritasApp.app */;
@@ -301,6 +315,7 @@
 			mainGroup = C4DC315426EADAE100EDB65C;
 			packageReferences = (
 				728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				59837B362710C8C800176599 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C4DC315E26EADAE100EDB65C /* Products */;
 			projectDirPath = "";
@@ -360,6 +375,7 @@
 				7222F315270E87E60045733D /* IDS35_CViewController.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
 				728011E6271015260092EE00 /* IDS2_18ViewController.swift in Sources */,
+				59837B3B2710CB7500176599 /* APIFunctionsPrueba.swift in Sources */,
 				72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */,
 				728011E227100AC10092EE00 /* IDS1_APViewController.swift in Sources */,
 				728011D6271000D00092EE00 /* IDS1_NDViewController.swift in Sources */,
@@ -693,6 +709,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		59837B362710C8C800176599 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
@@ -704,6 +728,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		59837B372710C8C800176599 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59837B362710C8C800176599 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		728011D3270FFCFE0092EE00 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */;
