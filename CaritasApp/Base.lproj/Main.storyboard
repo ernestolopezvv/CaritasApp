@@ -1444,7 +1444,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="yVX-fi-Rpw"/>
                     <connections>
-                        <outlet property="amountBilled" destination="RRt-W7-nrq" id="Zpg-YV-Bf8"/>
+                        <outlet property="amountBilledLabel" destination="RRt-W7-nrq" id="IYH-6v-dnn"/>
                         <outlet property="billStateTextField" destination="RFa-HR-uNz" id="rmJ-2f-S51"/>
                         <outlet property="creationDateTextField" destination="Dxr-Cr-U9l" id="0Xg-kn-mOn"/>
                         <outlet property="dateReceived" destination="jgk-Ta-whC" id="4ed-cV-KRs"/>

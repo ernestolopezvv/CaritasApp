@@ -21,7 +21,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         if segue.identifier == "donationDetailsSegue" {
             vc.donation = donationsArray[donationsTableView.indexPathForSelectedRow!.row]
-            vc.update = true
+            vc.fetch = true
         }
     }
     
@@ -42,12 +42,12 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewWillAppear(_ animated: Bool) {
         
-        APIFunctions.functions.fectchDonations()
+        APIFunctionsPrueba.functions.fetchDonations()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        APIFunctions.functions.fectchDonations()
+        APIFunctionsPrueba.functions.fetchDonations()
     }
     
 
@@ -62,8 +62,8 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIFunctions.functions.delegate = self
-        APIFunctions.functions.fectchDonations()
+        APIFunctionsPrueba.functions.delegate = self
+        APIFunctionsPrueba.functions.fetchDonations()
       
         donationsTableView.delegate = self
         donationsTableView.dataSource = self

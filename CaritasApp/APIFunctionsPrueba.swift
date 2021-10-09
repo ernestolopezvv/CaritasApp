@@ -25,7 +25,7 @@ class APIFunctionsPrueba {
     var delegate: DataDelegate?
     static let functions = APIFunctionsPrueba()
     
-    func fectchDonations() {
+    func fetchDonations() {
         
         AF.request("https://caritas-app-backend.herokuapp.com/fetchdonation").response {response in
             
@@ -35,27 +35,5 @@ class APIFunctionsPrueba {
             self.delegate?.updateArray(newArray: data!)
         }
     }
-    
-    func addDonation(receptionState: String, billState: String, creationDate:String, receptionDate: String, weightKg: String, destination:String) {
-        
-        AF.request("https://caritas-app-backend.herokuapp.com/createdonation", method: .post, encoding: URLEncoding.httpBody, headers: ["receptionState": receptionState, "billState":billState, "creationDate":creationDate, "receptionDate":receptionDate, "weightKg":weightKg, "destination": destination]).responseJSON {response in
-            
-            
-        }
-    }
-    
-    func updateDonation(receptionState: String, billState: String, creationDate:String, receptionDate: String, weightKg: String, destination:String, id:String) {
-        
-        AF.request("https://caritas-app-backend.herokuapp.com/updatedonation", method: .post, encoding: URLEncoding.httpBody, headers: ["receptionState": receptionState, "billState":billState, "creationDate":creationDate, "receptionDate":receptionDate, "weightKg":weightKg, "destination": destination, "id":id]).responseJSON {response in
-            
-        }
-    }
-    
-    func deleteDonation(id: String){
-        
-        AF.request("https://caritas-app-backend.herokuapp.com/deletedonation", method: .post, encoding: URLEncoding.httpBody, headers: ["id": id]).responseJSON {response in
-            print(response)
-        }
 
-    }
 }
