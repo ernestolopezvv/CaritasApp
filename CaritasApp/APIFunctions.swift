@@ -1,5 +1,5 @@
 //
-//  APIFunctionsPrueba.swift
+//  APIFunctions.swift
 //  CaritasApp
 //
 //  Created by Enrique Ruiz on 08/10/21.
@@ -20,10 +20,10 @@ struct Donation: Decodable {
     
 }
 
-class APIFunctionsPrueba {
+class APIFunctions {
     
     var delegate: DataDelegate?
-    static let functions = APIFunctionsPrueba()
+    static let functions = APIFunctions()
     
     func fetchDonations() {
         

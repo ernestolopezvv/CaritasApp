@@ -26,15 +26,6 @@ class IDS23_DViewController: UIViewController {
     @IBOutlet weak var storedByLabel: UILabel!
     
     
-    
-    @IBOutlet weak var receptionStateTextField: UITextField!
-    @IBOutlet weak var billStateTextField: UITextField!
-    @IBOutlet weak var creationDateTextField: UITextField!
-    @IBOutlet weak var receptionDateTextField: UITextField!
-    @IBOutlet weak var weightKgTextField: UITextField!
-    @IBOutlet weak var destinationTextField: UITextField!
-
-    
     override func viewWillAppear(_ animated: Bool) {
         
 
@@ -46,33 +37,14 @@ class IDS23_DViewController: UIViewController {
         
         if fetch == true {
            
-            receptionStateTextField.text = donation!.receptionState
-            billStateTextField.text = donation!.billState
-            creationDateTextField.text = donation!.creationDate
-            receptionDateTextField.text = donation!.receptionDate
-            weightKgTextField.text = donation!.weightKg
-            destinationTextField.text = donation!.destination
-        }
-        else {
-            receptionStateTextField.text = "donation!.receptionState"
-            billStateTextField.text = "donation!.billState"
-            creationDateTextField.text = "donation!.creationDate"
-            receptionDateTextField.text = "donation!.receptionDate"
-            weightKgTextField.text = "donation!.weightKg"
-            destinationTextField.text = "donation!.destination"
+            ticketLabel.text = donation!.receptionState
+            donatorLabel.text = donation!.billState
+            dateReceived.text = donation!.creationDate
+            amountBilledLabel.text = donation!.receptionDate
+            weightKgLabel.text = donation!.weightKg
+            deliveredByLabel.text = donation!.destination
         }
     
-            
-            /*
-            receptionStateTextField.text! = data.recepcionState
-        receptionState: , billState: billStateTextField.text!, creationDate: creationDateTextField.text!, receptionDate: receptionDateTextField.text!, weightKg: weightKgTextField.text!, destination: destinationTextField.text!, id:donation!._id)
-            
-            
-        }
-        else {
-            
-            APIFunctionsPrueba.functions.fectchDonation(receptionState: receptionStateTextField.text!, billState: billStateTextField.text!, creationDate: creationDateTextField.text!, receptionDate: receptionDateTextField.text!, weightKg: weightKgTextField.text!, destination: destinationTextField.text!)
-            */
 
     /*
     // MARK: - Navigation

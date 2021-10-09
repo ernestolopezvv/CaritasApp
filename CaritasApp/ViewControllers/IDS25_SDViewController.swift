@@ -13,47 +13,46 @@ protocol DataDelegate {
 
 class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var donationsArray = [Donation]()
+    var donatorsArray = [Donation]()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let vc = segue.destination as! IDS23_DViewController
+        let vc = segue.destination as! IDS23_HViewController
         
-        if segue.identifier == "donationDetailsSegue" {
-            vc.donation = donationsArray[donationsTableView.indexPathForSelectedRow!.row]
+        
+        if segue.identifier == "DonatorToHistory" {
+            
+            vc.donation = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return donationsArray.count
+        return donatorsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "donatorsCell", for: indexPath)
         
-        cell.textLabel?.text = donationsArray[indexPath.row].creationDate
+        cell.textLabel?.text = donatorsArray[indexPath.row].creationDate
         return cell
     }
     
-    @IBOutlet weak var donationsTableView: UITableView!
+    @IBOutlet weak var donatorsTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
         
-        APIFunctionsPrueba.functions.fetchDonations()
+        APIFunctions.functions.fetchDonations()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        APIFunctionsPrueba.functions.fetchDonations()
+        APIFunctions.functions.fetchDonations()
     }
     
 
-    @IBAction func onGoButton(_ sender: Any) {
-        performSegue(withIdentifier: "DonatorToHistory", sender: self)
-    }
     
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -62,11 +61,11 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIFunctionsPrueba.functions.delegate = self
-        APIFunctionsPrueba.functions.fetchDonations()
+        APIFunctions.functions.delegate = self
+        APIFunctions.functions.fetchDonations()
       
-        donationsTableView.delegate = self
-        donationsTableView.dataSource = self
+        donatorsTableView.delegate = self
+        donatorsTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -77,18 +76,15 @@ extension IDS25_SDViewController: DataDelegate {
     func updateArray(newArray: String) {
         
         do {
-            donationsArray = try JSONDecoder().decode([Donation].self, from: newArray.data(using: .utf8)!)
-            print(donationsArray)
+            donatorsArray = try JSONDecoder().decode([Donation].self, from: newArray.data(using: .utf8)!)
+            print(donatorsArray)
         } catch {
             print("Failed to decode!")
             
         }
-        self.donationsTableView?.reloadData()
+        self.donatorsTableView?.reloadData()
     }
 
-
-
-    
 
     /*
     // MARK: - Navigation

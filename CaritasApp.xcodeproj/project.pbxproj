@@ -11,7 +11,7 @@
 		59837B332710A73900176599 /* Articulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B312710A73900176599 /* Articulo.swift */; };
 		59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B342710B64200176599 /* IDS25_SDViewController.swift */; };
 		59837B382710C8C800176599 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 59837B372710C8C800176599 /* Alamofire */; };
-		59837B3B2710CB7500176599 /* APIFunctionsPrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B3A2710CB7500176599 /* APIFunctionsPrueba.swift */; };
+		59837B3B2710CB7500176599 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B3A2710CB7500176599 /* APIFunctions.swift */; };
 		7222F311270E87880045733D /* IDS35_AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F310270E87880045733D /* IDS35_AViewController.swift */; };
 		7222F313270E87AB0045733D /* IDS35_DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F312270E87AB0045733D /* IDS35_DViewController.swift */; };
 		7222F315270E87E60045733D /* IDS35_CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F314270E87E60045733D /* IDS35_CViewController.swift */; };
@@ -56,7 +56,7 @@
 		59837B302710A73900176599 /* Donacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donacion.swift; sourceTree = "<group>"; };
 		59837B312710A73900176599 /* Articulo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articulo.swift; sourceTree = "<group>"; };
 		59837B342710B64200176599 /* IDS25_SDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS25_SDViewController.swift; sourceTree = "<group>"; };
-		59837B3A2710CB7500176599 /* APIFunctionsPrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctionsPrueba.swift; path = CaritasApp/APIFunctionsPrueba.swift; sourceTree = SOURCE_ROOT; };
+		59837B3A2710CB7500176599 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctions.swift; path = CaritasApp/APIFunctions.swift; sourceTree = SOURCE_ROOT; };
 		7222F310270E87880045733D /* IDS35_AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35_AViewController.swift; sourceTree = "<group>"; };
 		7222F312270E87AB0045733D /* IDS35_DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35_DViewController.swift; sourceTree = "<group>"; };
 		7222F314270E87E60045733D /* IDS35_CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS35_CViewController.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		59A5E16927103745004E05A7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				59837B3A2710CB7500176599 /* APIFunctionsPrueba.swift */,
+				59837B3A2710CB7500176599 /* APIFunctions.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -375,7 +375,7 @@
 				7222F315270E87E60045733D /* IDS35_CViewController.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
 				728011E6271015260092EE00 /* IDS2_18ViewController.swift in Sources */,
-				59837B3B2710CB7500176599 /* APIFunctionsPrueba.swift in Sources */,
+				59837B3B2710CB7500176599 /* APIFunctions.swift in Sources */,
 				72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */,
 				728011E227100AC10092EE00 /* IDS1_APViewController.swift in Sources */,
 				728011D6271000D00092EE00 /* IDS1_NDViewController.swift in Sources */,
