@@ -1407,6 +1407,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yVX-fi-Rpw"/>
+                    <connections>
+                        <outlet property="amountBilledLabel" destination="RRt-W7-nrq" id="IYH-6v-dnn"/>
+                        <outlet property="dateReceived" destination="jgk-Ta-whC" id="4ed-cV-KRs"/>
+                        <outlet property="deliveredByLabel" destination="JAz-h7-EZm" id="g7q-jd-Wub"/>
+                        <outlet property="donatorLabel" destination="1pT-Uw-19Y" id="CQK-MO-btJ"/>
+                        <outlet property="storedByLabel" destination="1wU-5Z-hQ1" id="lzs-ua-ADC"/>
+                        <outlet property="ticketLabel" destination="0VM-9l-TPx" id="5fB-9S-qz7"/>
+                        <outlet property="weightKgLabel" destination="WlH-RH-fMk" id="fBU-e1-exx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFZ-BF-xLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1487,35 +1496,16 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="515.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="91" id="rVf-od-Frw">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="donationsCell" rowHeight="91" id="rVf-od-Frw">
                                                         <rect key="frame" x="0.0" y="44.5" width="373" height="91"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rVf-od-Frw" id="gM1-Xd-I3b">
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="91"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Donación" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PL3-ns-WxP">
-                                                                    <rect key="frame" x="9.5" y="9" width="186.5" height="73"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Nxr-Dy-MgT">
-                                                                    <rect key="frame" x="261" y="27.5" width="74.5" height="36"/>
-                                                                    <state key="normal" title="Detalles"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="Nxr-Dy-MgT" firstAttribute="centerY" secondItem="gM1-Xd-I3b" secondAttribute="centerY" id="6Qm-Jo-goy"/>
-                                                                <constraint firstItem="Nxr-Dy-MgT" firstAttribute="centerX" secondItem="gM1-Xd-I3b" secondAttribute="centerX" multiplier="1.6" id="9kV-UZ-wqp"/>
-                                                                <constraint firstItem="PL3-ns-WxP" firstAttribute="centerY" secondItem="gM1-Xd-I3b" secondAttribute="centerY" id="B9N-Lz-fKE"/>
-                                                                <constraint firstItem="PL3-ns-WxP" firstAttribute="width" secondItem="gM1-Xd-I3b" secondAttribute="width" multiplier="0.5" id="UlB-fj-N1o"/>
-                                                                <constraint firstItem="Nxr-Dy-MgT" firstAttribute="height" secondItem="gM1-Xd-I3b" secondAttribute="height" multiplier="0.4" id="k3X-PL-wy9"/>
-                                                                <constraint firstItem="PL3-ns-WxP" firstAttribute="height" secondItem="gM1-Xd-I3b" secondAttribute="height" multiplier="0.8" id="u4U-c9-IyL"/>
-                                                                <constraint firstItem="PL3-ns-WxP" firstAttribute="centerX" secondItem="gM1-Xd-I3b" secondAttribute="centerX" multiplier="0.55" id="w4w-T5-pO8"/>
-                                                                <constraint firstItem="Nxr-Dy-MgT" firstAttribute="width" secondItem="gM1-Xd-I3b" secondAttribute="width" multiplier="0.2" id="yT0-7O-jmF"/>
-                                                            </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <segue destination="wSx-FZ-VKe" kind="presentation" identifier="donationDetailsSegue" modalPresentationStyle="fullScreen" id="1aV-Of-vTy"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
@@ -1560,6 +1550,9 @@
                             <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="donationsTableView" destination="bL6-Il-dFx" id="9D9-sU-E4W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cs-8d-XfQ" sceneMemberID="firstResponder"/>
             </objects>
@@ -1783,9 +1776,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bj8-Um-V7d">
                                                 <rect key="frame" x="118" y="66.5" width="74.5" height="44"/>
                                                 <state key="normal" title="Detalles"/>
-                                                <connections>
-                                                    <action selector="onGoButton:" destination="ZOo-Fb-rh6" eventType="touchUpInside" id="fTn-6G-Ia5"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1813,35 +1803,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="515.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="91" id="IVu-ZC-qM3">
-                                                        <rect key="frame" x="0.0" y="44.5" width="373" height="91"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="donatorsCell" id="wwV-zb-8W9" userLabel="prototypeCell">
+                                                        <rect key="frame" x="0.0" y="44.5" width="373" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IVu-ZC-qM3" id="fOB-3V-s8V">
-                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="91"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wwV-zb-8W9" id="eDG-4H-YFj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Donador" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-ge-hzz" userLabel="# Donador">
-                                                                    <rect key="frame" x="9.5" y="9" width="186.5" height="73"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yld-If-6Gx">
-                                                                    <rect key="frame" x="261" y="27.5" width="74.5" height="36"/>
-                                                                    <state key="normal" title="Detalles"/>
-                                                                </button>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="yld-If-6Gx" firstAttribute="height" secondItem="fOB-3V-s8V" secondAttribute="height" multiplier="0.4" id="R1s-l1-qLx"/>
-                                                                <constraint firstItem="yld-If-6Gx" firstAttribute="centerX" secondItem="fOB-3V-s8V" secondAttribute="centerX" multiplier="1.6" id="dNQ-NU-oEV"/>
-                                                                <constraint firstItem="kZh-ge-hzz" firstAttribute="height" secondItem="fOB-3V-s8V" secondAttribute="height" multiplier="0.8" id="fbj-Mb-kHW"/>
-                                                                <constraint firstItem="yld-If-6Gx" firstAttribute="width" secondItem="fOB-3V-s8V" secondAttribute="width" multiplier="0.2" id="gA8-wM-tEd"/>
-                                                                <constraint firstItem="kZh-ge-hzz" firstAttribute="centerY" secondItem="fOB-3V-s8V" secondAttribute="centerY" id="jhw-4O-pOC"/>
-                                                                <constraint firstItem="yld-If-6Gx" firstAttribute="centerY" secondItem="fOB-3V-s8V" secondAttribute="centerY" id="ojP-K1-I17"/>
-                                                                <constraint firstItem="kZh-ge-hzz" firstAttribute="width" secondItem="fOB-3V-s8V" secondAttribute="width" multiplier="0.5" id="zDk-oc-lOu"/>
-                                                                <constraint firstItem="kZh-ge-hzz" firstAttribute="centerX" secondItem="fOB-3V-s8V" secondAttribute="centerX" multiplier="0.55" id="zEw-Va-x9v"/>
-                                                            </constraints>
                                                         </tableViewCellContentView>
+                                                        <accessibility key="accessibilityConfiguration" label="prototypeCell"/>
+                                                        <connections>
+                                                            <segue destination="PfY-nI-Z37" kind="presentation" identifier="DonatorsToDonationsSegue" modalPresentationStyle="fullScreen" id="pdp-nm-H9Z"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
@@ -1882,7 +1854,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="wSx-FZ-VKe" kind="presentation" identifier="DonatorToHistory" modalPresentationStyle="fullScreen" id="NBB-6p-1pm"/>
+                        <outlet property="donatorsTableView" destination="stQ-sD-vjw" id="OMM-9a-mP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7H-ML-YvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2474,6 +2446,9 @@
             <point key="canvasLocation" x="2190" y="-652"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pdp-nm-H9Z"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
