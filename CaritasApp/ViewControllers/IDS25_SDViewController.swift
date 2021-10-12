@@ -6,10 +6,11 @@
 //
 
 import UIKit
-
+/*
 protocol DataDelegate {
     func updateArray(newArray: String)
 }
+ */
 
 class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -71,6 +72,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     }
 }
     
+
 extension IDS25_SDViewController: DataDelegate {
     
     func updateArray(newArray: String) {
@@ -79,11 +81,11 @@ extension IDS25_SDViewController: DataDelegate {
             donatorsArray = try JSONDecoder().decode([User].self, from: newArray.data(using: .utf8)!)
             print(donatorsArray)
         } catch {
-            print("Failed to decode!")
-            
+            print("Failed to decode Donators!")
         }
         self.donatorsTableView?.reloadData()
     }
+ 
 
 
     /*
