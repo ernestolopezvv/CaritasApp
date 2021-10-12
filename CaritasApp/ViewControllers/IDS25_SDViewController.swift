@@ -6,14 +6,15 @@
 //
 
 import UIKit
-
+/*
 protocol DataDelegate {
     func updateArray(newArray: String)
 }
+ */
 
 class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var donatorsArray = [Donation]()
+    var donatorsArray = [User]()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -22,7 +23,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         if segue.identifier == "DonatorToHistory" {
             
-            vc.donation = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
+            vc.donator = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
         }
     }
@@ -36,7 +37,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donatorsCell", for: indexPath)
         
-        cell.textLabel?.text = donatorsArray[indexPath.row].creationDate
+        cell.textLabel?.text = donatorsArray[indexPath.row].correo
         return cell
     }
     
@@ -44,12 +45,12 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewWillAppear(_ animated: Bool) {
         
-        APIFunctions.functions.fetchDonations()
+        APIFunctions.functions.fetchDonators()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        APIFunctions.functions.fetchDonations()
+        APIFunctions.functions.fetchDonators()
     }
     
 
@@ -62,7 +63,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         
         APIFunctions.functions.delegate = self
-        APIFunctions.functions.fetchDonations()
+        APIFunctions.functions.fetchDonators()
       
         donatorsTableView.delegate = self
         donatorsTableView.dataSource = self
@@ -71,19 +72,20 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     }
 }
     
+
 extension IDS25_SDViewController: DataDelegate {
     
     func updateArray(newArray: String) {
         
         do {
-            donatorsArray = try JSONDecoder().decode([Donation].self, from: newArray.data(using: .utf8)!)
+            donatorsArray = try JSONDecoder().decode([User].self, from: newArray.data(using: .utf8)!)
             print(donatorsArray)
         } catch {
-            print("Failed to decode!")
-            
+            print("Failed to decode Donators!")
         }
         self.donatorsTableView?.reloadData()
     }
+ 
 
 
     /*

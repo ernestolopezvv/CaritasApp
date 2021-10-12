@@ -7,15 +7,22 @@
 
 import UIKit
 
+protocol DataDelegate {
+    func updateArray(newArray: String)
+}
+
 
 class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var donationsArray = [Donation]()
-    var donation: Donation?
+    //Archivo anterior IDS25_SD
+    var donator: User?
     var fetch = false
+    // Este archivo
+    var donationsArray = [Donation]()
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        // Archivo siguiente IDS23_D
         let vc = segue.destination as! IDS23_DViewController
         
         if segue.identifier == "donationDetailsSegue" {
@@ -33,7 +40,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
         
-        cell.textLabel?.text = donationsArray[indexPath.row].creationDate
+        cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }
 
@@ -73,8 +80,7 @@ extension IDS23_HViewController: DataDelegate {
             donationsArray = try JSONDecoder().decode([Donation].self, from: newArray.data(using: .utf8)!)
             print(donationsArray)
         } catch {
-            print("Failed to decode!")
-            
+            print("Failed to decode Donations!")            
         }
         self.donationsTableView?.reloadData()
     }
