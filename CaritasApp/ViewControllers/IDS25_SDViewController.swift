@@ -13,7 +13,7 @@ protocol DataDelegate {
 
 class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var donatorsArray = [Donation]()
+    var donatorsArray = [User]()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -22,7 +22,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         if segue.identifier == "DonatorToHistory" {
             
-            vc.donation = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
+            vc.donator = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
         }
     }
@@ -36,7 +36,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donatorsCell", for: indexPath)
         
-        cell.textLabel?.text = donatorsArray[indexPath.row].creationDate
+        cell.textLabel?.text = donatorsArray[indexPath.row].nombres
         return cell
     }
     
@@ -61,7 +61,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIFunctions.functions.delegate = self
+        APIFunctions.functions.userDelegate = self
         APIFunctions.functions.fetchDonations()
       
         donatorsTableView.delegate = self
@@ -76,7 +76,7 @@ extension IDS25_SDViewController: DataDelegate {
     func updateArray(newArray: String) {
         
         do {
-            donatorsArray = try JSONDecoder().decode([Donation].self, from: newArray.data(using: .utf8)!)
+            donatorsArray = try JSONDecoder().decode([User].self, from: newArray.data(using: .utf8)!)
             print(donatorsArray)
         } catch {
             print("Failed to decode!")

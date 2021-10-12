@@ -17,13 +17,14 @@ class IDS23_DViewController: UIViewController {
     var fetch = false
     
     
-    @IBOutlet weak var ticketLabel: UILabel!
-    @IBOutlet weak var donatorLabel: UILabel!
-    @IBOutlet weak var dateReceived: UILabel!
-    @IBOutlet weak var amountBilledLabel: UILabel!
-    @IBOutlet weak var weightKgLabel: UILabel!
-    @IBOutlet weak var deliveredByLabel: UILabel!
-    @IBOutlet weak var storedByLabel: UILabel!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var donadorLabel: UILabel!
+    @IBOutlet weak var recolectorLabel: UILabel!
+    @IBOutlet weak var fechaCreacionLabel: UILabel!
+    @IBOutlet weak var fechaRecoleccionLabel: UILabel!
+    @IBOutlet weak var cantidadFacturadaLabel: UILabel!
+    @IBOutlet weak var pesoRecibidoLabel: UILabel!
+
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,12 +38,13 @@ class IDS23_DViewController: UIViewController {
         
         if fetch == true {
            
-            ticketLabel.text = donation!.receptionState
-            donatorLabel.text = donation!.billState
-            dateReceived.text = donation!.creationDate
-            amountBilledLabel.text = donation!.receptionDate
-            weightKgLabel.text = donation!.weightKg
-            deliveredByLabel.text = donation!.destination
+            idLabel.text = donation!._id
+            //donadorLabel.text = donation!.
+            //recolectorLabel.text = donation!.creationDate
+            fechaCreacionLabel.text = donation!.fecha_creacion
+            fechaRecoleccionLabel.text = donation!.fecha_recepcion
+            cantidadFacturadaLabel.text = donation!.precio_total_recibido
+            pesoRecibidoLabel.text = donation!.peso_total_recibido
         }
     
 

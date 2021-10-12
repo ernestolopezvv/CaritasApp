@@ -11,7 +11,7 @@ import UIKit
 class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var donationsArray = [Donation]()
-    var donation: Donation?
+    var donator: User?
     var fetch = false
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,7 +33,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
         
-        cell.textLabel?.text = donationsArray[indexPath.row].creationDate
+        cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }
 
@@ -56,7 +56,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        APIFunctions.functions.delegate = self
+        APIFunctions.functions.donationDelegate = self
         APIFunctions.functions.fetchDonations()
       
         donationsTableView.delegate = self

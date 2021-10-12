@@ -1103,13 +1103,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-c7-ORu" userLabel="Row1">
                                                 <rect key="frame" x="0.0" y="0.0" width="335.5" height="41"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FqI-pO-OnY">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FqI-pO-OnY">
                                                         <rect key="frame" x="0.0" y="0.0" width="67.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TicketData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-9l-TPx">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-9l-TPx">
                                                         <rect key="frame" x="67.5" y="0.0" width="268" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1159,13 +1159,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfs-vs-uZy" userLabel="Row3">
                                                 <rect key="frame" x="0.0" y="94.5" width="335.5" height="41"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de recibido:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PSq-UH-3jT">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recolector:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PSq-UH-3jT">
                                                         <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FechaData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jgk-Ta-whC">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RecolectirData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jgk-Ta-whC">
                                                         <rect key="frame" x="151" y="0.0" width="184.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1187,13 +1187,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-bM-38R" userLabel="Row4">
                                                 <rect key="frame" x="0.0" y="149" width="335.5" height="41"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad Facturada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BOe-aO-UTe">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de creación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BOe-aO-UTe">
                                                         <rect key="frame" x="0.0" y="0.0" width="168" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FacturaData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-W7-nrq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreacionData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-W7-nrq">
                                                         <rect key="frame" x="168" y="0.0" width="167.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1215,14 +1215,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIY-x4-8wl" userLabel="Row5">
                                                 <rect key="frame" x="0.0" y="209" width="335.5" height="41"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso registrado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-Sv-e2C">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de recolección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-Sv-e2C">
                                                         <rect key="frame" x="0.0" y="0.0" width="141" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PesoData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WlH-RH-fMk">
-                                                        <rect key="frame" x="141" y="0.0" width="201" height="41"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RecoleccionData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WlH-RH-fMk">
+                                                        <rect key="frame" x="155" y="0.0" width="184.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1230,9 +1230,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="WlH-RH-fMk" firstAttribute="width" secondItem="SIY-x4-8wl" secondAttribute="width" multiplier="0.6" id="1yF-bl-9Ac"/>
+                                                    <constraint firstItem="WlH-RH-fMk" firstAttribute="width" secondItem="SIY-x4-8wl" secondAttribute="width" multiplier="0.55" id="1yF-bl-9Ac"/>
                                                     <constraint firstItem="WlH-RH-fMk" firstAttribute="height" secondItem="SIY-x4-8wl" secondAttribute="height" id="ang-j9-1vK"/>
-                                                    <constraint firstItem="WlH-RH-fMk" firstAttribute="leading" secondItem="a2i-Sv-e2C" secondAttribute="trailing" id="dQr-68-hPK"/>
+                                                    <constraint firstItem="WlH-RH-fMk" firstAttribute="leading" secondItem="a2i-Sv-e2C" secondAttribute="trailing" multiplier="1.1" id="dQr-68-hPK"/>
                                                     <constraint firstItem="a2i-Sv-e2C" firstAttribute="top" secondItem="SIY-x4-8wl" secondAttribute="top" id="drP-Og-Uos"/>
                                                     <constraint firstItem="a2i-Sv-e2C" firstAttribute="width" secondItem="SIY-x4-8wl" secondAttribute="width" multiplier="0.42" id="jT6-pf-o81"/>
                                                     <constraint firstItem="a2i-Sv-e2C" firstAttribute="height" secondItem="SIY-x4-8wl" secondAttribute="height" id="kw2-7s-eEP"/>
@@ -1243,14 +1243,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-Gt-OBv" userLabel="Row6">
                                                 <rect key="frame" x="0.0" y="275" width="335.5" height="41"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entregado por:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pMl-gQ-eMd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad Facturada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pMl-gQ-eMd">
                                                         <rect key="frame" x="0.0" y="0.0" width="134.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EntregaData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JAz-h7-EZm">
-                                                        <rect key="frame" x="134.5" y="0.0" width="201" height="34.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FacturaData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JAz-h7-EZm">
+                                                        <rect key="frame" x="148" y="0.0" width="184" height="34.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1259,9 +1259,9 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="pMl-gQ-eMd" firstAttribute="leading" secondItem="xuc-Gt-OBv" secondAttribute="leading" id="3v4-xe-fzp"/>
-                                                    <constraint firstItem="JAz-h7-EZm" firstAttribute="leading" secondItem="pMl-gQ-eMd" secondAttribute="trailing" id="4Lw-vg-lY2"/>
+                                                    <constraint firstItem="JAz-h7-EZm" firstAttribute="leading" secondItem="pMl-gQ-eMd" secondAttribute="trailing" multiplier="1.1" id="4Lw-vg-lY2"/>
                                                     <constraint firstItem="JAz-h7-EZm" firstAttribute="top" secondItem="xuc-Gt-OBv" secondAttribute="top" id="DWJ-Pe-Qan"/>
-                                                    <constraint firstItem="JAz-h7-EZm" firstAttribute="width" secondItem="xuc-Gt-OBv" secondAttribute="width" multiplier="0.6" id="H2y-ul-DeP"/>
+                                                    <constraint firstItem="JAz-h7-EZm" firstAttribute="width" secondItem="xuc-Gt-OBv" secondAttribute="width" multiplier="0.55" id="H2y-ul-DeP"/>
                                                     <constraint firstItem="pMl-gQ-eMd" firstAttribute="top" secondItem="xuc-Gt-OBv" secondAttribute="top" id="Rn8-ad-08A"/>
                                                     <constraint firstItem="pMl-gQ-eMd" firstAttribute="height" secondItem="xuc-Gt-OBv" secondAttribute="height" id="XIT-H9-Sje"/>
                                                     <constraint firstItem="JAz-h7-EZm" firstAttribute="height" secondItem="xuc-Gt-OBv" secondAttribute="height" multiplier="0.84" id="ZuK-gA-3vu"/>
@@ -1271,13 +1271,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajn-nC-1hF" userLabel="Row7">
                                                 <rect key="frame" x="0.0" y="347.5" width="335.5" height="41"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Almacenado por:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-6Z-h7z">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso registrado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-6Z-h7z">
                                                         <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlmacenData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-5Z-hQ1">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PesoData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-5Z-hQ1">
                                                         <rect key="frame" x="151" y="0.0" width="335.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -1408,13 +1408,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="yVX-fi-Rpw"/>
                     <connections>
-                        <outlet property="amountBilledLabel" destination="RRt-W7-nrq" id="IYH-6v-dnn"/>
-                        <outlet property="dateReceived" destination="jgk-Ta-whC" id="4ed-cV-KRs"/>
-                        <outlet property="deliveredByLabel" destination="JAz-h7-EZm" id="g7q-jd-Wub"/>
-                        <outlet property="donatorLabel" destination="1pT-Uw-19Y" id="CQK-MO-btJ"/>
-                        <outlet property="storedByLabel" destination="1wU-5Z-hQ1" id="lzs-ua-ADC"/>
-                        <outlet property="ticketLabel" destination="0VM-9l-TPx" id="5fB-9S-qz7"/>
-                        <outlet property="weightKgLabel" destination="WlH-RH-fMk" id="fBU-e1-exx"/>
+                        <outlet property="cantidadFacturadaLabel" destination="JAz-h7-EZm" id="0vc-w1-dZc"/>
+                        <outlet property="donadorLabel" destination="1pT-Uw-19Y" id="Wt0-Rg-nlm"/>
+                        <outlet property="fechaCreacionLabel" destination="RRt-W7-nrq" id="DEt-yN-jm1"/>
+                        <outlet property="fechaRecoleccionLabel" destination="WlH-RH-fMk" id="lOb-jT-Flv"/>
+                        <outlet property="idLabel" destination="0VM-9l-TPx" id="IQR-0U-uu5"/>
+                        <outlet property="pesoRecibidoLabel" destination="1wU-5Z-hQ1" id="S2C-VV-nee"/>
+                        <outlet property="recolectorLabel" destination="jgk-Ta-whC" id="b9e-sg-ele"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFZ-BF-xLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1864,7 +1864,6 @@
         <!--IDS34_Login-->
         <scene sceneID="yMO-Bw-qPS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ajE-ML-lyk" sceneMemberID="firstResponder"/>
                 <viewController title="IDS34Login" id="060-iL-7X7" userLabel="IDS34_Login" customClass="IDS34ViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwL-hc-QMp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1992,6 +1991,7 @@
                         <segue destination="5n7-qI-31P" kind="presentation" identifier="LoginToDriver" modalPresentationStyle="fullScreen" id="gmb-1h-Wa3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajE-ML-lyk" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3013" y="90"/>
         </scene>
