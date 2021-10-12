@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59814106271515EE00C11495 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59814105271515EE00C11495 /* Usuario.swift */; };
 		59837B322710A73900176599 /* Donacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B302710A73900176599 /* Donacion.swift */; };
 		59837B332710A73900176599 /* Articulo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B312710A73900176599 /* Articulo.swift */; };
 		59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B342710B64200176599 /* IDS25_SDViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59814105271515EE00C11495 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		59837B302710A73900176599 /* Donacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donacion.swift; sourceTree = "<group>"; };
 		59837B312710A73900176599 /* Articulo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articulo.swift; sourceTree = "<group>"; };
 		59837B342710B64200176599 /* IDS25_SDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS25_SDViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				59837B302710A73900176599 /* Donacion.swift */,
+				59814105271515EE00C11495 /* Usuario.swift */,
 				59837B312710A73900176599 /* Articulo.swift */,
 			);
 			name = ValueObject;
@@ -368,6 +371,7 @@
 				728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */,
 				59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */,
 				59837B322710A73900176599 /* Donacion.swift in Sources */,
+				59814106271515EE00C11495 /* Usuario.swift in Sources */,
 				728011D8271001420092EE00 /* IDS25ViewController.swift in Sources */,
 				7222F311270E87880045733D /* IDS35_AViewController.swift in Sources */,
 				59837B332710A73900176599 /* Articulo.swift in Sources */,

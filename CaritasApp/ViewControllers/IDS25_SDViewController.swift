@@ -61,7 +61,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIFunctions.functions.userDelegate = self
+        APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchDonations()
       
         donatorsTableView.delegate = self

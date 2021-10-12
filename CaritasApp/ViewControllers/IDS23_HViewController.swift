@@ -56,7 +56,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        APIFunctions.functions.donationDelegate = self
+        APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchDonations()
       
         donationsTableView.delegate = self
