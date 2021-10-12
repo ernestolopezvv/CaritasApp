@@ -36,7 +36,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donatorsCell", for: indexPath)
         
-        cell.textLabel?.text = donatorsArray[indexPath.row].nombres
+        cell.textLabel?.text = donatorsArray[indexPath.row].correo
         return cell
     }
     
@@ -44,12 +44,12 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewWillAppear(_ animated: Bool) {
         
-        APIFunctions.functions.fetchDonations()
+        APIFunctions.functions.fetchDonators()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        APIFunctions.functions.fetchDonations()
+        APIFunctions.functions.fetchDonators()
     }
     
 
@@ -62,7 +62,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         
         APIFunctions.functions.delegate = self
-        APIFunctions.functions.fetchDonations()
+        APIFunctions.functions.fetchDonators()
       
         donatorsTableView.delegate = self
         donatorsTableView.dataSource = self

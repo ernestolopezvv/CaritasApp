@@ -108,7 +108,7 @@ class APIFunctions {
         }
     }
     
-    func fetchUsers() {
+    func fetchDonators() {
         
         AF.request("https://caritas-app-backend.herokuapp.com/fetchusuario").response {response in
             
