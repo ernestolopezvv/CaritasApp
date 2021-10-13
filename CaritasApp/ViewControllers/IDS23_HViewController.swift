@@ -41,7 +41,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion!)
+        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }

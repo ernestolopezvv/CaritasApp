@@ -8,58 +8,6 @@
 import Foundation
 import Alamofire
 
-struct Donation: Decodable {
-    
-    var _id :String?
-    var estado_factura: Bool?
-    var fecha_creacion: Date?
-    var fecha_recepcion: Date?
-    var precio_total_reportado: Double?
-    var precio_total_recibido: Double?
-    var peso_total_reportado: Double?
-    var peso_total_recibido: Double?
-    var almacen_destino: String?
-    var donador: UserInDonation?
-    var recolector: UserInDonation?
-    var estado_recepcion_almacen: Bool?
-    var estado_recepcion_chofer: Bool?
-    //var articulos_donados: [ItemInDonation]?
-    
-}
-
-struct User: Decodable {
-    var _id: String
-    var apellidos: String
-    var contrasena: String
-    var correo: String
-    var entidad: String
-    var nombres: String
-    var rfc: String?
-    var rol: String?
-}
-
-struct UserInDonation: Decodable {
-    var _id: String?
-    var nombre: String?
-}
-
-struct ItemInDonation: Decodable {
-    var upc: String?
-    var cantidad_donada: String?
-    var cantidad_recibida: String?
-    var cantidad_buen_estado: String?
-    var precio_unitario: String?
-    var precio_total_unidades: String?
-    var numero_serie_externo: String?
-}
-
-struct Item: Decodable {
-    var descripcion: String?
-    var peso_articulo: String?
-    var uom: String?
-    var upc: String?
-}
-
 class APIFunctions {
     
     var delegate: DataDelegate?
@@ -72,7 +20,6 @@ class APIFunctions {
             print("Previo a response fetchDonacion")
             print(response.data)
             let data = String(data: response.data!, encoding: .utf8)
-            print(data)
             
             self.delegate?.updateArray(newArray: data!)
         }
