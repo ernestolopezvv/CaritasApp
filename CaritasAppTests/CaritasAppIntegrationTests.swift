@@ -70,6 +70,39 @@ class CaritasAppIntegrationTest: XCTestCase {
                       "almacen_destino":"1",
                       "estado_recepcion_almacen":false,
                       "estado_recepcion_chofer":false,
+                      "estado_recepcion_chofer":false,
+                      "donador": {
+                                  "id": "6164910ec2c86e7e343477c9",
+                                  "nombre": "Sam"
+                      },
+                      "recolector": {
+                                  "id": "6164926fc2c86e7e343477cb",
+                                  "nombre": "Stephen"
+                      },
+                      "articulos_donados": [
+                          {
+                              "_id": "616726cb608388b21951ee35",
+                              "UPC": "123456",
+                              "cantidad_donada": 1,
+                              "cantidad_recibida": 1,
+                              "cantidad_buen_estado": 1,
+                              "precio_unitario": 90.5,
+                              "precio_total_unidades": 2.5,
+                              "peso_total_unidades": 3.4,
+                              "numero_serie_externo": "827292"
+                          },
+                          {
+                              "_id": "616726cb608388b21951ee36",
+                              "UPC": "131415",
+                              "cantidad_donada": 3,
+                              "cantidad_recibida": 2,
+                              "cantidad_buen_estado": 2,
+                              "precio_unitario": 70,
+                              "precio_total_unidades": 140,
+                              "peso_total_unidades": 0.37,
+                              "numero_serie_externo": "464841"
+                          }
+                      ]
                    }
                 ]
             """//.data(using: .utf8)!

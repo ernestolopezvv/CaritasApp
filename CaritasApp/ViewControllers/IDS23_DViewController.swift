@@ -44,7 +44,7 @@ class IDS23_DViewController: UIViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "YYYY-MM-dd"
             fechaCreacionLabel.text = dateFormatter.string(from:donation!.fecha_creacion!)
-            fechaRecoleccionLabel.text = dateFormatter.string(from:donation!.fecha_recepcion!)
+            fechaRecoleccionLabel.text = dateFormatter.string(from:donation!.fecha_recepcion)
             cantidadFacturadaLabel.text = String(donation!.precio_total_recibido!)
             pesoRecibidoLabel.text = String(donation!.peso_total_recibido!)
         }
