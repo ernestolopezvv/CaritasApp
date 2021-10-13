@@ -76,7 +76,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-nN-fab" userLabel="Row4">
                                 <rect key="frame" x="0.0" y="432.5" width="414" height="44.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x59-9B-c1V">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Descripcion" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x59-9B-c1V">
                                         <rect key="frame" x="30" y="0.0" width="290" height="33.5"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -94,7 +94,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16v-R6-ex9" userLabel="Row5">
                                 <rect key="frame" x="0.0" y="477" width="414" height="45"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWP-3T-QGB">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UOM del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWP-3T-QGB">
                                         <rect key="frame" x="30" y="0.0" width="290" height="34"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -130,7 +130,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YN6-M0-Om3" userLabel="Row7">
                                 <rect key="frame" x="0.0" y="567" width="414" height="44.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPC del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-n7-P6N">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Peso del producto" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-n7-P6N">
                                         <rect key="frame" x="30" y="0.0" width="290" height="33.5"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
