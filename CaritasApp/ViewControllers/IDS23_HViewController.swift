@@ -39,8 +39,10 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
-        
-        cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion!)
+        //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }
 
@@ -77,7 +79,11 @@ extension IDS23_HViewController: DataDelegate {
     func updateArray(newArray: String) {
         
         do {
-            donationsArray = try JSONDecoder().decode([Donation].self, from: newArray.data(using: .utf8)!)
+            let decoder = JSONDecoder()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            decoder.dateDecodingStrategy = .formatted(dateFormatter)
+            donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
             print(donationsArray)
         } catch {
             print("Failed to decode Donations!")            
