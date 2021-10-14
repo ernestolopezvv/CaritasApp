@@ -39,14 +39,15 @@ class IDS23_DViewController: UIViewController {
         if fetch == true {
            
             idLabel.text = donation!._id
-            donadorLabel.text = donation!.donador?.nombre
+            donadorLabel.text = donation!.donador.nombre
             recolectorLabel.text = donation!.recolector?.nombre
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "YYYY-MM-dd"
-            fechaCreacionLabel.text = dateFormatter.string(from:donation!.fecha_creacion!)
+            fechaCreacionLabel.text = dateFormatter.string(from:donation!.fecha_creacion)
             fechaRecoleccionLabel.text = dateFormatter.string(from:donation!.fecha_recepcion)
-            cantidadFacturadaLabel.text = String(donation!.precio_total_recibido!)
-            pesoRecibidoLabel.text = String(donation!.peso_total_recibido!)
+            cantidadFacturadaLabel.text = String(donation!.precio_total_recibido)
+            pesoRecibidoLabel.text = String(donation!.peso_total_recibido)
+            //pesoRecibidoLabel.text = donation!.articulos_donados[1].upc
         }
     
 

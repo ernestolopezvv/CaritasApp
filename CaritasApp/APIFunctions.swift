@@ -8,14 +8,6 @@
 import Foundation
 import Alamofire
 
-
-struct Item: Decodable {
-    var descripcion: String?
-    var peso_articulo: String?
-    var uom: String?
-    var upc: String?
-}
-
 class APIFunctions {
     
     var delegate: DataDelegate?

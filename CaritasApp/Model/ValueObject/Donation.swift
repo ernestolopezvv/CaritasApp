@@ -10,26 +10,26 @@ import Alamofire
 
 struct Donation: Decodable {
     
-    var _id :String?
-    var estado_factura: Bool?
-    var fecha_creacion: Date?
+    var _id :String
+    var estado_factura: Bool
+    var fecha_creacion: Date
     var fecha_recepcion: Date
     var precio_total_reportado: Double?
-    var precio_total_recibido: Double?
+    var precio_total_recibido: Double
     var peso_total_reportado: Double?
-    var peso_total_recibido: Double?
-    var almacen_destino: String?
-    var donador: UserInDonation?
+    var peso_total_recibido: Double
+    var almacen_destino: String
+    var donador: UserInDonation
     var recolector: UserInDonation?
-    var estado_recepcion_almacen: Bool?
-    var estado_recepcion_chofer: Bool?
+    var estado_recepcion_almacen: Bool
+    var estado_recepcion_chofer: Bool
     var articulos_donados: [ItemInDonation]?
     
 }
 
 struct UserInDonation: Decodable {
-    var _id: String?
-    var nombre: String?
+    var id: String
+    var nombre: String
 }
 
 struct ItemInDonation: Decodable {
