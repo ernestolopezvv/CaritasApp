@@ -6,11 +6,21 @@
 //
 
 import UIKit
+import UniformTypeIdentifiers
 
 class IDS1_NDViewController: UIViewController {
     
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func loadFile(_ sender: UIButton) {
+        let supportedTypes: [UTType] = [UTType.json]
+        let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: supportedTypes, asCopy: true)
+         documentPicker.delNegate = self
+         documentPicker.allowsMultipleSelection = false
+         documentPicker.modalPresentationStyle = .fullScreen
+         present(documentPicker, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -19,7 +29,7 @@ class IDS1_NDViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+     
     /*
     // MARK: - Navigation
 

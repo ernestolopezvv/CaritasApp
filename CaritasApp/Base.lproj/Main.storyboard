@@ -266,6 +266,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="17P-wc-vWk" userLabel="Subir archivo">
                                         <rect key="frame" x="232" y="0.0" width="124" height="44.5"/>
                                         <state key="normal" title="Subir Archivo"/>
+                                        <connections>
+                                            <action selector="loadFile:" destination="h91-Vw-ynT" eventType="touchUpInside" id="Hdy-nf-Mlc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
