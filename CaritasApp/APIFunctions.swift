@@ -39,9 +39,16 @@ class APIFunctions {
     }
     
     
-    func updateItem(upc: String, uom: String, descripcion:String, peso_articulo: Double) {
+    func updateItem(descripcion:String, uom: String, upc: String, peso_articulo: String) {
         
         AF.request("https://caritas-app-backend.herokuapp.com/updatearticulo", method: .post, encoding: URLEncoding.httpBody, headers: ["descripcion": descripcion, "uom":uom, "upc":upc, "peso articulo kg":peso_articulo]).responseJSON {response in
+            
+        }
+    }
+    
+    func addItem(descripcion:String, uom: String, upc: String, peso_articulo: String) {
+        
+        AF.request("https://caritas-app-backend.herokuapp.com/createarticulo", method: .post, encoding: URLEncoding.httpBody, headers: ["descripcion": descripcion, "uom":uom, "upc":upc, "peso articulo kg":peso_articulo]).responseJSON {response in
             
         }
     }

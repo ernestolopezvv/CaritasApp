@@ -8,8 +8,8 @@
 import Foundation
 
 struct Item: Decodable {
-    var upc: String
-    var uom: String?
     var descripcion: String
-    var peso_articulo: Double?
+    var uom: String?
+    var upc: String
+    var peso_articulo: String?
 }

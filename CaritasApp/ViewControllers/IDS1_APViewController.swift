@@ -18,6 +18,16 @@ class IDS1_APViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if update == true {
+            
+            itemDescriptionTextField.text = item!.descripcion
+            itemUomTextField.text = item!.uom
+            itemUpcTextField.text = item!.upc
+            itemWeightTextField.text = item!.peso_articulo
+            
+            
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -31,16 +41,16 @@ class IDS1_APViewController: UIViewController {
         
         if update == true {
             
-            APIFunctions.functions.updateDonation(receptionState: receptionStateTextField.text!, billState: billStateTextField.text!, creationDate: creationDateTextField.text!, receptionDate: receptionDateTextField.text!, weightKg: weightKgTextField.text!, destination: destinationTextField.text!, id:donation!._id)
+            APIFunctions.functions.updateItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo: itemWeightTextField.text!)
             
             
         }
         else {
             
-            APIFunctions.functions.addDonation(receptionState: receptionStateTextField.text!, billState: billStateTextField.text!, creationDate: creationDateTextField.text!, receptionDate: receptionDateTextField.text!, weightKg: weightKgTextField.text!, destination: destinationTextField.text!)
+            APIFunctions.functions.addItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo: itemWeightTextField.text!)
             
         }
-        self.navigationController?.popViewController(animated: true)
+        //self.navigationController?.popViewController(animated: true)
 
         
     }
@@ -56,4 +66,4 @@ class IDS1_APViewController: UIViewController {
     }
     */
 
-}
+
