@@ -8,7 +8,7 @@
 import UIKit
 import UniformTypeIdentifiers
 
-class IDS1_NDViewController: UIViewController {
+class IDS1_NDViewController: UIViewController, UIDocumentPickerDelegate {
     
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -17,7 +17,7 @@ class IDS1_NDViewController: UIViewController {
     @IBAction func loadFile(_ sender: UIButton) {
         let supportedTypes: [UTType] = [UTType.json]
         let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: supportedTypes, asCopy: true)
-         documentPicker.delNegate = self
+         documentPicker.delegate = self
          documentPicker.allowsMultipleSelection = false
          documentPicker.modalPresentationStyle = .fullScreen
          present(documentPicker, animated: true, completion: nil)
