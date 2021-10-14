@@ -348,6 +348,14 @@
                                     <constraint firstItem="Qrz-Yk-d7J" firstAttribute="width" secondItem="78T-Za-Tj4" secondAttribute="width" multiplier="1.6" id="mLZ-4i-Uiw"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6KT-8g-VbU" userLabel="Loaded File">
+                                <rect key="frame" x="20" y="582" width="373" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b96-at-KSR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -378,10 +386,13 @@
                             <constraint firstItem="gQm-KQ-M5E" firstAttribute="height" secondItem="Y0R-uG-IID" secondAttribute="height" multiplier="0.15" id="w3a-Hn-mhe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loadedFile" destination="6KT-8g-VbU" id="eTj-hU-6kq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFA-YK-DDA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="-652"/>
+            <point key="canvasLocation" x="3040.579710144928" y="-652.23214285714278"/>
         </scene>
         <!--IDS14-->
         <scene sceneID="ou0-p4-WjB">
@@ -2439,6 +2450,9 @@
         <segue reference="0kn-jD-AXO"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

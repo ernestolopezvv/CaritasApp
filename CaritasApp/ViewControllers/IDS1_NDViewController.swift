@@ -10,6 +10,8 @@ import UniformTypeIdentifiers
 
 class IDS1_NDViewController: UIViewController, UIDocumentPickerDelegate {
     
+    @IBOutlet weak var loadedFile: UITextView!
+    
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -22,6 +24,16 @@ class IDS1_NDViewController: UIViewController, UIDocumentPickerDelegate {
          documentPicker.modalPresentationStyle = .fullScreen
          present(documentPicker, animated: true, completion: nil)
     }
+    
+    public func readFileAsJson(_ url: URL) throws -> Any? {
+        print("The Url is : \(url)")
+        let data = try Data(contentsOf: url)
+        let json = try? JSONSerialization.jsonObject(with: data, options: [])
+        print("Json data=\(String(describing: json))")
+        
+        return json
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
