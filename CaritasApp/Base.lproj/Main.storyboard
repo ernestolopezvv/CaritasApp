@@ -133,6 +133,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vMm-F7-J9s" userLabel="Subir archivo">
                                         <rect key="frame" x="145" y="0.0" width="124" height="45"/>
                                         <state key="normal" title="Agregar"/>
+                                        <connections>
+                                            <action selector="saveClick:" destination="unh-5D-gxF" eventType="touchUpInside" id="acB-b1-XUh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,6 +206,12 @@
                             <constraint firstItem="FM8-nD-SVf" firstAttribute="height" secondItem="pfP-Hi-zjw" secondAttribute="height" multiplier="0.15" id="zSD-wj-wyH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemDescriptionTextField" destination="x59-9B-c1V" id="dLm-wS-UZ1"/>
+                        <outlet property="itemUomTextField" destination="GWP-3T-QGB" id="j3N-yp-pG5"/>
+                        <outlet property="itemUpcTextField" destination="yTu-b8-jRY" id="hhP-Q1-efW"/>
+                        <outlet property="itemWeightTextField" destination="Sei-n7-P6N" id="XtS-lp-JBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VY-gB-oCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

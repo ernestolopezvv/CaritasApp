@@ -11,5 +11,5 @@ struct Item: Decodable {
     var upc: String
     var uom: String?
     var descripcion: String
-    var peso_articulo: String?
+    var peso_articulo: Double?
 }

@@ -37,5 +37,13 @@ class APIFunctions {
             self.delegate?.updateArray(newArray: data!)
         }
     }
+    
+    
+    func updateItem(upc: String, uom: String, descripcion:String, peso_articulo: Double) {
+        
+        AF.request("https://caritas-app-backend.herokuapp.com/updatearticulo", method: .post, encoding: URLEncoding.httpBody, headers: ["descripcion": descripcion, "uom":uom, "upc":upc, "peso articulo kg":peso_articulo]).responseJSON {response in
+            
+        }
+    }
 
 }
