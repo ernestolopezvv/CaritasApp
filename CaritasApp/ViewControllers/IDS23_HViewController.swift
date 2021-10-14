@@ -17,6 +17,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     //Archivo anterior IDS25_SD
     var donator: User?
     var fetch = false
+    var id = ""
     // Este archivo
     var donationsArray = [Donation]()
     
@@ -75,15 +76,17 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     
 
 extension IDS23_HViewController: DataDelegate {
-    
+
     func updateArray(newArray: String) {
-        
+                
         do {
             let decoder = JSONDecoder()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
+            //donationsArray.removeAll(where: ($0.donador.id) != vc.id))
+
             print(donationsArray)
         } catch {
             print("Failed to decode Donations!")            
