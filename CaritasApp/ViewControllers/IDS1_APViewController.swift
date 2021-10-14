@@ -39,7 +39,15 @@ class IDS1_APViewController: UIViewController {
     
     @IBAction func saveClick(_ sender: Any) {
         APIFunctions.functions.addItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo_kg: itemWeightTextField.text!)
-        print("producto agregado")
+        let alertController = UIAlertController(title: "Agregado!", message: "Se agrego un nuevo producto", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default) {
+            (action: UIAlertAction!) in
+            // Code in this block will trigger when OK button tapped.
+            print("Producto agregado");
+        }
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
+        
         /*if update == true {
             
             APIFunctions.functions.updateItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo: itemWeightTextField.text!)
@@ -56,7 +64,9 @@ class IDS1_APViewController: UIViewController {
         
     }
     }
+
     
+
     /*
     // MARK: - Navigation
 
