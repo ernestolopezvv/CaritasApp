@@ -29,7 +29,6 @@ class IDS1_APViewController: UIViewController {
             
         }
 
-        // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var itemDescriptionTextField: UITextField!
@@ -59,7 +58,7 @@ class IDS1_APViewController: UIViewController {
             APIFunctions.functions.addItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo: itemWeightTextField.text!)
             
         }*/
-        self.navigationController?.popViewController(animated: true)
+        //self.navigationController?.popViewController(animated: true)
 
         
     }
