@@ -24,7 +24,7 @@ class IDS1_APViewController: UIViewController {
             itemDescriptionTextField.text = item!.descripcion
             itemUomTextField.text = item!.uom
             itemUpcTextField.text = item!.upc
-            itemWeightTextField.text = item!.peso_articulo
+            itemWeightTextField.text = item!.peso_articulo_kg
             
             
         }
@@ -38,8 +38,9 @@ class IDS1_APViewController: UIViewController {
     @IBOutlet weak var itemWeightTextField: UITextField!
     
     @IBAction func saveClick(_ sender: Any) {
-        
-        if update == true {
+        APIFunctions.functions.addItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo_kg: itemWeightTextField.text!)
+        print("producto agregado")
+        /*if update == true {
             
             APIFunctions.functions.updateItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo: itemWeightTextField.text!)
             
@@ -49,8 +50,8 @@ class IDS1_APViewController: UIViewController {
             
             APIFunctions.functions.addItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo: itemWeightTextField.text!)
             
-        }
-        //self.navigationController?.popViewController(animated: true)
+        }*/
+        self.navigationController?.popViewController(animated: true)
 
         
     }
