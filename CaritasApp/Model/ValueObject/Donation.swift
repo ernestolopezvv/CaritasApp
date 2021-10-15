@@ -70,12 +70,12 @@ public class DatosDonador : Codable {
 
 public class Donador: Codable {
     public let fecha_creacion : String
-    public let precio_total_reportado : Double?
-    public let peso_total_reportado : Double?
+    public let precio_total_reportado : String
+    public let peso_total_reportado : String
     //public let donador : DatosDonador?
     //public let articulos : [Articulo]?
         
-    public init(fecha_creacion: String, precio_total_reportado: Double, peso_total_reportado: Double /*donador: DatosDonador, articulos: [Articulo]*/)  {
+    public init(fecha_creacion: String, precio_total_reportado: String, peso_total_reportado: String /*donador: DatosDonador, articulos: [Articulo]*/)  {
         self.fecha_creacion = fecha_creacion
         self.precio_total_reportado = precio_total_reportado
         self.peso_total_reportado = peso_total_reportado

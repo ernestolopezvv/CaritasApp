@@ -372,7 +372,7 @@
                                 <rect key="frame" x="145" y="708" width="124" height="44.5"/>
                                 <state key="normal" title="Continuar"/>
                                 <connections>
-                                    <action selector="enviarJson:" destination="h91-Vw-ynT" eventType="touchUpInside" id="Ge2-gP-GNE"/>
+                                    <action selector="subirArchivo:" destination="h91-Vw-ynT" eventType="touchUpInside" id="vsp-ca-pFU"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pnh-dh-sJo" userLabel="DonadorID Text Field">
