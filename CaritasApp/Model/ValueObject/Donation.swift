@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 
 struct Donation: Decodable {
-    
     var _id :String
     var almacen_destino: String
     var estado_factura: Bool
@@ -41,6 +40,7 @@ struct ItemInDonation: Decodable {
     var numero_serie_externo: String?
 }
 
+/*
 public class Articulo : Codable {
     public let UPC : String?
     public let cantidad_donada : Double?
@@ -68,19 +68,21 @@ public class DatosDonador : Codable {
     }
 }
 
-public class Donador: Codable {
-    public let fecha_creacion : String
-    public let precio_total_reportado : String
-    public let peso_total_reportado : String
+struct Donador: Codable {
+    let fecha_creacion : String
+    let precio_total_reportado : String
+    let peso_total_reportado : String
     //public let donador : DatosDonador?
     //public let articulos : [Articulo]?
         
-    public init(fecha_creacion: String, precio_total_reportado: String, peso_total_reportado: String /*donador: DatosDonador, articulos: [Articulo]*/)  {
+    /*public init(fecha_creacion: String, precio_total_reportado: String, peso_total_reportado: String /*donador: DatosDonador, articulos: [Articulo]*/)  {
         self.fecha_creacion = fecha_creacion
         self.precio_total_reportado = precio_total_reportado
         self.peso_total_reportado = peso_total_reportado
         //self.donador = DatosDonador
         //self.articulos = [Articulos]
+     */
+ */
     }
     
-}
+
