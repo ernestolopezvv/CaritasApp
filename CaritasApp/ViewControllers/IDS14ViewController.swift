@@ -13,9 +13,11 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendar.delegate = self
+        
+        //calendar.delegate = self
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchDonations()
+        
         calendarTableView.delegate = self
         calendarTableView.dataSource = self
     }
@@ -35,21 +37,20 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         print("\(string)")
     }
     
-    //Archivo anterior IDS25_SD
-    var donator: User?
-    var fetch = false
     // Este archivo
     var donationsArray = [Donation]()
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Archivo siguiente IDS23_D
+        /*
         let vc = segue.destination as! IDS23_DViewController
         
         if segue.identifier == "calendarioPrueba" {
             vc.donation = donationsArray[calendarTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
-        }
+         
+        }*/
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,16 +60,15 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell", for: indexPath)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
+        //cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
+        cell.textLabel?.text = donationsArray[indexPath.row]._id
         return cell
     }
 
-
-    
     override func viewWillAppear(_ animated: Bool) {
         
         APIFunctions.functions.fetchDonations()
@@ -78,9 +78,6 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         APIFunctions.functions.fetchDonations()
     }
-
-    
-    
 }
 
 

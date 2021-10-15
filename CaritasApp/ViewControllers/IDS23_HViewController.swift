@@ -15,8 +15,9 @@ protocol DataDelegate {
 class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Archivo anterior IDS25_SD
-    var donator: User?
+    public var donator: User?
     var fetch = false
+    public var givenId: String?
     // Este archivo
     var donationsArray = [Donation]()
     
@@ -41,6 +42,8 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
+        
+        
         cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
@@ -67,31 +70,35 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchDonations()
-      
+        
         donationsTableView.delegate = self
         donationsTableView.dataSource = self
     }
 }
-    
 
 extension IDS23_HViewController: DataDelegate {
     
+    //Función de extensión
     func updateArray(newArray: String) {
-        
+                
         do {
             let decoder = JSONDecoder()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
-            print(donationsArray)
+
+            //Considerando login/acceso de usuario
+            if (givenId != "LoginDonador") {
+                donationsArray = donationsArray.filter {$0.donador.id == donator?._id}
+            }
+            //print(donationsArray)
         } catch {
-            print("Failed to decode Donations!")            
+            print("Failed to decode Donations!")
         }
         self.donationsTableView?.reloadData()
     }
 }
-
     
 
     /*

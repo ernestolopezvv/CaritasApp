@@ -118,8 +118,6 @@ class CaritasAppIntegrationTest: XCTestCase {
             //Then
             XCTAssertEqual(donations[0]._id, "616497b2c2c86e7e343477dd")
             XCTAssertEqual(donations[0].estado_factura, false)
-            //XCTAssertEqual(donations[0].fecha_creacion, "2021-10-10T07:00:00.000Z")
-            //XCTAssertEqual(donations[0].fecha_recepcion, "2021-10-10T07:00:00.000Z")
             XCTAssertEqual(donations[0].precio_total_reportado, 90.99)
             XCTAssertEqual(donations[0].precio_total_recibido, 90.99)
             XCTAssertEqual(donations[0].peso_total_reportado, 2.5)
