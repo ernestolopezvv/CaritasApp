@@ -5,6 +5,7 @@
 //  Created by Santiago A.A.M on 07/10/21.
 //
 
+
 import UIKit
 
 class IDS23_DViewController: UIViewController {
@@ -32,7 +33,7 @@ class IDS23_DViewController: UIViewController {
 
     }
     
-    
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,4 +63,5 @@ class IDS23_DViewController: UIViewController {
     */
     }
 
+     */
 }

@@ -5,13 +5,15 @@
 //  Created by Santiago A.A.M on 07/10/21.
 //
 
+
+
 import UIKit
 
 protocol DataDelegate {
     func updateArray(newArray: String)
 }
 
-
+/*/
 class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Archivo anterior IDS25_SD
@@ -36,6 +38,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         return donationsArray.count
     }
     
+    /*
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
@@ -45,6 +48,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }
+     */
 
     @IBOutlet weak var donationsTableView: UITableView!
     
@@ -103,3 +107,4 @@ extension IDS23_HViewController: DataDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+*/

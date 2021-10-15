@@ -37,5 +37,13 @@ class APIFunctions {
             self.delegate?.updateArray(newArray: data!)
         }
     }
-
+    
+    
+    
+    func crearDonacion(almacen_destino:String) {
+            
+            AF.request("https://caritas-app-backend.herokuapp.com/createdonation", method: .post, encoding: URLEncoding.httpBody, headers: ["almacen_destino": almacen_destino]).responseJSON {response in
+                
+            }
+        }
 }
