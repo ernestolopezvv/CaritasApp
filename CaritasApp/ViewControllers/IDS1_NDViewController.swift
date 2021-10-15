@@ -91,14 +91,14 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
                 print(readDonation.peso_total_reportado!)
                 self.pesoTextField.text = String(format: "%f", readDonation.peso_total_reportado!)
                 self.precioTotalTextField.text = String(format: "%f", readDonation.precio_total_reportado!)
-                self.donadorIDTextField.text = String(readDonation.idUsuario!)
-                self.nombreDonadorTextField.text = String(readDonation.nombreDonador!)
-                self.upcTextField.text = String(readDonation.UPC!)
+                //self.donadorIDTextField.text = String(readDonation.donador.idUsuario!)
+                //self.nombreDonadorTextField.text = String(readDonation.donador.nombreDonador!)
+                /*self.upcTextField.text = String(readDonation.)
                 self.cantidadDonadaTextField.text = String(format: "%f", readDonation.cantidad_donada!)
                 self.precioUnitarioTextField.text = String(format: "%f", readDonation.precio_unitario!)
                 self.precioTotalUnitarioTextField.text = String(format: "%f", readDonation.precio_total_unidades!)
                 self.numeroSerieTextField.text = String(readDonation.numero_serie_externo!)
-
+                 */
                 
             } catch {
                 print("error trying to convert data to JSON")
@@ -107,5 +107,5 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
 
         controller.dismiss(animated: true)
     }
-    
+        
 }

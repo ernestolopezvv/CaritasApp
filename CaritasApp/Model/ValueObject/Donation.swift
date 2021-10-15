@@ -27,8 +27,8 @@ struct Donation: Decodable {
 }
 
 struct UserInDonation: Decodable {
-    var id: String
-    var nombre: String
+    var id: String?
+    var nombre: String?
 }
 
 struct ItemInDonation: Decodable {
@@ -41,34 +41,46 @@ struct ItemInDonation: Decodable {
     var numero_serie_externo: String?
 }
 
-
-
-public class Donador: Codable {
-    public let fecha_creacion : String
-    public let precio_total_reportado : Double?
-    public let peso_total_reportado : Double?
-    public let idUsuario : String?
-    public let nombreDonador : String?
+public class Articulo : Codable {
     public let UPC : String?
     public let cantidad_donada : Double?
     public let precio_unitario : Double?
     public let precio_total_unidades : Double?
     public let numero_serie_externo : String?
-     
-
-
     
-    public init(fecha_creacion: String, precio_total_reportado: Double, peso_total_reportado: Double, idUsuario: String, nombreDonador : String, UPC: String, cantidad_donada : Double, precio_unitario: Double, precio_total_unidades : Double, numero_serie_externo : String) {
+    public init(UPC: String, cantidad_donada : Double, precio_unitario: Double, precio_total_unidades : Double, numero_serie_externo : String) {
+    self.UPC = UPC
+    self.cantidad_donada = cantidad_donada
+    self.precio_unitario = precio_unitario
+    self.precio_total_unidades = precio_total_unidades
+    self.numero_serie_externo = numero_serie_externo
+    }
+}
+
+public class DatosDonador : Codable {
+    public let idUsuario : String
+    public let nombreDonador : String
+    
+    public init(idUsuario: String, nombreDonador : String) {
+    self.idUsuario = idUsuario
+    self.nombreDonador = nombreDonador
+    
+    }
+}
+
+public class Donador: Codable {
+    public let fecha_creacion : String
+    public let precio_total_reportado : Double?
+    public let peso_total_reportado : Double?
+    //public let donador : DatosDonador?
+    //public let articulos : [Articulo]?
+        
+    public init(fecha_creacion: String, precio_total_reportado: Double, peso_total_reportado: Double /*donador: DatosDonador, articulos: [Articulo]*/)  {
         self.fecha_creacion = fecha_creacion
         self.precio_total_reportado = precio_total_reportado
         self.peso_total_reportado = peso_total_reportado
-        self.idUsuario = idUsuario
-        self.nombreDonador = nombreDonador
-        self.UPC = UPC
-        self.cantidad_donada = cantidad_donada
-        self.precio_unitario = precio_unitario
-        self.precio_total_unidades = precio_total_unidades
-        self.numero_serie_externo = numero_serie_externo
+        //self.donador = DatosDonador
+        //self.articulos = [Articulos]
     }
     
 }

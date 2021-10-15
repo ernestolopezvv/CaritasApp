@@ -29,7 +29,6 @@ class DonationFileTool{
         readDonation = try decoder.decode(Donador.self, from: data)
         print("Donacion: =  fecha_creacion:\(readDonation.fecha_creacion) fecha_creacion:\(readDonation.fecha_creacion)")
         print("Donacion: =  peso_total_reportado:\(readDonation.peso_total_reportado) peso_total_reportado:\(readDonation.peso_total_reportado)")
-        print("Donacion: =  idUsuario:\(readDonation.idUsuario) idUsuario:\(readDonation.idUsuario)")
         return readDonation
     }
     
