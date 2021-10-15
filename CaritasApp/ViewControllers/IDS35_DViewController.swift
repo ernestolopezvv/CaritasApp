@@ -18,6 +18,20 @@ class IDS35_DViewController: UIViewController {
     @IBAction func onGoButtonHistory(_ sender: Any) {
         performSegue(withIdentifier: "DonatorToHistory", sender: self)
     }
+        
+    //Filtro dependiendo del usuario una vez que haya login
+    //En este caso, se muestran todos al acceder desde donador
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Archivo siguiente IDS23_D
+        let vc = segue.destination as! IDS23_HViewController
+        
+        if segue.identifier == "DonatorToHistory" {
+            print("Entro al primr")
+            vc.givenId = "LoginDonador"
+            vc.fetch = true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
