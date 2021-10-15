@@ -25,7 +25,8 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
             
             vc.donator = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
-            vc.id = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]._id
+            print(donatorsArray[0]._id)
+            vc.id = vc.donator!._id
         }
     }
     
