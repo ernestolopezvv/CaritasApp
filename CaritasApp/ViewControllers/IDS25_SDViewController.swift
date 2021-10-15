@@ -20,13 +20,9 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         
         let vc = segue.destination as! IDS23_HViewController
         
-        
-        if segue.identifier == "DonatorToHistory" {
-            
+        if segue.identifier == "DonatorsToDonationsSegue" {            
             vc.donator = donatorsArray[donatorsTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
-            print(donatorsArray[0]._id)
-            vc.id = vc.donator!._id
         }
     }
     
@@ -84,7 +80,7 @@ extension IDS25_SDViewController: DataDelegate {
             print(donatorsArray)
             //Almacenar solo los usuarios que son donadores
             donatorsArray = donatorsArray.filter{$0.rol == "Donador"}
-            print(donatorsArray)
+            //print(donatorsArray)
         } catch {
             print("Failed to decode Donators!")
         }

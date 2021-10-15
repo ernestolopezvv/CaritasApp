@@ -1068,17 +1068,17 @@
             <objects>
                 <viewController title="IDS23Detalles" id="wSx-FZ-VKe" userLabel="IDS23_Detalles" customClass="IDS23_DViewController" customModule="CaritasApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xfQ-AW-0SW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxd-Vs-hGj" userLabel="Main">
-                                <rect key="frame" x="20.5" y="0.0" width="373" height="808"/>
+                                <rect key="frame" x="20.5" y="44" width="373" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etj-Ob-tMX" userLabel="Row1">
-                                        <rect key="frame" x="0.0" y="40.5" width="373" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="41" width="373" height="65.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalles de Donación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oP8-oJ-xeS">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="65.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1093,19 +1093,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1j-XJ-4Eo" userLabel="Detalles">
-                                        <rect key="frame" x="20" y="136.5" width="335.5" height="404"/>
+                                        <rect key="frame" x="20" y="138" width="335.5" height="409"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-c7-ORu" userLabel="Row1">
-                                                <rect key="frame" x="0.0" y="0.0" width="335.5" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FqI-pO-OnY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="40.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-9l-TPx">
-                                                        <rect key="frame" x="67.5" y="0.0" width="268" height="40.5"/>
+                                                        <rect key="frame" x="67.5" y="0.0" width="268" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1124,16 +1124,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj5-lB-t6h" userLabel="Row2">
-                                                <rect key="frame" x="0.0" y="44.5" width="335.5" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="45" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VcS-fX-kCw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="40.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DonadorData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1pT-Uw-19Y">
-                                                        <rect key="frame" x="84" y="0.0" width="251.5" height="40.5"/>
+                                                        <rect key="frame" x="84" y="0.0" width="251.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1152,16 +1152,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfs-vs-uZy" userLabel="Row3">
-                                                <rect key="frame" x="0.0" y="93.5" width="335.5" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="94.5" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recolector:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PSq-UH-3jT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="151" height="40.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RecolectirData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jgk-Ta-whC">
-                                                        <rect key="frame" x="151" y="0.0" width="184.5" height="40.5"/>
+                                                        <rect key="frame" x="151" y="0.0" width="184.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1180,16 +1180,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-bM-38R" userLabel="Row4">
-                                                <rect key="frame" x="0.0" y="147" width="335.5" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="149" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de creación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BOe-aO-UTe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="40.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreacionData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-W7-nrq">
-                                                        <rect key="frame" x="168" y="0.0" width="167.5" height="40.5"/>
+                                                        <rect key="frame" x="168" y="0.0" width="167.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1208,16 +1208,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIY-x4-8wl" userLabel="Row5">
-                                                <rect key="frame" x="0.0" y="206.5" width="335.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="209" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de recolección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-Sv-e2C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RecoleccionData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WlH-RH-fMk">
-                                                        <rect key="frame" x="155" y="0.0" width="184.5" height="40"/>
+                                                        <rect key="frame" x="155" y="0.0" width="184.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1236,16 +1236,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-Gt-OBv" userLabel="Row6">
-                                                <rect key="frame" x="0.0" y="271.5" width="335.5" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="275" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad Facturada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pMl-gQ-eMd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="40.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FacturaData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JAz-h7-EZm">
-                                                        <rect key="frame" x="148" y="0.0" width="184" height="34"/>
+                                                        <rect key="frame" x="148" y="0.0" width="184" height="34.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1264,16 +1264,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajn-nC-1hF" userLabel="Row7">
-                                                <rect key="frame" x="0.0" y="343" width="335.5" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="347.5" width="335.5" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso registrado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-6Z-h7z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="151" height="40.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="151" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PesoData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1wU-5Z-hQ1">
-                                                        <rect key="frame" x="151" y="0.0" width="335.5" height="40.5"/>
+                                                        <rect key="frame" x="151" y="0.0" width="335.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1325,14 +1325,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-Dv-joJ" userLabel="Row3">
-                                        <rect key="frame" x="19" y="594.5" width="335" height="161.5"/>
+                                        <rect key="frame" x="19" y="602" width="335" height="163.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="haD-wS-OSM">
                                                 <rect key="frame" x="83.5" y="0.0" width="168" height="32.5"/>
                                                 <state key="normal" title="Descargar Factura"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ggv-go-pK3">
-                                                <rect key="frame" x="50" y="64.5" width="235" height="32.5"/>
+                                                <rect key="frame" x="50" y="65.5" width="235" height="32.5"/>
                                                 <state key="normal" title="Descargar lista de productos"/>
                                             </button>
                                         </subviews>
@@ -1349,10 +1349,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQg-kY-X7i" userLabel="Back">
-                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="40.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjE-ne-BbX">
-                                                <rect key="frame" x="-22" y="2" width="119" height="36.5"/>
+                                                <rect key="frame" x="-22" y="2" width="119" height="37"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                                 <connections>
@@ -2443,7 +2443,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="pdp-nm-H9Z"/>
-        <segue reference="0kn-jD-AXO"/>
+        <segue reference="1aV-Of-vTy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="linkColor">

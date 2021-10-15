@@ -17,11 +17,9 @@ class APIFunctions {
         
         AF.request("https://caritas-app-backend.herokuapp.com/fetchdonacion").response {response in
             
-            print("Previo a response fetchDonacion")
-            print(response.data)
+            print("Response fetchDonacion")
             let data = String(data: response.data!, encoding: .utf8)
             print(data)
-            
             self.delegate?.updateArray(newArray: data!)
         }
     }
@@ -30,10 +28,9 @@ class APIFunctions {
         
         AF.request("https://caritas-app-backend.herokuapp.com/fetchusuario").response {response in
             
-            print("Previo a response fetchDonador")
-            print(response.data)
+            print("Response fetchDonador")
             let data = String(data: response.data!, encoding: .utf8)
-            
+            print(data)
             self.delegate?.updateArray(newArray: data!)
         }
     }
