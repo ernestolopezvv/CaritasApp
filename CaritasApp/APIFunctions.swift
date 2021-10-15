@@ -38,6 +38,17 @@ class APIFunctions {
         }
     }
     
+    func fetchItems() {
+        
+        AF.request("https://caritas-app-backend.herokuapp.com/fetcharticulo").response {response in
+            
+            print("Previo a response fetchDonador")
+            print(response.data)
+            let data = String(data: response.data!, encoding: .utf8)
+            
+            self.delegate?.updateArray(newArray: data!)
+        }
+    }
     
     func updateItem(descripcion:String, uom: String, upc: String, peso_articulo: String) {
         

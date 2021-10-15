@@ -141,4 +141,41 @@ class CaritasAppIntegrationTest: XCTestCase {
             XCTFail("error info: \(error)")
         }
     }
-}
+    
+    func testPostItem() throws {
+        // Given
+        let json = """
+            {
+                "descripcion":"TomatePrueba",
+                "uom": "Kg",
+                "upc": "231412",
+                "peso_articulo_kg": "20"
+            }
+        """//.data(using: .utf8)!
+        do {
+            // When
+            let decoder = JSONDecoder()
+            /*let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            decoder.dateDecodingStrategy = .formatted(dateFormatter)*/
+        
+            let items = try decoder.decode([Item].self, from: json.data(using: .utf8)!)
+            
+            APIFunctions.functions.addItem(descripcion: items[0].descripcion, uom: items[0].uom!, upc: items[0].upc, peso_articulo_kg: items[0].peso_articulo_kg!)
+            
+            //APIFunctions.functions.fetchItems()
+            //Then
+            //XCTAssertEqual(donations[0]._id, "616497b2c2c86e7e343477dd")
+
+        } catch {
+            XCTFail("error info: \(error)")
+        }
+    }
+        // When
+        // Then
+        
+    }
+            
+    
+    
+
