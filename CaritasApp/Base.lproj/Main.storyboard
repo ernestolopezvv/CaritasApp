@@ -453,7 +453,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calendar" destination="iGp-C5-7tf" id="l1X-DS-ZfH"/>
+                        <outlet property="calendar" destination="iGp-C5-7tf" id="KWC-ts-Fe2"/>
                         <outlet property="calendarTableView" destination="gGg-cf-hge" id="B6C-Wn-tBX"/>
                         <segue destination="wSx-FZ-VKe" kind="presentation" identifier="calendarioPrueba" id="0kn-jD-AXO"/>
                     </connections>

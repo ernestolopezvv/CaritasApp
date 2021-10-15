@@ -41,3 +41,7 @@ struct ItemInDonation: Decodable {
     var precio_total_unidades: Double?
     var numero_serie_externo: String?
 }
+
+struct MiVariable {
+    static var fechaseleccionada = ""
+}

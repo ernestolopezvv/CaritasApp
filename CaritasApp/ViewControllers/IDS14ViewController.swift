@@ -11,10 +11,11 @@ import FSCalendar
 class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FSCalendarDelegate {
     
     
+    @IBOutlet weak var calendar: FSCalendar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //calendar.delegate = self
+        calendar.delegate = self
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchDonations()
         
@@ -27,19 +28,17 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBOutlet weak var calendarTableView: UITableView!
-    @IBOutlet var calendar: FSCalendar!
-    
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE MM-dd-YYYY"
-        let string = formatter.string(from: date)
-        print("\(string)")
+        formatter.dateFormat = "YYYY-MM-dd"
+        MiVariable.fechaseleccionada = formatter.string(from: date)
+        self.calendarTableView?.reloadData()
+        //print("\(MiVariable.fechaseleccionada)")
     }
     
     // Este archivo
     var donationsArray = [Donation]()
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Archivo siguiente IDS23_D
@@ -63,7 +62,10 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell", for: indexPath)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
+        if dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion) == MiVariable.fechaseleccionada{
+            cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
+        }
+       
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         //cell.textLabel?.text = donationsArray[indexPath.row]._id
         return cell
@@ -92,6 +94,7 @@ extension IDS14ViewController: DataDelegate {
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
             print(donationsArray)
+            
         } catch {
             print("Failed to decode Donations!")
         }
