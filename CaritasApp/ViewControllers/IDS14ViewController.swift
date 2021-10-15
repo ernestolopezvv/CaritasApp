@@ -33,7 +33,8 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let formatter = DateFormatter()
         formatter.dateFormat = "YYYY-MM-dd"
         MiVariable.fechaseleccionada = formatter.string(from: date)
-        self.calendarTableView?.reloadData()
+        //self.calendarTableView?.clearsContextBeforeDrawing = true
+        calendarTableView.reloadData()
         //print("\(MiVariable.fechaseleccionada)")
     }
     
