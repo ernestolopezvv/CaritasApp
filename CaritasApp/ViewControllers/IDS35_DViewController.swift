@@ -23,12 +23,13 @@ class IDS35_DViewController: UIViewController {
     //En este caso, se muestran todos al acceder desde donador
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Archivo siguiente IDS23_D
-        let vc = segue.destination as! IDS23_HViewController
-        
+    
         if segue.identifier == "DonatorToHistory" {
-            print("Entro al primr")
+            let vc = segue.destination as! IDS23_HViewController
             vc.givenId = "LoginDonador"
             vc.fetch = true
+        } else if segue.identifier == "DonatorToHistory" {
+            
         }
     }
     

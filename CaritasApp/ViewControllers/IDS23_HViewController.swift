@@ -41,7 +41,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd"
+        dateFormatter.dateFormat = "YYYY-MM-dd"            
         
         
         cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
@@ -59,6 +59,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidAppear(_ animated: Bool) {
         
         APIFunctions.functions.fetchDonations()
+        
     }
     
     @IBAction func onCloseButton(_ sender: Any) {
@@ -88,15 +89,25 @@ extension IDS23_HViewController: DataDelegate {
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
 
+            donationsArray = donationsArray.filter {$0.estado_factura == true}
             //Considerando login/acceso de usuario
             if (givenId != "LoginDonador") {
                 donationsArray = donationsArray.filter {$0.donador.id == donator?._id}
+            } else {
+                donationsArray = [Donation]()
+                
+                if (donationsArray.isEmpty)
+                {
+                    let alertController = UIAlertController(title: "Inicia sesión!", message: "No hay ninguna donación para mostrar", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
+                    present(alertController, animated: true)
+                }
             }
             //print(donationsArray)
         } catch {
             print("Failed to decode Donations!")
         }
-        self.donationsTableView?.reloadData()
+            self.donationsTableView?.reloadData()
     }
 }
     
