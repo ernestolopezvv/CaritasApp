@@ -12,10 +12,6 @@ import FSCalendar
 
 
 class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FSCalendarDelegate {
-
-    var donator: User?
-    var fetch = false
-    var donationsArray = [Donation]()
     
     @IBOutlet weak var calendar: FSCalendar!
     
@@ -39,15 +35,15 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let formatter = DateFormatter()
         formatter.dateFormat = "YYYY-MM-dd"
         MiVariable.fechaseleccionada = formatter.string(from: date)
-        //self.calendarTableView?.clearsContextBeforeDrawing = true
-        calendarTableView.reloadData()
-        //print("\(MiVariable.fechaseleccionada)")
+        self.calendarTableView?.reloadData()
     }
     
     
-
+    var donator: User?
+    var fetch = false
     // Este archivo
-    
+    var donationsArray = [Donation]()
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Archivo siguiente IDS23_D
@@ -74,9 +70,7 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         /*if dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion) == MiVariable.fechaseleccionada{
             cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         }*/
-        
-        //cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
-        //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
+        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         //cell.textLabel?.text = donationsArray[indexPath.row]._id
         return cell
     }
@@ -97,12 +91,14 @@ extension IDS14ViewController: DataDelegate {
     
     func updateArray(newArray: String) {
         
+    
         do {
             let decoder = JSONDecoder()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
+            
             print(donationsArray)
             
         } catch {
@@ -113,3 +109,12 @@ extension IDS14ViewController: DataDelegate {
 }
 
     
+/*
+// MARK: - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Get the new view controller using segue.destination.
+    // Pass the selected object to the new view controller.
+}
+*/

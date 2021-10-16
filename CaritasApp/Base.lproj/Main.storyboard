@@ -433,7 +433,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="wSx-FZ-VKe" kind="presentation" identifier="CalendarDetailSegue" modalPresentationStyle="fullScreen" id="P4B-Dd-Tln"/>
+                                            <segue destination="wSx-FZ-VKe" kind="presentation" identifier="CalendarDetailsSegue" modalPresentationStyle="fullScreen" id="P4B-Dd-Tln"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -35,9 +35,9 @@ class IDS23_DViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         if fetch == true {
-           
+            print("hola como estamos el fethc jala")
             idLabel.text = donation!._id
             donadorLabel.text = donation!.donador.nombre
             recolectorLabel.text = donation!.recolector?.nombre
