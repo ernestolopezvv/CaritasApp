@@ -8,8 +8,14 @@
 import UIKit
 import FSCalendar
 
+
+
+
 class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FSCalendarDelegate {
-    
+
+    var donator: User?
+    var fetch = false
+    var donationsArray = [Donation]()
     
     @IBOutlet weak var calendar: FSCalendar!
     
@@ -38,19 +44,21 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         //print("\(MiVariable.fechaseleccionada)")
     }
     
+    
+
     // Este archivo
-    var donationsArray = [Donation]()
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Archivo siguiente IDS23_D
-        /*
+        
         let vc = segue.destination as! IDS23_DViewController
         
-        if segue.identifier == "calendarioPrueba" {
+        if segue.identifier == "CalendarDetailsSegue" {
             vc.donation = donationsArray[calendarTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
          
-        }*/
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,10 +71,11 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell", for: indexPath)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
-        if dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion) == MiVariable.fechaseleccionada{
+        /*if dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion) == MiVariable.fechaseleccionada{
             cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
-        }
-       
+        }*/
+        
+        //cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         //cell.textLabel?.text = donationsArray[indexPath.row]._id
         return cell
