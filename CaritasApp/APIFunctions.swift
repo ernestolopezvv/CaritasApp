@@ -40,10 +40,10 @@ class APIFunctions {
     
     
     
-    func crearDonacion(fecha_creacion:String, peso_total_reportado:String, precio_total_reportado:String) {
+    func crearDonacion(/*fecha_creacion:String, */peso_total_reportado:String, precio_total_reportado:String) {
             
-        AF.request("https://caritas-app-backend.herokuapp.com/createdonation", method: .post, encoding: URLEncoding.httpBody, headers: ["fecha_creacion": fecha_creacion, "peso_total_reportado": peso_total_reportado, "precio_total_reportado": precio_total_reportado]).responseJSON {response in
-        
+        AF.request("https://caritas-app-backend.herokuapp.com/createdonation", method: .post, encoding: URLEncoding.httpBody, headers: [/*"fecha_creacion": fecha_creacion,*/ "peso_total_reportado": peso_total_reportado, "precio_total_reportado": precio_total_reportado]).responseJSON {response in
+    
             }
         }
     

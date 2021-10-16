@@ -237,8 +237,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cP-Gi-3jV" userLabel="Row2">
                                 <rect key="frame" x="20" y="178.5" width="372.5" height="134.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Importar archivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pRU-RB-yxU">
+                                        <rect key="frame" x="-10" y="90" width="207" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17P-wc-vWk">
+                                        <rect key="frame" x="228" y="90" width="124" height="44.5"/>
+                                        <state key="normal" title="Subir Archivo"/>
+                                        <connections>
+                                            <action selector="loadFile:" destination="h91-Vw-ynT" eventType="touchUpInside" id="Hdy-nf-Mlc"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaV-IT-dyp" userLabel="Gracias">
-                                        <rect key="frame" x="-10" y="-18" width="383" height="61"/>
+                                        <rect key="frame" x="-5" y="8" width="383" height="61"/>
                                         <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                         <string key="text">¡Gracias por tu donación a Cáritas! Para registrar tu donación por favor adjunta tu archivo en formato .json e indica la fecha de recolección del paquete.
 </string>
@@ -246,19 +259,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Importar archivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pRU-RB-yxU">
-                                        <rect key="frame" x="-10" y="66" width="207" height="44.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17P-wc-vWk">
-                                        <rect key="frame" x="216" y="66" width="124" height="44.5"/>
-                                        <state key="normal" title="Subir Archivo"/>
-                                        <connections>
-                                            <action selector="loadFile:" destination="h91-Vw-ynT" eventType="touchUpInside" id="Hdy-nf-Mlc"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -278,14 +278,6 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-F3-8N0" userLabel="Row3">
                                 <rect key="frame" x="0.0" y="343" width="414" height="44.5"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IhG-Gf-aPg" userLabel="Peso Text Field">
-                                        <rect key="frame" x="40" y="0.0" width="334" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78T-Za-Tj4" userLabel="Back">
@@ -310,7 +302,7 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6KT-8g-VbU" userLabel="Loaded File">
-                                <rect key="frame" x="21" y="750" width="373" height="112"/>
+                                <rect key="frame" x="21" y="601" width="373" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -318,7 +310,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xal-N6-Buh" userLabel="Fecha Text Field">
-                                <rect key="frame" x="39" y="301" width="337" height="34"/>
+                                <rect key="frame" x="39" y="395" width="337" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -326,61 +318,25 @@
                                     <action selector="loadFile:" destination="h91-Vw-ynT" eventType="editingDidEnd" id="9Vw-xw-j5V"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCG-KT-Dby" userLabel="UPC Text Field">
-                                <rect key="frame" x="39" y="506" width="334" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWF-Z3-ta5" userLabel="Precio Total Text Field">
-                                <rect key="frame" x="39" y="384" width="337" height="34"/>
+                                <rect key="frame" x="38" y="506" width="337" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W8i-vv-svP">
-                                <rect key="frame" x="39" y="468" width="337" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-LZ-r4e" userLabel="CantidadDonada Text Field">
-                                <rect key="frame" x="39" y="545" width="337" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNu-eo-Hhe" userLabel="Precio Unitario Text Field">
-                                <rect key="frame" x="39" y="587" width="337" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gcc-ss-pG0" userLabel="PrecioTotalUnitario Text Field">
-                                <rect key="frame" x="39" y="629" width="337" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-CD-n69" userLabel="NumeroSerie Text Field">
-                                <rect key="frame" x="39" y="671" width="337" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IhG-Gf-aPg" userLabel="Peso Text Field">
+                                <rect key="frame" x="38" y="447" width="337" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8jD-hv-YPY" userLabel="Subir archivo">
-                                <rect key="frame" x="145" y="708" width="124" height="44.5"/>
+                                <rect key="frame" x="145" y="548" width="124" height="44.5"/>
                                 <state key="normal" title="Continuar"/>
                                 <connections>
                                     <action selector="subirArchivo:" destination="h91-Vw-ynT" eventType="touchUpInside" id="vsp-ca-pFU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pnh-dh-sJo" userLabel="DonadorID Text Field">
-                                <rect key="frame" x="39" y="426" width="337" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b96-at-KSR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -392,7 +348,7 @@
                             <constraint firstItem="jBF-F3-8N0" firstAttribute="leading" secondItem="b96-at-KSR" secondAttribute="leading" id="An8-Sp-qAi"/>
                             <constraint firstItem="5cP-Gi-3jV" firstAttribute="top" secondItem="gQm-KQ-M5E" secondAttribute="bottom" id="DHb-Jc-wiJ"/>
                             <constraint firstItem="jBF-F3-8N0" firstAttribute="top" secondItem="5cP-Gi-3jV" secondAttribute="bottom" constant="30" id="GOC-j3-n0n"/>
-                            <constraint firstItem="8jD-hv-YPY" firstAttribute="centerY" secondItem="Y0R-uG-IID" secondAttribute="centerY" constant="282.25" id="KJT-Sy-Q5x"/>
+                            <constraint firstItem="8jD-hv-YPY" firstAttribute="centerY" secondItem="Y0R-uG-IID" secondAttribute="centerY" constant="122.25" id="KJT-Sy-Q5x"/>
                             <constraint firstItem="jBF-F3-8N0" firstAttribute="width" secondItem="Y0R-uG-IID" secondAttribute="width" id="QVh-kP-e3Z"/>
                             <constraint firstItem="5cP-Gi-3jV" firstAttribute="width" secondItem="Y0R-uG-IID" secondAttribute="width" multiplier="0.9" id="VbS-J9-1Es"/>
                             <constraint firstItem="jBF-F3-8N0" firstAttribute="height" secondItem="Y0R-uG-IID" secondAttribute="height" multiplier="0.05" id="WNJ-4q-09D"/>
@@ -408,17 +364,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cantidadDonadaTextField" destination="rDq-LZ-r4e" id="pWd-8U-uIn"/>
-                        <outlet property="donadorIDTextField" destination="pnh-dh-sJo" id="NFz-Fi-pth"/>
                         <outlet property="fechaTextField" destination="Xal-N6-Buh" id="SAW-p8-Z6I"/>
                         <outlet property="loadedFile" destination="6KT-8g-VbU" id="eTj-hU-6kq"/>
-                        <outlet property="nombreDonadorTextField" destination="W8i-vv-svP" id="3mY-dm-ggR"/>
-                        <outlet property="numeroSerieTextField" destination="CpL-CD-n69" id="syB-T4-Kaf"/>
                         <outlet property="pesoTextField" destination="IhG-Gf-aPg" id="avR-Jx-Lcu"/>
                         <outlet property="precioTotalTextField" destination="WWF-Z3-ta5" id="1dZ-HF-DZZ"/>
-                        <outlet property="precioTotalUnitarioTextField" destination="Gcc-ss-pG0" id="ah1-wT-uZq"/>
-                        <outlet property="precioUnitarioTextField" destination="GNu-eo-Hhe" id="EhM-Xf-lZy"/>
-                        <outlet property="upcTextField" destination="DCG-KT-Dby" id="v2H-Ad-Ba8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFA-YK-DDA" sceneMemberID="firstResponder"/>

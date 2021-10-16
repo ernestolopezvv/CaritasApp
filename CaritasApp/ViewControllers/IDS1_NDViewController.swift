@@ -11,7 +11,7 @@ import UniformTypeIdentifiers
 class IDS1_NDViewController: UIViewController {
     
     
-    var Donador: Donador?
+    var Donation: Donation?
     var update = false
     
     @IBOutlet weak var fechaTextField: UITextField!
@@ -45,14 +45,14 @@ class IDS1_NDViewController: UIViewController {
         super.viewDidLoad()
         
         if update == true{
-            fechaTextField.text = Donador!.fecha_creacion
-            pesoTextField.text = Donador!.peso_total_reportado
-            precioTotalTextField.text = Donador!.precio_total_reportado
+            //fechaTextField.text = Donation?.fecha_creacion
+            pesoTextField.text = String(format: "%f", Donation!.peso_total_reportado!)
+            precioTotalTextField.text = String(format: "%f", Donation!.precio_total_reportado!)
         }
     }
     
     @IBAction func subirArchivo(_ sender: Any) {
-        APIFunctions.functions.crearDonacion(fecha_creacion: fechaTextField.text!, peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!)
+        APIFunctions.functions.crearDonacion(/*fecha_creacion: fechaTextField.text!,*/ peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!, estado_factura: "False")
                let alertController = UIAlertController(title: "Agregado!", message: "Se agrego una nueva donacion", preferredStyle: .alert)
                let OKAction = UIAlertAction(title: "OK", style: .default) {
                    (action: UIAlertAction!) in
@@ -111,9 +111,10 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
                     present(alertController, animated: true, completion: nil)
                 }
                  */
-                self.fechaTextField.text = String(readDonation.fecha_creacion)
-                self.pesoTextField.text = String(readDonation.peso_total_reportado)
-                self.precioTotalTextField.text = String(readDonation.precio_total_reportado)
+                //self.fechaTextField.text = String(readDonation.fecha_creacion)
+                self.pesoTextField.text = String(format: "%f", readDonation.peso_total_reportado!)
+                self.precioTotalTextField.text = String(format: "%f", readDonation.precio_total_reportado!)
+                
                 //self.donadorIDTextField.text = String(readDonation.donador.idUsuario!)
                 //self.nombreDonadorTextField.text = String(readDonation.donador.nombreDonador!)
                 /*self.upcTextField.text = String(readDonation.)
