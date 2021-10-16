@@ -52,7 +52,7 @@ class IDS1_NDViewController: UIViewController {
     }
     
     @IBAction func subirArchivo(_ sender: Any) {
-        APIFunctions.functions.crearDonacion(/*fecha_creacion: fechaTextField.text!,*/ peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!, estado_factura: "False")
+        APIFunctions.functions.crearDonacion(/*fecha_creacion: fechaTextField.text!,*/ peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!)
                let alertController = UIAlertController(title: "Agregado!", message: "Se agrego una nueva donacion", preferredStyle: .alert)
                let OKAction = UIAlertAction(title: "OK", style: .default) {
                    (action: UIAlertAction!) in
