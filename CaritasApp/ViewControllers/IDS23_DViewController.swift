@@ -40,12 +40,24 @@ class IDS23_DViewController: UIViewController {
            
             idLabel.text = donation!._id
             donadorLabel.text = donation!.donador.nombre
-            recolectorLabel.text = donation!.recolector?.nombre
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "YYYY-MM-dd"
-            fechaCreacionLabel.text = dateFormatter.string(from:donation!.fecha_creacion)
-            fechaRecoleccionLabel.text = dateFormatter.string(from:donation!.fecha_recepcion)
-            cantidadFacturadaLabel.text = String(donation!.precio_total_recibido)
+            recolectorLabel.text = donation!.recolector.nombre
+            
+            let stringCreacionDate = donation?.fecha_creacion
+            let dateFormatterCreacion = DateFormatter()
+            dateFormatterCreacion.dateFormat = "YYYY-MM-dd"
+            let creacionDateFormat = dateFormatterCreacion.date(from: stringCreacionDate!)
+            let newCreacionDate = dateFormatterCreacion.string(from: creacionDateFormat!)
+
+            fechaCreacionLabel.text = String(newCreacionDate)
+            
+            let stringRecepcionDate = donation?.fecha_recepcion
+            let dateFormatterRecepcion = DateFormatter()
+            dateFormatterRecepcion.dateFormat = "YYYY-MM-dd"
+            let recepcionDateFormat = dateFormatterRecepcion.date(from: stringRecepcionDate!)
+            let newRecepcionDate = dateFormatterRecepcion.string(from: recepcionDateFormat!)
+            
+            fechaRecoleccionLabel.text = String(newRecepcionDate)
+             cantidadFacturadaLabel.text = String(donation!.precio_total_recibido)
             pesoRecibidoLabel.text = String(donation!.peso_total_recibido)
             //pesoRecibidoLabel.text = donation!.articulos_donados[1].upc
         }

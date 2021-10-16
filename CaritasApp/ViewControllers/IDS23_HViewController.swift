@@ -6,11 +6,11 @@
 //
 
 import UIKit
-
+/*
 protocol DataDelegate {
     func updateArray(newArray: String)
 }
-
+*/
 
 class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -19,7 +19,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
     var fetch = false
     public var givenId: String?
     // Este archivo
-    var donationsArray = [Donation]()
+    var dArray = [Donation]()
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,24 +27,30 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         let vc = segue.destination as! IDS23_DViewController
         
         if segue.identifier == "donationDetailsSegue" {
-            vc.donation = donationsArray[donationsTableView.indexPathForSelectedRow!.row]
+            vc.donation = dArray[donationsTableView.indexPathForSelectedRow!.row]
             vc.fetch = true
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return donationsArray.count
+        return dArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath)
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd"            
+       
+       // let dateFormatter = DateFormatter()
+        //dateFormatter.dateFormat = "YYYY-MM-dd"
+        let stringRecepcionDate = dArray[indexPath.row].fecha_recepcion
+        let dateFormatterRecepcion = DateFormatter()
+        dateFormatterRecepcion.dateFormat = "YYYY-MM-dd"
+        let recepcionDateFormat = dateFormatterRecepcion.date(from: stringRecepcionDate)
+        let newRecepcionDate = dateFormatterRecepcion.string(from: recepcionDateFormat!)
         
         
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
+        cell.textLabel?.text = String(newRecepcionDate)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }
@@ -87,16 +93,16 @@ extension IDS23_HViewController: DataDelegate {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
-            donationsArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
+            dArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
 
-            donationsArray = donationsArray.filter {$0.estado_factura == true}
+            dArray = dArray.filter {$0.estado_factura == true}
             //Considerando login/acceso de usuario
             if (givenId != "LoginDonador") {
-                donationsArray = donationsArray.filter {$0.donador.id == donator?._id}
+                dArray = dArray.filter {$0.donador.id == donator?._id}
             } else {
-                donationsArray = [Donation]()
+                dArray = [Donation]()
                 
-                if (donationsArray.isEmpty)
+                if (dArray.isEmpty)
                 {
                     let alertController = UIAlertController(title: "Inicia sesión!", message: "No hay ninguna donación para mostrar", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
@@ -112,12 +118,4 @@ extension IDS23_HViewController: DataDelegate {
 }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    

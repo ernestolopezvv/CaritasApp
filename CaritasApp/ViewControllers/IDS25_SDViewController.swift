@@ -6,11 +6,13 @@
 //
 
 import UIKit
+
 /*
 protocol DataDelegate {
     func updateArray(newArray: String)
 }
- */
+*/
+
 
 class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -87,16 +89,5 @@ extension IDS25_SDViewController: DataDelegate {
         self.donatorsTableView?.reloadData()
     }
  
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

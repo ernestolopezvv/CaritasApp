@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4453EEAE271AB32100377D9B /* RecoleccionesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453EEAD271AB32100377D9B /* RecoleccionesTableViewCell.swift */; };
 		59814106271515EE00C11495 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59814105271515EE00C11495 /* User.swift */; };
 		59837B332710A73900176599 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B312710A73900176599 /* Item.swift */; };
 		59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B342710B64200176599 /* IDS25_SDViewController.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4453EEAD271AB32100377D9B /* RecoleccionesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoleccionesTableViewCell.swift; sourceTree = "<group>"; };
 		59814105271515EE00C11495 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		59837B312710A73900176599 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		59837B342710B64200176599 /* IDS25_SDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS25_SDViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				7222F310270E87880045733D /* IDS35_AViewController.swift */,
 				7222F314270E87E60045733D /* IDS35_CViewController.swift */,
 				7222F312270E87AB0045733D /* IDS35_DViewController.swift */,
+				4453EEAD271AB32100377D9B /* RecoleccionesTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				728011DE27100A090092EE00 /* IDS23_HViewController.swift in Sources */,
 				728011E027100A1E0092EE00 /* IDS23_DViewController.swift in Sources */,
 				7222F313270E87AB0045733D /* IDS35_DViewController.swift in Sources */,
+				4453EEAE271AB32100377D9B /* RecoleccionesTableViewCell.swift in Sources */,
 				C4DC316526EADAE100EDB65C /* IDS34ViewController.swift in Sources */,
 				728011DC2710084F0092EE00 /* IDS16ViewController.swift in Sources */,
 				728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */,
@@ -560,7 +564,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CaritasApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +583,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CaritasApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

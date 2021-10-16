@@ -65,7 +65,7 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         dateFormatter.dateFormat = "YYYY-MM-dd"
         //cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
-        cell.textLabel?.text = donationsArray[indexPath.row]._id
+        cell.textLabel?.text = donationsArray[indexPath.row].fecha_creacion
         return cell
     }
 

@@ -8,6 +8,12 @@
 import Foundation
 import Alamofire
 
+
+protocol DataDelegate{
+    func updateArray(newArray: String)
+    
+}
+
 class APIFunctions {
     
     var delegate: DataDelegate?
@@ -15,7 +21,7 @@ class APIFunctions {
     
     func fetchDonations() {
         
-        AF.request("https://caritas-app-backend.herokuapp.com/fetchdonacion").response {response in
+        AF.request("http://localhost:3000/donaciones/fetch").response {response in
             
             print("Response fetchDonacion")
             let data = String(data: response.data!, encoding: .utf8)
