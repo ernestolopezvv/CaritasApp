@@ -26,7 +26,7 @@ struct Donation: Decodable {
     var recolector: Recolector
     var estado_recepcion_almacen: Bool
     var estado_recepcion_chofer: Bool
-    var articulos_donados: [Articulo]
+    var articulos_donados: [Item]
     
 }
 

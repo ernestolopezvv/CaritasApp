@@ -13,15 +13,10 @@ class IDS35_CViewController: UIViewController {
     
     var chofer = "Erick Solis Mahl"
     var recolecciones = [Donation]()
+  
 
     
     @IBOutlet weak var recoleccionesTableView: UITableView!
-   
-    // MARK: Cantidad pruductos
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +25,31 @@ class IDS35_CViewController: UIViewController {
         
         recoleccionesTableView.delegate = self
         recoleccionesTableView.dataSource = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Detect wich indexPath doanation the user slected
+        let indexPath = recoleccionesTableView.indexPathForSelectedRow
+        
+        guard indexPath != nil else {
+            //The user hasn't selected anything
+            return
+        }
+        
+        // Get the Items of the Donation the user tapped on
+        let donacion = recolecciones[indexPath!.row]
+        
+        // Get the reference to the IDS16_ViewControler
+        let detailViewControler = segue.destination as! IDS16ViewController
+        
+        // Pass the donation to te IDS16_ViewContreler
+        detailViewControler.itemsList = donacion.articulos_donados
+        
+        detailViewControler.logo = donacion.donador.nombre
+        
+        
+        
     }
 
 }
