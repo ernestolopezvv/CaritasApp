@@ -11,7 +11,7 @@ import UniformTypeIdentifiers
 class IDS1_NDViewController: UIViewController {
     
     
-    var Donation: Donation?
+    var donation: Donation?
     var update = false
     
     @IBOutlet weak var fechaTextField: UITextField!
@@ -46,13 +46,14 @@ class IDS1_NDViewController: UIViewController {
         
         if update == true{
             //fechaTextField.text = Donation?.fecha_creacion
-            pesoTextField.text = String(format: "%f", Donation!.peso_total_reportado!)
-            precioTotalTextField.text = String(format: "%f", Donation!.precio_total_reportado!)
+            pesoTextField.text = String(format: "%f", donation!.peso_total_reportado!)
+            precioTotalTextField.text = String(format: "%f", donation!.precio_total_reportado!)
         }
     }
     
     @IBAction func subirArchivo(_ sender: Any) {
-        APIFunctions.functions.crearDonacion(/*fecha_creacion: fechaTextField.text!,*/ peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!, estado_factura: "False")
+        //APIFunctions.functions.crearDonacion(/*fecha_creacion: fechaTextField.text!,*/ peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!, estado_factura: "False", estado_recepcion_almacen: "False", estado_recepcion_chofer: "False", almacen_destino:"0", articulos_donados: donation!.articulos_donados!)
+        APIFunctions.functions.createDonacion(donation:donation!)
                let alertController = UIAlertController(title: "Agregado!", message: "Se agrego una nueva donacion", preferredStyle: .alert)
                let OKAction = UIAlertAction(title: "OK", style: .default) {
                    (action: UIAlertAction!) in
@@ -102,7 +103,7 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
             }
             
             do {
-                let readDonation = try fileTool.readFileAsDonation(url)
+                donation = try fileTool.readFileAsDonation(url)
                 
                 /*
                 if (readDonation.almacen_destino != Donation.almacen_destino){
@@ -112,8 +113,8 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
                 }
                  */
                 //self.fechaTextField.text = String(readDonation.fecha_creacion)
-                self.pesoTextField.text = String(format: "%f", readDonation.peso_total_reportado!)
-                self.precioTotalTextField.text = String(format: "%f", readDonation.precio_total_reportado!)
+                self.pesoTextField.text = String(format: "%f", donation!.peso_total_reportado!)
+                self.precioTotalTextField.text = String(format: "%f", donation!.precio_total_reportado!)
                 
                 //self.donadorIDTextField.text = String(readDonation.donador.idUsuario!)
                 //self.nombreDonadorTextField.text = String(readDonation.donador.nombreDonador!)

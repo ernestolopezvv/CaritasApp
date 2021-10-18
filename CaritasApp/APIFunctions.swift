@@ -40,12 +40,24 @@ class APIFunctions {
     
     
     
-    func crearDonacion(/*fecha_creacion:String, */peso_total_reportado:String, precio_total_reportado:String, estado_factura:String) {
+    func createDonacion(/*fecha_creacion:String, peso_total_reportado:String, precio_total_reportado:String, estado_factura:String, estado_recepcion_almacen: String, estado_recepcion_chofer:String, almacen_destino:String, articulos_donados: [ItemInDonation]*/donation: Donation) {
             
-        AF.request("https://caritas-app-backend.herokuapp.com/createdonation", method: .post, encoding: URLEncoding.httpBody, headers: [/*"fecha_creacion": fecha_creacion,*/ "peso_total_reportado": peso_total_reportado, "precio_total_reportado": precio_total_reportado, "estado_factura":"false"]).responseJSON {response in
+        /*AF.request("https://caritas-app-backend.herokuapp.com/createdonation", method: .post, encoding: URLEncoding.httpBody, headers: [/*"fecha_creacion": fecha_creacion,*/ "peso_total_reportado": peso_total_reportado, "precio_total_reportado": precio_total_reportado, "estado_factura":"false", "estado_recepcion_almacen":"false", "estado_recepcion_chofer":"false", "almacen_destino":"0", "articulos_donados": articulos_donados]).responseJSON {response in
     
             }
+         */
+        let url = URL(string: "https://caritas-app-backend.herokuapp.com/createdonation")
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethod.post.rawValue
+        request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
+        let encoder = JSONEncoder()
+        let jsonData = try! encoder.encode(donation)
+        request.httpBody = jsonData
+        AF.request(request).responseJSON {response in
+            print("hola")
+            print(response.data)
         }
+    }
     
     func addItem(descripcion:String, uom: String, upc: String, peso_articulo_kg: String) {
             
