@@ -8,16 +8,47 @@
 import UIKit
 
 class IDS1_APViewController: UIViewController {
-
-    @IBAction func onCloseButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-
-    }
+    
+    var item: Item?
+    var update = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if update == true {
+            
+            itemDescriptionTextField.text = item!.descripcion
+            itemUomTextField.text = item!.uom
+            itemUpcTextField.text = item!.upc
+            itemWeightTextField.text = item!.peso_articulo
+            
+            
+        }
 
-        // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onCloseButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBOutlet weak var itemWeightTextField: UITextField!
+    @IBOutlet weak var itemUpcTextField: UITextField!
+    @IBOutlet weak var itemUomTextField: UITextField!
+    
+    @IBOutlet weak var itemDescriptionTextField: UITextField!
+    
+    @IBAction func onSaveClick(_ sender: Any) {
+        APIFunctions.functions.addItem(descripcion: itemDescriptionTextField.text!, uom: itemUomTextField.text!, upc: itemUpcTextField.text!, peso_articulo_kg: itemWeightTextField.text!)
+        let alertController = UIAlertController(title: "Agregado!", message: "Se agrego un nuevo producto", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default) {
+            (action: UIAlertAction!) in
+            // Code in this block will trigger when OK button tapped.
+            print("Producto agregado");
+        }
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+}
     
 
     /*
@@ -30,4 +61,5 @@ class IDS1_APViewController: UIViewController {
     }
     */
 
-}
+
+
