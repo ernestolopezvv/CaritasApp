@@ -70,8 +70,8 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         /*if dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion) == MiVariable.fechaseleccionada{
             cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
         }*/
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
-        //cell.textLabel?.text = donationsArray[indexPath.row]._id
+        //cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
+        cell.textLabel?.text = donationsArray[indexPath.row]._id
         return cell
     }
 
