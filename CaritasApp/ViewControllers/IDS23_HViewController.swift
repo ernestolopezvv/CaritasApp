@@ -44,7 +44,7 @@ class IDS23_HViewController: UIViewController, UITableViewDelegate, UITableViewD
         dateFormatter.dateFormat = "YYYY-MM-dd"            
         
         
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
+        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion!)
         //cell.textLabel?.text = donationsArray[indexPath.row].fecha_recepcion
         return cell
     }
@@ -92,7 +92,7 @@ extension IDS23_HViewController: DataDelegate {
             donationsArray = donationsArray.filter {$0.estado_factura == true}
             //Considerando login/acceso de usuario
             if (givenId != "LoginDonador") {
-                donationsArray = donationsArray.filter {$0.donador.id == donator?._id}
+                donationsArray = donationsArray.filter {$0.donador?.id == donator?._id}
             } else {
                 donationsArray = [Donation]()
                 

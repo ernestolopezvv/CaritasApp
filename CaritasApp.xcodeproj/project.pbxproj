@@ -25,6 +25,7 @@
 		728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E327100B6F0092EE00 /* IDS17ViewController.swift */; };
 		728011E6271015260092EE00 /* IDS2_18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E5271015260092EE00 /* IDS2_18ViewController.swift */; };
 		72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */; };
+		C4602B02272095F100EEB5E0 /* DonationFileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4602B01272095F100EEB5E0 /* DonationFileTool.swift */; };
 		C47EF754271758DB00063724 /* CaritasAppIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */; };
 		C47EF75627175AE300063724 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF75527175AE300063724 /* Donation.swift */; };
 		C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316026EADAE100EDB65C /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 		728011E327100B6F0092EE00 /* IDS17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS17ViewController.swift; sourceTree = "<group>"; };
 		728011E5271015260092EE00 /* IDS2_18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS2_18ViewController.swift; sourceTree = "<group>"; };
 		72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS14ViewController.swift; sourceTree = "<group>"; };
+		C4602B01272095F100EEB5E0 /* DonationFileTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonationFileTool.swift; path = CaritasApp/DonationFileTool.swift; sourceTree = SOURCE_ROOT; };
 		C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaritasAppIntegrationTests.swift; sourceTree = "<group>"; };
 		C47EF75527175AE300063724 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
 		C4DC315D26EADAE100EDB65C /* CaritasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaritasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 		59A5E16827103745004E05A7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C4602B01272095F100EEB5E0 /* DonationFileTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				59837B332710A73900176599 /* Item.swift in Sources */,
 				C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */,
 				7222F315270E87E60045733D /* IDS35_CViewController.swift in Sources */,
+				C4602B02272095F100EEB5E0 /* DonationFileTool.swift in Sources */,
 				C47EF75627175AE300063724 /* Donation.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
 				728011E6271015260092EE00 /* IDS2_18ViewController.swift in Sources */,
