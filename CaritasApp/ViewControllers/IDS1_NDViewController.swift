@@ -46,8 +46,13 @@ class IDS1_NDViewController: UIViewController {
         
         if update == true{
             //fechaTextField.text = Donation?.fecha_creacion
+            fechaTextField.placeholder = "Fecha de la donacion"
+            pesoTextField.placeholder = "Peso total de la donacion"
+            precioTotalTextField.placeholder = "Precio total de la donacion"
             pesoTextField.text = String(format: "%f", donation!.peso_total_reportado!)
             precioTotalTextField.text = String(format: "%f", donation!.precio_total_reportado!)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/mm/yyyy"
         }
     }
     
@@ -112,7 +117,7 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
                     present(alertController, animated: true, completion: nil)
                 }
                  */
-                //self.fechaTextField.text = String(readDonation.fecha_creacion)
+                //self.fechaTextField.text = String(donation!.fecha_creacion)
                 self.pesoTextField.text = String(format: "%f", donation!.peso_total_reportado!)
                 self.precioTotalTextField.text = String(format: "%f", donation!.precio_total_reportado!)
                 

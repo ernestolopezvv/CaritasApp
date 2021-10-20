@@ -61,6 +61,16 @@ class CaritasAppIntegrationTest: XCTestCase {
                {
                   "precio_total_reportado":40.5,
                   "peso_total_reportado":44.2,
+                  "donador":{
+                      "id":"616d006345d547c02f759ebe",
+                      "nombre":"John",
+                      "apellido":"a"
+                  },
+                  "recolector":{
+                      "id": "6164926fc2c86e7e343477cb",
+                      "nombre": "Stephen",
+                      "apellido": "Strange"
+                  },
                   "articulos_donados": [
                       {
                           "_id": "616726cb608388b21951ee35",
