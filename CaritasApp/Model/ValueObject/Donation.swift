@@ -43,7 +43,7 @@ struct UserInDonation: Codable {
 }
 
 struct ItemInDonation: Codable {
-    var upc: String?
+    var UPC: String?
     var cantidad_donada: Int?
     var cantidad_recibida: Int?
     var cantidad_buen_estado: Int?
