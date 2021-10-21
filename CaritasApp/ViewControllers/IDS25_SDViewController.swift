@@ -6,16 +6,13 @@
 //
 
 import UIKit
-/*
-protocol DataDelegate {
-    func updateArray(newArray: String)
-}
- */
 
 class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //Variable que contiene todos los donadores, obtenidos de la base de datos
     var donatorsArray = [User]()
     
+    // Se prepara para la siguiente pantalla para seleccionar donación específica, además de asignar variables a utilizar
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let vc = segue.destination as! IDS23_HViewController
@@ -26,6 +23,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    //Funciones para mostrar el contenido del TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return donatorsArray.count
@@ -39,6 +37,7 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    //Hook del table View
     @IBOutlet weak var donatorsTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,12 +64,11 @@ class IDS25_SDViewController: UIViewController, UITableViewDelegate, UITableView
       
         donatorsTableView.delegate = self
         donatorsTableView.dataSource = self
-
-        // Do any additional setup after loading the view.
     }
 }
     
 
+//Se solicita la información para mostrar
 extension IDS25_SDViewController: DataDelegate {
     
     func updateArray(newArray: String) {
@@ -78,7 +76,7 @@ extension IDS25_SDViewController: DataDelegate {
         do {
             donatorsArray = try JSONDecoder().decode([User].self, from: newArray.data(using: .utf8)!)
             print(donatorsArray)
-            //Almacenar solo los usuarios que son donadores
+            //Filtro para almacenar solo los usuarios que son donadores
             donatorsArray = donatorsArray.filter{$0.rol == "Donador"}
             //print(donatorsArray)
         } catch {
@@ -86,17 +84,5 @@ extension IDS25_SDViewController: DataDelegate {
         }
         self.donatorsTableView?.reloadData()
     }
- 
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
