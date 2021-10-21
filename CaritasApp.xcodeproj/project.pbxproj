@@ -22,8 +22,8 @@
 		728011DE27100A090092EE00 /* IDS23_HViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DD27100A090092EE00 /* IDS23_HViewController.swift */; };
 		728011E027100A1E0092EE00 /* IDS23_DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DF27100A1E0092EE00 /* IDS23_DViewController.swift */; };
 		728011E227100AC10092EE00 /* IDS1_APViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E127100AC10092EE00 /* IDS1_APViewController.swift */; };
-		728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E327100B6F0092EE00 /* IDS17ViewController.swift */; };
-		728011E6271015260092EE00 /* IDS2_18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E5271015260092EE00 /* IDS2_18ViewController.swift */; };
+		728011E427100B6F0092EE00 /* IDS17_RDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E327100B6F0092EE00 /* IDS17_RDViewController.swift */; };
+		728011E6271015260092EE00 /* IDS2_17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011E5271015260092EE00 /* IDS2_17ViewController.swift */; };
 		72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */; };
 		C4602B02272095F100EEB5E0 /* DonationFileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4602B01272095F100EEB5E0 /* DonationFileTool.swift */; };
 		C47EF754271758DB00063724 /* CaritasAppIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */; };
@@ -68,8 +68,8 @@
 		728011DD27100A090092EE00 /* IDS23_HViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS23_HViewController.swift; sourceTree = "<group>"; };
 		728011DF27100A1E0092EE00 /* IDS23_DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS23_DViewController.swift; sourceTree = "<group>"; };
 		728011E127100AC10092EE00 /* IDS1_APViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS1_APViewController.swift; sourceTree = "<group>"; };
-		728011E327100B6F0092EE00 /* IDS17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS17ViewController.swift; sourceTree = "<group>"; };
-		728011E5271015260092EE00 /* IDS2_18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS2_18ViewController.swift; sourceTree = "<group>"; };
+		728011E327100B6F0092EE00 /* IDS17_RDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS17_RDViewController.swift; sourceTree = "<group>"; };
+		728011E5271015260092EE00 /* IDS2_17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS2_17ViewController.swift; sourceTree = "<group>"; };
 		72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDS14ViewController.swift; sourceTree = "<group>"; };
 		C4602B01272095F100EEB5E0 /* DonationFileTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonationFileTool.swift; path = CaritasApp/DonationFileTool.swift; sourceTree = SOURCE_ROOT; };
 		C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaritasAppIntegrationTests.swift; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 				728011D5271000D00092EE00 /* IDS1_NDViewController.swift */,
 				72892AF2270D7EC300F05E5F /* IDS14ViewController.swift */,
 				728011DB2710084F0092EE00 /* IDS16ViewController.swift */,
-				728011E327100B6F0092EE00 /* IDS17ViewController.swift */,
-				728011E5271015260092EE00 /* IDS2_18ViewController.swift */,
+				728011E327100B6F0092EE00 /* IDS17_RDViewController.swift */,
+				728011E5271015260092EE00 /* IDS2_17ViewController.swift */,
 				728011DF27100A1E0092EE00 /* IDS23_DViewController.swift */,
 				728011DD27100A090092EE00 /* IDS23_HViewController.swift */,
 				728011D7271001420092EE00 /* IDS25ViewController.swift */,
@@ -371,7 +371,7 @@
 				7222F313270E87AB0045733D /* IDS35_DViewController.swift in Sources */,
 				C4DC316526EADAE100EDB65C /* IDS34ViewController.swift in Sources */,
 				728011DC2710084F0092EE00 /* IDS16ViewController.swift in Sources */,
-				728011E427100B6F0092EE00 /* IDS17ViewController.swift in Sources */,
+				728011E427100B6F0092EE00 /* IDS17_RDViewController.swift in Sources */,
 				59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */,
 				59814106271515EE00C11495 /* User.swift in Sources */,
 				728011D8271001420092EE00 /* IDS25ViewController.swift in Sources */,
@@ -382,7 +382,7 @@
 				C4602B02272095F100EEB5E0 /* DonationFileTool.swift in Sources */,
 				C47EF75627175AE300063724 /* Donation.swift in Sources */,
 				C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */,
-				728011E6271015260092EE00 /* IDS2_18ViewController.swift in Sources */,
+				728011E6271015260092EE00 /* IDS2_17ViewController.swift in Sources */,
 				59837B3B2710CB7500176599 /* APIFunctions.swift in Sources */,
 				72892AF3270D7EC300F05E5F /* IDS14ViewController.swift in Sources */,
 				728011E227100AC10092EE00 /* IDS1_APViewController.swift in Sources */,
