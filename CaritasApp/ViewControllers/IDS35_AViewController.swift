@@ -10,6 +10,7 @@ import FSCalendar
 
 class IDS35_AViewController: UIViewController {
     
+    //Asignaciones de diferentes segues a cada botón mediante hooks
     @IBAction func onGoButtonDonation(_ sender: Any) {
         performSegue(withIdentifier: "AdminToDonation", sender: self)
     }

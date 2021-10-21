@@ -13,6 +13,7 @@ class IDS23_DViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //Variables asignadas antes de acceder a esta pantalla
     var donation: Donation?
     var fetch = false
     
@@ -26,13 +27,7 @@ class IDS23_DViewController: UIViewController {
     @IBOutlet weak var pesoRecibidoLabel: UILabel!
 
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-
-    }
-    
-    
+    //Asignacion de valores para mostrar en el interfaz mediante el uso de hooks
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,17 +44,6 @@ class IDS23_DViewController: UIViewController {
             pesoRecibidoLabel.text = String(format: "%f",donation!.peso_total_recibido!)
             //pesoRecibidoLabel.text = donation!.articulos_donados[1].upc
         }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     }
 
 }
