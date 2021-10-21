@@ -8,15 +8,43 @@
 import UIKit
 
 class IDS16ViewController: UIViewController {
+    
+    var donacion:Donation?
+    var fecha = String()
+    var peso = Double()
 
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBOutlet weak var fechaRecoleccionLabel: UILabel!
+    
+    @IBOutlet weak var pesoDonacionLabel: UILabel!
+    
+    @IBOutlet weak var donadorLabel: UILabel!
+    
+    @IBOutlet weak var almacenLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "YYYY-MM-dd"
+        
+        fecha = dateFormater.string(from: (donacion?.fecha_creacion)!)
+        
+        peso = (donacion?.peso_total_reportado)!
+        
+        fechaRecoleccionLabel.text = fecha
+        pesoDonacionLabel.text = String(peso)
+        
+        donadorLabel.text = donacion?.donador?.nombre
+        
+        almacenLabel.text = donacion?.almacen_destino
+        
     }
     
 
