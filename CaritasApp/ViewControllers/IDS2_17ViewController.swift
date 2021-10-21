@@ -62,7 +62,7 @@ class IDS2_17ViewController: UIViewController, UITableViewDelegate, UITableViewD
         alertController.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil/*{action in self.performSegue(withIdentifier: "receiveDonationSegue", sender: self) }*/))
         present(alertController, animated: true)
         print("Print de donacion")
-        //print(donation?.articulos_donados?[0].cantidad_recibida)
+        print(donation?.articulos_donados?[0].cantidad_recibida)
         
         
     }

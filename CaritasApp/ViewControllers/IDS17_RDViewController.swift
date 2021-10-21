@@ -39,13 +39,14 @@ class IDS17_RDViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath) as! prueba
+        let cell = tableView.dequeueReusableCell(withIdentifier: "donationsCell", for: indexPath) as! selectDonationCell
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
         
         
-        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion)
-        cell.nameLabel.text = donationsArray[indexPath.row].donador.nombre
+        cell.textLabel?.text = dateFormatter.string(from: donationsArray[indexPath.row].fecha_recepcion!)
+        cell.nameLabel.text = donationsArray[indexPath.row].donador?.nombre
         
         
         //cell.donado
