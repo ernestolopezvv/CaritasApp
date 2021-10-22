@@ -99,7 +99,7 @@ class APIFunctions {
     //Asignar almaen 
     func asignarAlmacen(donation: Donation) {
             
-            let url = URL(string: "https://caritas-app-backend.herokuapp.com/updatedonation")
+            let url = URL(string: "https://caritas-app-backend.herokuapp.com/updatealmacen")
             var request = URLRequest(url: url!)
             request.httpMethod = HTTPMethod.put.rawValue
             request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")

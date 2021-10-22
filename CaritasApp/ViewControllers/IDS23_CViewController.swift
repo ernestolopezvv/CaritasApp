@@ -17,7 +17,7 @@ class IDS23_CViewController: UIViewController {
     var donation: Donation?
     var fetch = false
     
-    
+    // Fetch de los datos generales de la donacion
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var donadorLabel: UILabel!
     @IBOutlet weak var recolectorLabel: UILabel!
@@ -25,7 +25,7 @@ class IDS23_CViewController: UIViewController {
     @IBOutlet weak var fechaRecoleccionLabel: UILabel!
     @IBOutlet weak var cantidadFacturadaLabel: UILabel!
     @IBOutlet weak var pesoRecibidoLabel: UILabel!
-
+    @IBOutlet weak var almacenDestinoTextField: UITextField!
     
     //Asignacion de valores para mostrar en el interfaz mediante el uso de hooks
     override func viewDidLoad() {
@@ -43,7 +43,18 @@ class IDS23_CViewController: UIViewController {
             cantidadFacturadaLabel.text = String(format: "%f",donation!.precio_total_recibido!)
             pesoRecibidoLabel.text = String(format: "%f",donation!.peso_total_recibido!)
             //pesoRecibidoLabel.text = donation!.articulos_donados[1].upc
+            almacenDestinoTextField.text = donation!.almacen_destino!
         }
     }
-
+    
+    // Se asigna el nuevo valor del almacen en un textfield y se llama a la función del APIFunctions
+    // para actualizarlo en la base de datos
+    @IBAction func updateAlmacen(_ sender: Any) {
+        donation?.almacen_destino = almacenDestinoTextField.text
+        APIFunctions.functions.asignarAlmacen(donation: donation!)
+        
+        let alertController = UIAlertController(title: "Almacen destino actualizado", message: "Regresa al menu principal", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil/*{action in self.performSegue(withIdentifier: "receiveDonationSegue", sender: self) }*/))
+        present(alertController, animated: true)
+    }
 }

@@ -2,7 +2,7 @@
 //  IDS1_NDViewController.swift
 //  CaritasApp
 //
-//  Created by Santiago A.A.M on 07/10/21.
+//  Created by Ernesto López on 07/10/21.
 //
 
 import UIKit
@@ -14,41 +14,19 @@ class IDS1_NDViewController: UIViewController {
     var donation: Donation?
     var update = false
     
-    @IBOutlet weak var fechaTextField: UITextField!
-
+    // Conexiones con el storyboard
     @IBOutlet weak var pesoTotalTextField: UITextField!
-    
     @IBOutlet weak var precioTotalTextField: UITextField!
-    
-    @IBOutlet weak var donadorIDTextField: UITextField!
-    
-    @IBOutlet weak var nombreDonadorTextField: UITextField!
-    
-    @IBOutlet weak var upcTextField: UITextField!
-    
-    @IBOutlet weak var cantidadDonadaTextField: UITextField!
-    
-    @IBOutlet weak var precioUnitarioTextField: UITextField!
-    
-    @IBOutlet weak var precioTotalUnitarioTextField: UITextField!
-    
-    
-    @IBOutlet weak var numeroSerieTextField: UITextField!
-    
     @IBOutlet weak var loadedFile: UITextView!
-    
     @IBAction func onCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
 
-    
+    // Cuando se cargue un archivo se remarcaran en dos TextFields los valores del peso y precio
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if update == true{
-            //fechaTextField.text = Donation?.fecha_creacion
-            fechaTextField.placeholder = "Fecha de la donacion"
             pesoTotalTextField.placeholder = "Peso total de la donacion"
             precioTotalTextField.placeholder = "Precio total de la donacion"
             pesoTotalTextField.text = String(format: "%f", donation!.peso_total_reportado!)
@@ -58,10 +36,10 @@ class IDS1_NDViewController: UIViewController {
         }
     }
     
+    // Al momento de aceptar la donación se mandará a la base de datos con la funcion del APIFunctions
     @IBAction func subirArchivo(_ sender: Any) {
-        //APIFunctions.functions.crearDonacion(/*fecha_creacion: fechaTextField.text!,*/ peso_total_reportado: pesoTextField.text!, precio_total_reportado: precioTotalTextField.text!, estado_factura: "False", estado_recepcion_almacen: "False", estado_recepcion_chofer: "False", almacen_destino:"0", articulos_donados: donation!.articulos_donados!)
         APIFunctions.functions.createDonacion(donation:donation!)
-               let alertController = UIAlertController(title: "Agregado!", message: "Se agrego una nueva donacion", preferredStyle: .alert)
+               let alertController = UIAlertController(title: "Agregado", message: "Se agrego una nueva donacion", preferredStyle: .alert)
                let OKAction = UIAlertAction(title: "OK", style: .default) {
                    (action: UIAlertAction!) in
                    // Code in this block will trigger when OK button tapped.
@@ -73,7 +51,8 @@ class IDS1_NDViewController: UIViewController {
            }
 
     
-    
+    // Imprime en un textView toda la información contenida en el JSON, esto para que el usuario
+    // pueda verificar que los datos introducidos hayan sido los correctos.
     @IBAction func loadFile(_ sender: UIButton) {
         let supportedTypes: [UTType] = [UTType.json]
         let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: supportedTypes, asCopy: true)
@@ -82,13 +61,10 @@ class IDS1_NDViewController: UIViewController {
          documentPicker.modalPresentationStyle = .fullScreen
          present(documentPicker, animated: true, completion: nil)
     }
-    
-
-
-        // APIFunctions.functions.crearDonacion(almacen_destino: "1")
-    
 }
 
+    // Le permite al usuario importar un documento dentro del teléfono a la aplicación, así como
+    // leer en diferentes formatos la información.
 extension IDS1_NDViewController: UIDocumentPickerDelegate {
     public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
 
@@ -111,32 +87,12 @@ extension IDS1_NDViewController: UIDocumentPickerDelegate {
             
             do {
                 donation = try fileTool.readFileAsDonation(url)
-                
-                /*
-                if (readDonation.almacen_destino != Donation.almacen_destino){
-                    let alertController = UIAlertController(title: "Error", message: "Invalid Unit", preferredStyle: UIAlertController.Style.alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                    present(alertController, animated: true, completion: nil)
-                }
-                 */
-                //self.fechaTextField.text = String(donation!.fecha_creacion)
                 self.pesoTotalTextField.text = String(format: "%f", donation!.peso_total_reportado!)
                 self.precioTotalTextField.text = String(format: "%f", donation!.precio_total_reportado!)
-                
-                //self.donadorIDTextField.text = String(readDonation.donador.idUsuario!)
-                //self.nombreDonadorTextField.text = String(readDonation.donador.nombreDonador!)
-                /*self.upcTextField.text = String(readDonation.)
-                self.cantidadDonadaTextField.text = String(format: "%f", readDonation.cantidad_donada!)
-                self.precioUnitarioTextField.text = String(format: "%f", readDonation.precio_unitario!)
-                self.precioTotalUnitarioTextField.text = String(format: "%f", readDonation.precio_total_unidades!)
-                self.numeroSerieTextField.text = String(readDonation.numero_serie_externo!)
-                 */
-                
             } catch {
                 print("error trying to convert data to JSON")
             }
         }
-
         controller.dismiss(animated: true)
     }
         
