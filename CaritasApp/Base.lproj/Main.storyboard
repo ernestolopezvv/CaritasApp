@@ -2497,37 +2497,10 @@
                                                     <constraint firstItem="PvC-fg-T6e" firstAttribute="top" secondItem="eH8-as-0Be" secondAttribute="top" id="xE8-qv-2bp"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkb-KU-mqf" userLabel="Row8">
-                                                <rect key="frame" x="-0.5" y="427" width="336.5" height="20.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso registrado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O44-MF-Iiz" userLabel="Almacen destino">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2V-i0-1mI" userLabel="almacen">
-                                                        <rect key="frame" x="140" y="-7" width="168.5" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="N2V-i0-1mI" firstAttribute="height" secondItem="Rkb-KU-mqf" secondAttribute="height" multiplier="1.25854" id="0jE-vV-0Cc"/>
-                                                    <constraint firstItem="O44-MF-Iiz" firstAttribute="leading" secondItem="Rkb-KU-mqf" secondAttribute="leading" id="0tU-UJ-LuZ"/>
-                                                    <constraint firstItem="N2V-i0-1mI" firstAttribute="leading" secondItem="Rkb-KU-mqf" secondAttribute="leading" constant="140" id="FSF-Af-aMl"/>
-                                                    <constraint firstItem="O44-MF-Iiz" firstAttribute="height" secondItem="Rkb-KU-mqf" secondAttribute="height" id="fdp-lW-BzF"/>
-                                                    <constraint firstItem="O44-MF-Iiz" firstAttribute="width" secondItem="Rkb-KU-mqf" secondAttribute="width" multiplier="0.41" id="in7-Xp-kTp"/>
-                                                    <constraint firstItem="O44-MF-Iiz" firstAttribute="top" secondItem="Rkb-KU-mqf" secondAttribute="top" id="mMB-VM-8L0"/>
-                                                    <constraint firstItem="N2V-i0-1mI" firstAttribute="width" secondItem="Rkb-KU-mqf" secondAttribute="width" multiplier="0.5" id="sb2-2L-U0d"/>
-                                                </constraints>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="OBh-gO-PrT" firstAttribute="top" secondItem="AtN-0c-XsR" secondAttribute="bottom" multiplier="1.1" id="0LX-iU-t7z"/>
-                                            <constraint firstItem="Rkb-KU-mqf" firstAttribute="leading" secondItem="g8X-AY-ZbV" secondAttribute="leading" constant="-0.5" id="0eu-tT-vh7"/>
                                             <constraint firstItem="OBh-gO-PrT" firstAttribute="leading" secondItem="g8X-AY-ZbV" secondAttribute="leading" id="1qC-oH-UlX"/>
                                             <constraint firstItem="AtN-0c-XsR" firstAttribute="top" secondItem="oUb-l6-4Ex" secondAttribute="bottom" multiplier="1.1" id="2nh-LW-epl"/>
                                             <constraint firstItem="oUb-l6-4Ex" firstAttribute="top" secondItem="tQe-it-Suz" secondAttribute="bottom" multiplier="1.1" id="32g-ms-Nof"/>
@@ -2542,12 +2515,9 @@
                                             <constraint firstItem="ejn-3d-OFV" firstAttribute="width" secondItem="g8X-AY-ZbV" secondAttribute="width" id="HdE-kW-IfS"/>
                                             <constraint firstItem="1RO-MG-WNI" firstAttribute="top" secondItem="ejn-3d-OFV" secondAttribute="bottom" multiplier="1.1" id="K0i-zi-59u"/>
                                             <constraint firstItem="AtN-0c-XsR" firstAttribute="leading" secondItem="g8X-AY-ZbV" secondAttribute="leading" id="Pgw-5R-W1w"/>
-                                            <constraint firstItem="Rkb-KU-mqf" firstAttribute="top" secondItem="eH8-as-0Be" secondAttribute="bottom" multiplier="1.1" id="TEk-7P-anG"/>
                                             <constraint firstItem="1RO-MG-WNI" firstAttribute="leading" secondItem="g8X-AY-ZbV" secondAttribute="leading" id="XZk-7G-TlW"/>
-                                            <constraint firstItem="Rkb-KU-mqf" firstAttribute="centerX" secondItem="eH8-as-0Be" secondAttribute="centerX" id="YpB-2L-cFy"/>
                                             <constraint firstItem="ejn-3d-OFV" firstAttribute="top" secondItem="OBh-gO-PrT" secondAttribute="bottom" multiplier="1.1" id="ZBK-Kk-1PE"/>
                                             <constraint firstItem="tQe-it-Suz" firstAttribute="top" secondItem="g8X-AY-ZbV" secondAttribute="top" id="cSF-x9-xsm"/>
-                                            <constraint firstAttribute="bottom" secondItem="Rkb-KU-mqf" secondAttribute="bottom" constant="-38.5" id="dVz-A4-YAw"/>
                                             <constraint firstItem="eH8-as-0Be" firstAttribute="width" secondItem="g8X-AY-ZbV" secondAttribute="width" id="haM-tU-Iws"/>
                                             <constraint firstItem="oUb-l6-4Ex" firstAttribute="leading" secondItem="g8X-AY-ZbV" secondAttribute="leading" id="mZB-RM-VF5"/>
                                             <constraint firstItem="ejn-3d-OFV" firstAttribute="height" secondItem="g8X-AY-ZbV" secondAttribute="height" multiplier="0.1" id="nbS-PW-OD2"/>
@@ -2561,10 +2531,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-Sg-Wq6" userLabel="Row3">
-                                        <rect key="frame" x="19" y="656.5" width="335" height="164"/>
+                                        <rect key="frame" x="19" y="602" width="335" height="163.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1qV-zQ-Xzb">
-                                                <rect key="frame" x="83.5" y="0.0" width="168" height="33"/>
+                                                <rect key="frame" x="83.5" y="0.0" width="168" height="32.5"/>
                                                 <state key="normal" title="Confirmar"/>
                                             </button>
                                         </subviews>
@@ -2616,7 +2586,7 @@
                                     <constraint firstItem="up5-Ju-5f6" firstAttribute="height" secondItem="FS6-dT-wQs" secondAttribute="height" multiplier="0.08" id="oHi-CW-0I7"/>
                                     <constraint firstItem="g8X-AY-ZbV" firstAttribute="height" secondItem="FS6-dT-wQs" secondAttribute="height" multiplier="0.5" id="qkc-VF-oUx"/>
                                     <constraint firstItem="wdV-Sg-Wq6" firstAttribute="width" secondItem="FS6-dT-wQs" secondAttribute="width" multiplier="0.9" id="us1-ge-1uD"/>
-                                    <constraint firstItem="wdV-Sg-Wq6" firstAttribute="top" secondItem="g8X-AY-ZbV" secondAttribute="bottom" multiplier="1.2" id="zLC-Ow-PS3"/>
+                                    <constraint firstItem="wdV-Sg-Wq6" firstAttribute="top" secondItem="g8X-AY-ZbV" secondAttribute="bottom" multiplier="1.1" id="zLC-Ow-PS3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2631,8 +2601,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="F8L-uK-kVj"/>
                     <connections>
-                        <outlet property="almacenDestinoLabel" destination="FS6-dT-wQs" id="vUe-Kk-E3j"/>
-                        <outlet property="almacenDestinoTextField" destination="N2V-i0-1mI" id="RvL-8k-9AX"/>
                         <outlet property="cantidadFacturadaLabel" destination="mrm-1Q-4nQ" id="24I-kA-I1K"/>
                         <outlet property="donadorLabel" destination="NOI-w8-kCG" id="KAh-mN-MqB"/>
                         <outlet property="fechaCreacionLabel" destination="0bd-Hf-yGp" id="Ixp-Sg-vAY"/>
