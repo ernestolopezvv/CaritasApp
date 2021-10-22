@@ -56,8 +56,8 @@ class IDS2_17ViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         APIFunctions.functions.receiveDonation(donation: donation!)
         
-        let alertController = UIAlertController(title: "!", message: "Aparece después de ejecutar updateDonation", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil/*{action in self.performSegue(withIdentifier: "receiveDonationSegue", sender: self) }*/))
+        let alertController = UIAlertController(title: "!", message: "Donación recibida.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Regresa al menu principal", style: .default, handler: nil/*{action in self.performSegue(withIdentifier: "receiveDonationSegue", sender: self) }*/))
         present(alertController, animated: true)
         print("Print de donacion")
         print(donation?.articulos_donados?[0].cantidad_recibida)

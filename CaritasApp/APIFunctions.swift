@@ -96,6 +96,22 @@ class APIFunctions {
             }
         }
     
+    //Asignar almaen 
+    func asignarAlmacen(donation: Donation) {
+            
+            let url = URL(string: "https://caritas-app-backend.herokuapp.com/updatedonation")
+            var request = URLRequest(url: url!)
+            request.httpMethod = HTTPMethod.put.rawValue
+            request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
+            let encoder = JSONEncoder()
+            let jsonData = try! encoder.encode(donation)
+            request.httpBody = jsonData
+            AF.request(request).responseJSON {response in
+                print("hola")
+                print(response.data)
+            }
+        }
+    
     //Se añade un nuevo artículo
     func addItem(descripcion:String, uom: String, upc: String, peso_articulo_kg: String) {
         
