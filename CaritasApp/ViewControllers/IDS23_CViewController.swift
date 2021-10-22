@@ -26,6 +26,8 @@ class IDS23_CViewController: UIViewController {
     @IBOutlet weak var cantidadFacturadaLabel: UILabel!
     @IBOutlet weak var pesoRecibidoLabel: UILabel!
 
+    @IBOutlet weak var almacenDestinoTextField: UITextField!
+    
     
     //Asignacion de valores para mostrar en el interfaz mediante el uso de hooks
     override func viewDidLoad() {
@@ -43,6 +45,8 @@ class IDS23_CViewController: UIViewController {
             cantidadFacturadaLabel.text = String(format: "%f",donation!.precio_total_recibido!)
             pesoRecibidoLabel.text = String(format: "%f",donation!.peso_total_recibido!)
             //pesoRecibidoLabel.text = donation!.articulos_donados[1].upc
+            almacenDestinoTextField.text = donation!.almacen_destino!
+
         }
     }
 
