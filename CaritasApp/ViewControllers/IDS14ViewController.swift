@@ -45,7 +45,7 @@ class IDS14ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let vc = segue.destination as! IDS23_DViewController
+        let vc = segue.destination as! IDS23_CViewController
         
         if segue.identifier == "CalendarDetailsSegue" {
             vc.donation = donationsArray[calendarTableView.indexPathForSelectedRow!.row]
