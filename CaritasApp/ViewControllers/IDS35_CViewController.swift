@@ -10,9 +10,10 @@ import UIKit
 class IDS35_CViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
-    
+    // Recibe las donaciones
     var donacionesArray = [Donation]()
     
+    // Informacion detallada de cada donacion en nueva pantalla
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let vc = segue.destination as! IDS16ViewController
@@ -44,8 +45,10 @@ class IDS35_CViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // llama al endpoint Fetchdonacion
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchDonations()
+        
         
         donacionesTableView.delegate = self
         donacionesTableView.dataSource = self
@@ -56,11 +59,12 @@ class IDS35_CViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(donacionesArray.count)
+    
         return donacionesArray.count
         
     }
     
+    //Crea una lista de Donaciones
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recoleccionesCell", for: indexPath)
         
@@ -84,6 +88,7 @@ class IDS35_CViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 extension IDS35_CViewController: DataDelegate{
     
+    //Llena los datos en una array
     func updateArray(newArray: String) {
         
         do {
@@ -92,8 +97,7 @@ extension IDS35_CViewController: DataDelegate{
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             donacionesArray = try decoder.decode([Donation].self, from: newArray.data(using: .utf8)!)
-            
-            //print(donacionesArray)
+           
             
         } catch {
             print("Failed to decode Donations!")

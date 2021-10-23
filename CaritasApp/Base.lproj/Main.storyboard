@@ -1722,8 +1722,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHs-ZC-H3L" userLabel="Row1">
                                         <rect key="frame" x="0.0" y="-11" width="352" height="232"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAq-HK-CK1">
-                                                <rect key="frame" x="0.0" y="0.0" width="352" height="232"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAq-HK-CK1">
+                                                <rect key="frame" x="0.0" y="18" width="352" height="214"/>
                                                 <string key="text">¡Bievenido Pedro Antonio García! Estas son las donaciones que han sido asignado a ti. Dale click a la que te interese conocer más detalles</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1800,7 +1800,7 @@
                             <constraint firstItem="JP9-jR-DJL" firstAttribute="centerX" secondItem="20P-5V-cYi" secondAttribute="centerX" id="byG-gL-m6U"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2XG-cS-lHK"/>
+                    <navigationItem key="navigationItem" title="Recolecciones" id="2XG-cS-lHK"/>
                     <connections>
                         <outlet property="donacionesTableView" destination="Nsw-GN-Tw9" id="Mt5-Rp-5Cj"/>
                         <segue destination="fTK-Sr-luu" kind="presentation" identifier="DriverToDonationInfo" modalPresentationStyle="fullScreen" id="s2r-5Z-3A1"/>

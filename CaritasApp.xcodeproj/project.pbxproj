@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449DA14227239DB300E12E24 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 449DA14127239DB300E12E24 /* FSCalendar */; };
+		449DA14427239DB900E12E24 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 449DA14327239DB900E12E24 /* Alamofire */; };
+		449DA1462723A1A200E12E24 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59814105271515EE00C11495 /* User.swift */; };
+		449DA1472723A1A200E12E24 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B312710A73900176599 /* Item.swift */; };
+		449DA1482723A1A200E12E24 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF75527175AE300063724 /* Donation.swift */; };
+		449DA1492723A1AF00E12E24 /* IDS16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728011DB2710084F0092EE00 /* IDS16ViewController.swift */; };
+		449DA14A2723A1BA00E12E24 /* IDS35_CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222F314270E87E60045733D /* IDS35_CViewController.swift */; };
+		449DA14B2723A1E600E12E24 /* IDS34ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */; };
+		449DA14C2723A28700E12E24 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B3A2710CB7500176599 /* APIFunctions.swift */; };
+		449DA14D2723A35C00E12E24 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316626EADAE100EDB65C /* Main.storyboard */; };
 		59814106271515EE00C11495 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59814105271515EE00C11495 /* User.swift */; };
 		59837B332710A73900176599 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B312710A73900176599 /* Item.swift */; };
 		59837B352710B64200176599 /* IDS25_SDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59837B342710B64200176599 /* IDS25_SDViewController.swift */; };
@@ -112,12 +122,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449DA14227239DB300E12E24 /* FSCalendar in Frameworks */,
+				449DA14427239DB900E12E24 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		449DA14027239DB300E12E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		59837B2F2710A73900176599 /* ValueObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +204,7 @@
 				C4DC317626EADAE300EDB65C /* CaritasAppTests */,
 				C4DC318126EADAE300EDB65C /* CaritasAppUITests */,
 				C4DC315E26EADAE100EDB65C /* Products */,
+				449DA14027239DB300E12E24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +307,10 @@
 				C4DC318026EADAE300EDB65C /* PBXTargetDependency */,
 			);
 			name = CaritasAppUITests;
+			packageProductDependencies = (
+				449DA14127239DB300E12E24 /* FSCalendar */,
+				449DA14327239DB900E12E24 /* Alamofire */,
+			);
 			productName = CaritasAppUITests;
 			productReference = C4DC317E26EADAE300EDB65C /* CaritasAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -406,6 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449DA14D2723A35C00E12E24 /* Main.storyboard in Sources */,
+				449DA14C2723A28700E12E24 /* APIFunctions.swift in Sources */,
+				449DA14B2723A1E600E12E24 /* IDS34ViewController.swift in Sources */,
+				449DA14A2723A1BA00E12E24 /* IDS35_CViewController.swift in Sources */,
+				449DA1492723A1AF00E12E24 /* IDS16ViewController.swift in Sources */,
+				449DA1462723A1A200E12E24 /* User.swift in Sources */,
+				449DA1472723A1A200E12E24 /* Item.swift in Sources */,
+				449DA1482723A1A200E12E24 /* Donation.swift in Sources */,
 				C4DC318326EADAE300EDB65C /* CaritasAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,7 +600,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CaritasApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,7 +619,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CaritasApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -740,6 +772,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		449DA14127239DB300E12E24 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728011D2270FFCFD0092EE00 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		449DA14327239DB900E12E24 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59837B362710C8C800176599 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		59837B372710C8C800176599 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 59837B362710C8C800176599 /* XCRemoteSwiftPackageReference "Alamofire" */;
