@@ -43,7 +43,6 @@ class CaritasAppIntegrationTest: XCTestCase {
             // Then
             XCTAssertEqual(user._id, "6163d2c2c2c86e7e3434779a")
             XCTAssertEqual(user.apellidos, "Rogers")
-            XCTAssertEqual(user.contrasena, "capitanamerica")
             XCTAssertEqual(user.correo, "capitan@gmail.com")
             XCTAssertEqual(user.entidad, "Caritas")
             XCTAssertEqual(user.nombres, "Steve")
@@ -54,7 +53,7 @@ class CaritasAppIntegrationTest: XCTestCase {
         }
     }
     
-    func testDecodeDonation() throws {
+    func testDecodeDonador() throws {
                 // Given
             let json: String = """
                 [
@@ -117,4 +116,8 @@ class CaritasAppIntegrationTest: XCTestCase {
                 XCTFail("error info: \(error)")
             }
         }
+    
+
+    
+
 }

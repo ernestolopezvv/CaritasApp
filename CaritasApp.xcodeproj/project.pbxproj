@@ -39,6 +39,7 @@
 		C4602B02272095F100EEB5E0 /* DonationFileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4602B01272095F100EEB5E0 /* DonationFileTool.swift */; };
 		C47EF754271758DB00063724 /* CaritasAppIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */; };
 		C47EF75627175AE300063724 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EF75527175AE300063724 /* Donation.swift */; };
+		C4B07E272725E8C10082E700 /* CaritasAppServicePerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07E262725E8C10082E700 /* CaritasAppServicePerformanceTests.swift */; };
 		C4DC316126EADAE100EDB65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316026EADAE100EDB65C /* AppDelegate.swift */; };
 		C4DC316326EADAE100EDB65C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316226EADAE100EDB65C /* SceneDelegate.swift */; };
 		C4DC316526EADAE100EDB65C /* IDS34ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC316426EADAE100EDB65C /* IDS34ViewController.swift */; };
@@ -86,6 +87,7 @@
 		C4602B01272095F100EEB5E0 /* DonationFileTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonationFileTool.swift; path = CaritasApp/DonationFileTool.swift; sourceTree = SOURCE_ROOT; };
 		C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaritasAppIntegrationTests.swift; sourceTree = "<group>"; };
 		C47EF75527175AE300063724 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		C4B07E262725E8C10082E700 /* CaritasAppServicePerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaritasAppServicePerformanceTests.swift; sourceTree = "<group>"; };
 		C4DC315D26EADAE100EDB65C /* CaritasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaritasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DC316026EADAE100EDB65C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DC316226EADAE100EDB65C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				C4DC317926EADAE300EDB65C /* Info.plist */,
 				C47EF753271758DB00063724 /* CaritasAppIntegrationTests.swift */,
+				C4B07E262725E8C10082E700 /* CaritasAppServicePerformanceTests.swift */,
 			);
 			path = CaritasAppTests;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B07E272725E8C10082E700 /* CaritasAppServicePerformanceTests.swift in Sources */,
 				C47EF754271758DB00063724 /* CaritasAppIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,12 +532,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -583,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
